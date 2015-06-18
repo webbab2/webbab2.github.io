@@ -8,5 +8,5 @@ Det här är ett blogginlägg.
 
 Här är en ny paragraf med länkar till [webbab.se][webbab] och [vår GitHub][webbab-gh].
 
-[jekyll]:      https://webbab.se
-[jekyll-gh]:   https://github.com/webbab
+[webbab]:      https://webbab.se
+[webbab-gh]:   https://github.com/webbab
