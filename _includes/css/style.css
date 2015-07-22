@@ -1,13 +1,9 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+/*** grund grejer ***/
 
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lato",Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #444;
     background-color: #f7f7f7;
     font-weight:300;
@@ -25,23 +21,27 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: "Lato",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 0 10px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
+heading-bold {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
@@ -63,11 +63,14 @@ a:focus {
     font-weight: 400;
 }
 
+/*** nav ***/
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "Lato",Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
     background-color: {{ site.color.primary }};
 }
 
@@ -122,7 +125,7 @@ button.navbar-toggle{
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background: 0 0;
+        background-color: {{ site.color.primary }};
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -136,7 +139,109 @@ button.navbar-toggle{
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
     }
+    
+    .navbar-custom .nav li a {
+        -webkit-transition: all .1s ease-in-out;
+        -moz-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+    }
+    
+    .navbar-custom .nav li a:hover,
+    .navbar-custom .nav li a:focus,
+    .navbar-custom .nav li a.active {
+        background-color: transparent;
+        /*border-bottom: 2px solid #fff;
+        transform:translateY(-5px);*/
+        color: rgba(255,255,255,.5);
+    }
 }
+
+/*** misc ***/
+.space {
+    height: 30px;
+}
+
+.mtb {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.mb {
+	margin-bottom: 60px;
+}
+
+.mt {
+	margin-top: 60px;
+}
+
+.list li {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*** footer ***/
+
+footer {
+    /*position: absolute;
+    bottom: 0;
+    width: 100%;*/
+    padding: 50px 0;
+    background-color: {{ site.color.primary-dark }};
+    color: #bbb;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .address i {
+    font-size: 16px;
+}
+footer h4 {
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+}
+
+ul.footer-social-buttons {
+    margin-top: 0;
+}
+
+ul.footer-social-buttons li {
+    margin-bottom: 15px;
+    font-size: 16px !important;
+}
+
+@media(max-width:1199px) {
+    ul.footer-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.footer-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.footer-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer {
+    padding-bottom: 50px;
+}
+
+.copyright p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/*** intro ***/
 
 .intro {
     display: table;
@@ -316,49 +421,6 @@ button.navbar-toggle{
     background-color: {{ site.color.links }};
 }
 
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-ul.banner-social-buttons li {
-    margin-bottom: 15px;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 50px 0;
-    background-color: {{ site.color.primary-dark }};
-    color: #bbb;
-}
-
-footer p {
-    margin: 0;
-}
-
-.footer {
-    padding-bottom: 50px;
-}
-
-.copyright p{
-    font-size: 16px;
-}
 
 ::-moz-selection {
     text-shadow: none;
