@@ -4,13 +4,15 @@ email: info@webbab.se
 url: https://webbab.se
 description: "Hemsidor, animerade film, och mycket mer till företag. Vi bygger professionella, responsiva webbsidor till ett mer fördelaktigt pris. Vi bygger lösningar efter dina behov."
 
-# Color settings (hex-codes without the leading hash-tag)
+# Color settings (hex-codes or rgba)
 color:
   primary: '#960051'
   primary-dark: '#14050f'
+  primary-light: '#f7f7f7'
+  secondary-light: '#ededed'
   links: '#960051'
 
-# Footer settings
+# Footer settings (copyright name)
 footer: Webbyrån WEBBAB
 
 # Social networks usernames. fontawesome code and url.
@@ -27,6 +29,23 @@ social:
   - title: LinkedIn
     fa: linkedin-square
     url: https://www.linkedin.com/company/webbab
+
+# Medarbetare
+medarbetare:
+  - namn: Johan Lindberg
+    titel: Titel
+    text: Lorem ipsum dolor sit amet, qui in soluta integre dissentiunt, ne primis eligendi antiopam eum. Ex dicta tibique duo. Sit epicurei electram definiebas at, eum ut veniam deserunt. Ne veniam virtute ullamcorper mel.
+    img: johan.png
+    tel: 026-456 17 11
+    email: johan@webbab.se
+  - namn: Mattis Johansson
+    titel: Titel
+    text: Lorem ipsum dolor sit amet, qui in soluta integre dissentiunt, ne primis eligendi antiopam eum. Ex dicta tibique duo. Sit epicurei electram definiebas at, eum ut veniam deserunt. Ne veniam virtute ullamcorper mel.
+    img: mattis.png
+    tel: 026-456 17 12
+    email: mattis@webbab.se
+
+
 
 # Build settings
 markdown: kramdown

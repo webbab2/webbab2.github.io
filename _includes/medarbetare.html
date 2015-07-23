@@ -1,0 +1,27 @@
+<section class="container content-section">
+    <div class="row mb">
+        <div class="col-md-offset-2">
+            
+{% for medarbetare in site.medarbetare %}
+        <div class="col-md-4 col-sm-6">
+            <div class="medarbetare">
+                <img src="/img/medarbetare/{{ medarbetare.img }}" alt="{{ medarbetare.namn }}" class="img-responsive center-block">
+                <h4 class="bold-caps">{{ medarbetare.namn }}</h4>
+                <p class="medarbetare-titel">{{ medarbetare.titel }}</p>
+                <p>{{ medarbetare.text }}</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fa fa-phone fa-fw"></i> <a href="tel:{{ medarbetare.tel }}" class="">{{ medarbetare.tel }}</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope fa-fw"></i> <a href="tel:{{ medarbetare.email }}" class="">{{ medarbetare.email }}</a>
+                    </li>
+                </ul>
+                <div class="space"></div>
+            </div>
+        </div>
+{% endfor %}
+            
+        </div><!-- /col-md-offset-2 -->
+    </div>
+</section>

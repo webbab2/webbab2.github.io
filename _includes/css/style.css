@@ -27,9 +27,10 @@ h6 {
     letter-spacing: 1px;
 }
 
-heading-bold {
+.bold-caps {
     text-transform: uppercase;
     font-weight: 900;
+    color: #333;
 }
 
 p {
@@ -60,6 +61,30 @@ a:focus {
 }
 
 .light {
+    font-weight: 400;
+}
+
+
+/*** general misc ***/
+.space {
+    height: 30px;
+}
+
+.mtb {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.mb {
+	margin-bottom: 60px;
+}
+
+.mt {
+	margin-top: 60px;
+}
+
+.list li {
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -156,28 +181,11 @@ button.navbar-toggle{
     }
 }
 
-/*** misc ***/
-.space {
-    height: 30px;
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: {{ site.color.primary }};
+    cursor: pointer;
 }
 
-.mtb {
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-.mb {
-	margin-bottom: 60px;
-}
-
-.mt {
-	margin-top: 60px;
-}
-
-.list li {
-    font-size: 16px;
-    font-weight: 400;
-}
 
 /*** footer ***/
 
@@ -188,6 +196,15 @@ footer {
     padding: 50px 0;
     background-color: {{ site.color.primary-dark }};
     color: #bbb;
+}
+
+footer a {
+    color: #bbb;
+}
+footer a:hover, footer a:active {
+    /*border-bottom: 1px solid {{ site.color.primary }};
+    box-shadow: inset 0 -3px 0 {{ site.color.primary }};*/
+    color: {{ site.color.primary }};
 }
 
 footer p {
@@ -210,8 +227,12 @@ ul.footer-social-buttons {
 }
 
 ul.footer-social-buttons li {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 16px !important;
+}
+
+.network-name {
+    font-weight: 400;
 }
 
 @media(max-width:1199px) {
@@ -223,7 +244,7 @@ ul.footer-social-buttons li {
 @media(max-width:767px) {
     ul.footer-social-buttons li {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding: 0;
     }
 
@@ -239,6 +260,82 @@ ul.footer-social-buttons li {
 .copyright p{
     font-size: 16px;
     font-weight: 300;
+}
+
+
+/***************/
+
+.medarbetare {
+    background-color: {{ site.color.secondary-light }};
+}
+
+.medarbetare h4 {
+    margin: 20px 0 0px;
+}
+
+.medarbetare h4,
+.medarbetare p,
+.medarbetare ul {
+    padding: 0 20px;
+}
+
+.medarbetare p {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+}
+
+.medarbetare li {
+    line-height: 24px;
+    font-weight: 400;
+}
+
+p.medarbetare-titel {
+    color: {{ site.color.primary }};
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/*** contact ***/
+
+.ll a {
+    color: #444;
+}
+.ll a:hover, .ll a:active {
+    border-bottom: 1px solid {{ site.color.primary }};
+    box-shadow: inset 0 -3px 0 {{ site.color.primary }};
+    color: {{ site.color.primary }};
+}
+
+#contact ul {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contact-social-buttons li {
+    font-size: 36px;
+    color: {{ site.color.primary-dark }};
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.contact-social-buttons li:hover {
+    transform: translateY(-5px);
+    color: {{ site.color.primary }};
+}
+.contact-social-buttons a {
+    color: {{ site.color.primary-dark }};
+}
+.contact-social-buttons a:hover {
+    color: {{ site.color.primary }};
+}
+
+#contact .address h4 {
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
 /*** intro ***/
