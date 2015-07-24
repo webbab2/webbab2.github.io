@@ -27,6 +27,12 @@ h6 {
     letter-spacing: 1px;
 }
 
+@media(min-width:767px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+
 .bold-caps {
     text-transform: uppercase;
     font-weight: 900;
@@ -64,6 +70,14 @@ a:focus {
     font-weight: 400;
 }
 
+ul li {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+}
+ul li i {
+    padding-right: 4px;
+}
 
 /*** general misc ***/
 .space {
@@ -86,6 +100,10 @@ a:focus {
 .list li {
     font-size: 16px;
     font-weight: 400;
+}
+
+.list-pl {
+    padding-left: 15px;
 }
 
 /*** nav ***/
@@ -301,15 +319,6 @@ p.medarbetare-titel {
 
 /*** contact ***/
 
-.ll a {
-    color: #444;
-}
-.ll a:hover, .ll a:active {
-    border-bottom: 1px solid {{ site.color.primary }};
-    box-shadow: inset 0 -3px 0 {{ site.color.primary }};
-    color: {{ site.color.primary }};
-}
-
 #contact ul {
     font-size: 18px;
     line-height: 30px;
@@ -338,7 +347,83 @@ p.medarbetare-titel {
     margin-bottom: 0;
 }
 
+
+/***** buttons & links *****/
+
+.ll a {     /* line link */
+    color: {{ site.color.links }};
+}
+.ll-b a {
+    color: #444;
+}
+.ll a:hover, .ll a:active,
+.ll-b a:hover, .ll-b a:active {
+    border-bottom: 1px solid {{ site.color.links }};
+    box-shadow: inset 0 -3px 0 {{ site.color.links }};
+    color: {{ site.color.links }};
+}
+
+
+
+
+
+
+.btn {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid {{ site.color.links }};
+    color: {{ site.color.links }};
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid {{ site.color.links }};
+    outline: 0;
+    color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.links }};
+}
+
+.btn-ghost {
+    border: 2px solid {{ site.color.links }};
+    color: {{ site.color.links }};
+    background-color: transparent;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+    border: 2px solid {{ site.color.links }};
+    outline: 0;
+    color: {{ site.color.primary-light }};
+    background-color: {{ site.color.links }};
+}
+
+
+
+
+
+
+
+
+
 /*** intro ***/
+
+@media(min-width:767px) {
+    .intro-text {  /* den lilla till höger */
+        font-size: 22px;
+    }
+}
+
+
+
 
 .intro {
     display: table;
@@ -458,20 +543,15 @@ p.medarbetare-titel {
     }
 }
 
+
+
+
 .content-section {
     padding-top: 100px;
 }
 
-.download-section {
-    width: 100%;
-    padding: 50px 0;
-    color: #fff;
-    background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: {{ site.color.primary-dark }};
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+.default-header {
+    padding-top: 100px;
 }
 
 #map {
@@ -484,38 +564,13 @@ p.medarbetare-titel {
     .content-section {
         padding-top: 200px;
     }
-
-    .download-section {
-        padding: 100px 0;
+    .default-header {
+        padding-top: 200px;
     }
-
     #map {
         height: 400px;
-        margin-top: 250px;
+        margin-top: 0px;
     }
-}
-
-.btn {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-
-.btn-default {
-    border: 1px solid {{ site.color.links }};
-    color: {{ site.color.links }};
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid {{ site.color.links }};
-    outline: 0;
-    color: {{ site.color.primary-dark }};
-    background-color: {{ site.color.links }};
 }
 
 
@@ -542,10 +597,9 @@ body {
 }
 
 
+
+
 /*****PORTFOLIO*******/
-/**
-/**
-**/
 
 #portfolio .portfolio-item {
     right: 0;
@@ -699,4 +753,58 @@ body {
     transform: rotate(90deg);
 }
 
-/*** END PORTFOLIO *****/
+/*** /PORTFOLIO ***/
+
+
+/*** misc custom junk ***/
+.arrow-line-f {
+	position: relative;
+	background: #fff;
+}
+.arrow-line-f:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #fff;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow-line-f7 {
+	position: relative;
+	background: #f7f7f7;
+}
+.arrow-line-f7:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #f7f7f7;
+	border-width: 30px;
+	margin-left: -30px;
+}
+
+.list-nr {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #b41e78;
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}

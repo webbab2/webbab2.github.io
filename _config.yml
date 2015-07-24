@@ -25,10 +25,10 @@ social:
     url: https://vimeo.com/webbab
   - title: YouTube
     fa: youtube-play
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: https://youtube.com/webbab
   - title: LinkedIn
     fa: linkedin-square
-    url: https://www.linkedin.com/company/webbab
+    url: https://linkedin.com/company/webbab
 
 # Medarbetare
 medarbetare:
