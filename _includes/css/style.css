@@ -417,7 +417,7 @@ p.medarbetare-titel {
 /*** intro ***/
 
 @media(min-width:767px) {
-    .intro-text {  /* den lilla till höger */
+    .header-text {  /* den lilla till höger */
         font-size: 22px;
     }
 }
