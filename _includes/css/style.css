@@ -164,6 +164,7 @@ ul li i {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     background-color: {{ site.color.primary }};
+    border-radius: 0;
 }
 
 .navbar-custom .navbar-brand:focus {
