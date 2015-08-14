@@ -1,5 +1,5 @@
  <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom" role="navigation"><!-- navbar-fixed-top -->
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -7,7 +7,7 @@
                 </button>
                 <a class="navbar-brand page-scroll" href="/">
                     <!--<i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap-->
-                    <img src="/img/webbab-logo.png" alt="WEBBAB" height="25px";>
+                    <img src="/img/webbab-logo.png" alt="WEBBAB" class="site-logo">
                 </a>
             </div>
 
@@ -18,15 +18,36 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
+                    <!--li>
                         <a class="page-scroll" href="/">Start</a>
-                    </li>
+                    </li-->
                     <li>
                         <a class="page-scroll" href="/om-oss/">Om oss</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="/tjanster/">Tjänster</a>
+                    
+                    <li class="dropdown hidden-xs">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tjänster <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/tjanster/">Vad vi gör</a></li>
+                            <li><a href="/tjanster/webbutveckling/">Webbtjänster</a></li>
+                            <li><a href="/tjanster/webbshop/">Webbshop</a></li>
+                            <li><a href="/tjanster/tillval/">Tillval</a></li>
+                            <li><a href="/tjanster/animerad-film/">Animerad film</a></li>
+                            <li><a href="/tjanster/appar/">Appar</a></li>
+                        </ul>
                     </li>
+                    <li class="dropdown open visible-xs">
+                        <a>Tjänster <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/tjanster/">Vad vi gör</a></li>
+                            <li><a href="/tjanster/">Webbtjänster</a></li>
+                            <li><a href="/tjanster/">Webbshop</a></li>
+                            <li><a href="/tjanster/">Tillval</a></li>
+                            <li><a href="/tjanster/">Animerad film</a></li>
+                            <li><a href="/tjanster/">Appar</a></li>
+                        </ul>
+                    </li>
+                    
                     <li>
                         <a class="page-scroll" href="/portfolio/">Portfolio</a>
                     </li>
@@ -34,7 +55,7 @@
                         <a class="page-scroll" href="/kontakt/">Kontakt</a>
                     </li>
 
-                    
+                    <!--
                     <li class="dropdown hidden-xs">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -60,7 +81,8 @@
                           <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
-                    
+                    -->
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

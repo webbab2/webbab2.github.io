@@ -7,6 +7,7 @@ description: "Hemsidor, animerade film, och mycket mer till företag. Vi bygger 
 # Color settings (hex-codes or rgba)
 color:
   primary: '#960051'
+  primary-rgba: 'rgba(150,0,80,0.75)'
   primary-dark: '#14050f'
   primary-light: '#f7f7f7'
   secondary-light: '#ededed'
@@ -33,20 +34,19 @@ social:
 # Medarbetare
 medarbetare:
   - namn: Johan Lindberg
-    titel: Titel
-    text: Lorem ipsum dolor sit amet, qui in soluta integre dissentiunt, ne primis eligendi antiopam eum. Ex dicta tibique duo. Sit epicurei electram definiebas at, eum ut veniam deserunt. Ne veniam virtute ullamcorper mel.
+    titel: Grundare, Kundansvarig
+    text: Lorem ipsum dolor sit amet, qui in soluta integre dissentiunt, ne primis eligendi antiopam eum. Ex dicta tibique duo. Sit epicurei electram definiebas at, eum ut veniam deserunt.
     img: johan.png
     tel: 026-456 17 11
     email: johan@webbab.se
   - namn: Mattis Johansson
-    titel: Titel
-    text: Lorem ipsum dolor sit amet, qui in soluta integre dissentiunt, ne primis eligendi antiopam eum. Ex dicta tibique duo. Sit epicurei electram definiebas at, eum ut veniam deserunt. Ne veniam virtute ullamcorper mel.
+    titel: Projektledare
+    text: Lorem ipsum dolor sit amet, qui in soluta integre dissentiunt, ne primis eligendi antiopam eum. Ex dicta tibique duo. Sit epicurei electram definiebas at, eum ut veniam deserunt.
     img: mattis.png
     tel: 026-456 17 12
     email: mattis@webbab.se
 
 
-
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /portfolio/:title #pretty

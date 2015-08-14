@@ -3,9 +3,9 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", sans-serif;
     color: #444;
-    background-color: #f7f7f7;
+    background-color: #efefef;
     font-weight:300;
     text-rendering: optimizeLegibility;
 }
@@ -22,9 +22,22 @@ h4,
 h5,
 h6 {
     margin: 0 0 10px;
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
+    color: #333;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3, h4 {
+    font-weight: 700;
+}
+
+h4 {
+    line-height: 22px;
 }
 
 @media(min-width:767px) {
@@ -73,7 +86,7 @@ a:focus {
 ul li {
     font-size: 16px;
     line-height: 28px;
-    font-weight: 400;
+    font-weight: 300;
 }
 ul li i {
     padding-right: 4px;
@@ -88,13 +101,26 @@ ul li i {
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
-
 .mb {
 	margin-bottom: 60px;
 }
-
 .mt {
 	margin-top: 60px;
+}
+.mb-sm{
+    margin-bottom: 20px;
+}
+.mb-xs{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 767px){
+    .mtb {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .mb { margin-bottom: 40px; }
+    .mt { margin-top: 40px; }
 }
 
 .list li {
@@ -106,6 +132,29 @@ ul li i {
     padding-left: 15px;
 }
 
+.primary-color {
+    color: {{ site.color.primary }};
+}
+.primary-color-bg {
+    background-color: {{ site.color.primary }};
+    color: #f7f7f7;
+}
+
+.bordered {
+    border: 3px solid #666;
+    padding: 25px 20px;
+}
+
+
+.li18px li{
+    font-size: 18px;
+}
+
+.t14px {
+    font-size: 14px;
+}
+
+
 /*** nav ***/
 
 .navbar-custom {
@@ -115,10 +164,6 @@ ul li i {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     background-color: {{ site.color.primary }};
-}
-
-.navbar-custom .navbar-brand {
-    font-weight: 700;
 }
 
 .navbar-custom .navbar-brand:focus {
@@ -133,7 +178,7 @@ ul li i {
 
 button.navbar-toggle{
     color: #fff !important;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -162,6 +207,26 @@ button.navbar-toggle{
     outline: 0;
     background-color: rgba(255,255,255,.3);
 }
+
+.site-logo {
+    height: 50px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.top-nav-collapse .site-logo {
+    height: 25px;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.top-nav-collapse .navbar-brand {
+    padding: 15px;
+}
+
 
 @media(min-width:767px) {
     .navbar {
@@ -198,10 +263,32 @@ button.navbar-toggle{
         color: rgba(255,255,255,.5);
     }
 }
+@media (max-width: 767px){
+    .navbar-nav .open .dropdown-menu>li>a:hover {
+        color: #fff;
+    }
+    .site-logo, .top-nav-collapse .site-logo {
+        height: 30px;
+    }
+    .navbar-brand, .top-nav-collapse .navbar-brand {
+        padding: 15px;
+    }
+}
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
     background-color: {{ site.color.primary }};
     cursor: pointer;
+    color: #fff;
+}
+
+.dropdown-menu {
+    background-color: {{ site.color.primary }};
+    border: none;
+    color: #fff;
+}
+.dropdown-menu li a {
+    color: #fff;
+    font-weight: 300;
 }
 
 
@@ -231,13 +318,16 @@ footer p {
     font-weight: 400;
 }
 
-footer .address i {
+footer .fa {
     font-size: 16px;
 }
 footer h4 {
     font-weight: 700;
     font-size: 16px;
     display: inline-block;
+    color: #bbb;
+    line-height: 18px;
+    margin-bottom: 5px;
 }
 
 ul.footer-social-buttons {
@@ -289,6 +379,7 @@ ul.footer-social-buttons li {
 
 .medarbetare h4 {
     margin: 20px 0 0px;
+    font-weight: 700;
 }
 
 .medarbetare h4,
@@ -300,19 +391,20 @@ ul.footer-social-buttons li {
 .medarbetare p {
     margin-bottom: 12px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     color: #888;
 }
 
 .medarbetare li {
+    font-size: 15px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 p.medarbetare-titel {
     color: {{ site.color.primary }};
     font-style: italic;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -325,8 +417,7 @@ p.medarbetare-titel {
 }
 
 .contact-social-buttons li {
-    font-size: 36px;
-    color: {{ site.color.primary-dark }};
+    font-size: 32px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -336,7 +427,7 @@ p.medarbetare-titel {
     color: {{ site.color.primary }};
 }
 .contact-social-buttons a {
-    color: {{ site.color.primary-dark }};
+    color: #999;
 }
 .contact-social-buttons a:hover {
     color: {{ site.color.primary }};
@@ -364,18 +455,23 @@ p.medarbetare-titel {
 }
 
 
-
-
-
-
 .btn {
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     font-weight: 700;
     letter-spacing: 0.05em;
+    background-color: {{ site.color.primary }};
+    color:#fff;
+    font-weight:300;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+    color: #fff;
+    background-color: {{ site.color.primary-rgba }};
 }
 
 .btn-default {
@@ -407,11 +503,24 @@ p.medarbetare-titel {
 }
 
 
+.btn-white {
+    background-color: #fff;
+    color: {{ site.color.links }};
+    font-weight: 400;
+}
+.btn-white:hover, .btn-white:focus {
+    background-color: {{ site.color.links }};
+}
 
+.btn-lg {
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 15px 20px;
+}
 
-
-
-
+.btn-nc {
+    text-transform: none;
+}
 
 
 /*** intro ***/
@@ -438,6 +547,10 @@ p.medarbetare-titel {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;-->
+}
+
+.intro h1 {
+    color: #fff;
 }
 
 .intro .intro-body {
@@ -551,7 +664,7 @@ p.medarbetare-titel {
 }
 
 .default-header {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #map {
@@ -565,7 +678,7 @@ p.medarbetare-titel {
         padding-top: 200px;
     }
     .default-header {
-        padding-top: 200px;
+        padding-top: 125px;
     }
     #map {
         height: 400px;
@@ -577,11 +690,13 @@ p.medarbetare-titel {
 ::-moz-selection {
     text-shadow: none;
     background: {{ site.color.primary }};
+    color: #fff;
 }
 
 ::selection {
     text-shadow: none;
     background: {{ site.color.primary }};
+    color: #fff;
 }
 
 img::selection {
@@ -807,4 +922,39 @@ body {
     font-size: 2.5em;
     font-family: "Lato", sans-serif;
     font-weight: 900;
+}
+
+.mini-kontakt h2 {
+    padding-top: 30px;
+    color: #fff;
+}
+
+hr {
+border-color: #ddd;
+}
+.hr-fat {
+    border-width: 4px;
+}
+
+
+/* keep embedded videos fluid! */
+.icontain {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%; /* keep 16x9 Aspect Ratio */
+}
+.i4x3 { padding-bottom: 75.00%; } /* keep 4x3 Aspect Ratio */
+.icontain iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hline {
+    border-top: 2px solid {{ site.color.primary }};
+    width: 50px;
+    margin: 0 0 10px 0;
 }
