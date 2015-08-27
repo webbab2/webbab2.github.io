@@ -1,0 +1,27 @@
+.logo-wrapper {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+.logo-wrapper #logo-webbab {
+  overflow: visible;
+}
+.logo-wrapper #logo-webbab .word {
+  fill: #fff;
+  opacity: 0;
+}
+.logo-wrapper #logo-webbab #mask #alpha {
+  fill: #fff;
+}
+.logo-wrapper #iso {
+  fill: #fff;
+  opacity: 0;
+  -webkit-mask: url(#mask);
+          mask: url(#mask);
+}

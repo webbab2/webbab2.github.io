@@ -1,18 +1,16 @@
 ---
 layout: project
 title: Savelend
-subtitle: Animation
 category: 
 - Animation
 - Grafisk design
-date: 2014-11-10
+date: 2014-11-10 #för sortering
 project-date: April 2014
 video: https://player.vimeo.com/video/112219619?color=b32081&title=0&byline=0&portrait=1
-thumbnail: roundicons-thumbnail.png
-thumbnail-hover: golden-thumbnail.png
+thumbnail: savelend_logo.png
+thumbnail-hover: savelend_thumb.png
 client: Savelend Sweden AB
 client-info: ”Den vänliga tjänsten för att förbättra din ekonomiska situation, både för dig med tillfälligt behov av pengar och för dig med överskott”
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
 ---
 Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.

@@ -1,0 +1,153 @@
+ <!-- Navigation -->
+<nav class="menu">
+    <ul class="menu__items">
+        <li>
+            <a href="#team" class="menu__item js-menu-item">Teamet</a>
+        </li>
+        <li>
+            <a href="#projects" class="menu__item js-menu-item">Projekt</a>
+        </li>
+        <li>
+            <a href="#ventures" class="menu__item js-menu-item">Ventures</a>
+        </li>
+        <li>
+            <a href="#labs" class="menu__item js-menu-item">Labbet</a>
+        </li>
+        <li>
+            <a href="#customers" class="menu__item js-menu-item">Kunder</a>
+        </li>
+        <li>
+            <a href="#contact" class="menu__item js-menu-item">Kontakt</a>
+        </li>
+    </ul>
+</nav>
+<a id="menu-toggle"><span></span></a>
+
+<script src="{{ "/js/navv.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/all.js" | prepend: site.baseurl }}"></script>
+
+<style>
+
+    .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #fefefe;
+    padding-top: 100px;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 200ms ease-in,  opacity 100ms ease-in;
+    transition: transform 200ms ease-in,  opacity 100ms ease-in;
+    -webkit-transform: translate3d(0,  -100%,  0);
+    transform: translate3d(0,  -100%,  0);
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+.menu.open {
+    background: rgba(180, 30, 120, 0.98);
+    z-index: 1000;
+    opacity: 1;
+    -webkit-transform: translate3d(0,  0,  0);
+    transform: translate3d(0,  0,  0);
+    overflow: auto;
+}
+.menu__items {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    width: 90%;
+    list-style: none;
+    text-align: center;
+}
+.menu__item {
+    color: white;
+    font-size: 50px;
+}
+@media screen and (max-width: 600px) {
+    .menu__item {
+    font-size: 11vw;
+}
+}@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .menu__item {
+    font-size: 50px;
+}
+}@media screen and (min-width: 1025px) {
+    .menu__item {
+    font-size: 9vh;
+}
+}.menu-is-open .wrapper {
+    overflow: hidden;
+    width: 100%}
+@media screen and (max-width: 767px) {
+    .menu-is-open .wrapper {
+    position: fixed;
+}
+}#menu-toggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+#menu-toggle span {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#menu-toggle span:before, #menu-toggle span:after {
+    position: absolute;
+    background: #fff;
+    content: '';
+    width: 28px;
+    height: 3px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+#menu-toggle span:before {
+    top: -8px;
+}
+#menu-toggle span:after {
+    top: 8px;
+}
+#menu-toggle.active span {
+    background: transparent;
+}
+#menu-toggle.active span:before {
+    -webkit-transform: rotate(45deg) translate(5px,  6px);
+    -ms-transform: rotate(45deg) translate(5px,  6px);
+    transform: rotate(45deg) translate(5px,  6px);
+}
+#menu-toggle.active span:after {
+    -webkit-transform: rotate(-45deg) translate(5px,  -6px);
+    -ms-transform: rotate(-45deg) translate(5px,  -6px);
+    transform: rotate(-45deg) translate(5px,  -6px);
+}
+#menu-toggle.active:hover span {
+    background: transparent;
+}
+#menu-toggle.active:hover span:before {
+    -webkit-transform: rotate(40deg) translate(5px,  6px);
+    -ms-transform: rotate(40deg) translate(5px,  6px);
+    transform: rotate(40deg) translate(5px,  6px);
+}
+#menu-toggle.active:hover span:after {
+    -webkit-transform: rotate(-40deg) translate(5px,  -6px);
+    -ms-transform: rotate(-40deg) translate(5px,  -6px);
+    transform: rotate(-40deg) translate(5px,  -6px);
+}
+html:not(.menu-is-open) #menu-toggle.scrolled span, html:not(.menu-is-open) #menu-toggle.scrolled span:before, html:not(.menu-is-open) #menu-toggle.scrolled span:after {
+    background: black;
+}
+    
+</style>

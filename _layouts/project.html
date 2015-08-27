@@ -7,11 +7,11 @@
     <header class="container default-header">
         <div class="row mb">
             <div class="col-md-6">
-                <h1>Portfolio / {{ page.title }}</h1>
-                <p style="margin-bottom: 5px;">{{ page.category | join: ', ' }}</p>
+                <h1><a href="/portfolio">Portfolio</a> / {{ page.title }}</h1>
+                <!--p style="margin-bottom: 5px;">{{ page.category | join: ', ' }}</p-->
                 
                 {% for category in page.category %}
-                <p style="margin-bottom: 5px; display: inline-block;"><a href="/portfolio/{{ category }}">{{ category }}</a></p>
+                <p style="margin-bottom: 5px; display: inline-block; background-color: #fcfcfc; padding: 2px 6px; margin-right: 4px;"><a href="/portfolio/{{ category }}">{{ category }}</a></p>
                 {% endfor %}
                 
             </div>
@@ -43,10 +43,11 @@
                 <h4 class="project-details">{{ page.client }}</h4>
                 <div class="hline"></div>
                 <p class="t14px mb-xs">{{ page.client-info }}</p>
-                <p><b>Datum:</b> {{ page.date | date: "%b, %Y" }}</p>
-                {% if page.website %}<p><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
+                {% if page.project-date %}<p class="project-meta"><b>Datum:</b> {{ page.project-date }}</p>{% endif %}
+                {% if page.website %}<p class="project-meta"><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
             </div>
         </div><! --/row -->
+        <hr class="hr-fat">
     </div><! --/container -->
     
     {% include portfolio-grid.html %}

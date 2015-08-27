@@ -1,0 +1,19 @@
+---
+layout: project
+title: MOAB
+category: 
+- Webb
+- Logotyp
+- Visitkort
+- Grafisk design
+date: 2014-11-10 #för sortering
+project-date: Nov 2014
+thumbnail: moab_logo.png
+thumbnail-hover: moab_thumb.png
+img: moab_img.jpg
+img2: moab_logotyp.png
+client: MOAB Asfalt & Entreprenad 
+client-info: MOAB Asfalt & Entreprenad AB är Sveriges snabbast växande leverantör inom asfalt och entreprenad. De utför entreprenad­arbeten och alla typer av arbeten inom asfaltläggning till alla kunders behov.
+
+---
+Vi tog fram logotyp, visitkort, webbsida och varumärkesplattform för det nybildade företaget MOAB Asfalt & Entreprenad som redan är Sveriges snabbast växande leverantör inom asfalt och entreprenad.

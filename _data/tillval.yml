@@ -1,0 +1,56 @@
+---
+- title: Domän och webbhotell
+  fa: globe
+  text: Om du inte redan har ett domännamn (t ex .se eller .com adress) så hjälper vi dig att registrera och aktivera den, samt lägga upp sidan på ett webbhotell.
+  pris: 145
+  pris-suffix: /mån
+  stor: true
+
+- title: Har du inga egna bilder eller texter för webbplatsen?
+  fa: file-o
+  text: Vi samarbetar med Contentor och Gefle Fotostudio och kan fylla din hemsida med innehåll åt dig. Vi kan även hjälpa er att köpa in passande stockbilder om det skulle behövas. Professionellt skrivna texter och bilder förhöjer och ger ett mer seriöst intryck.</p><p>Contentor skriver texter åt bland andra Groupon, Fyndiq, tretti.se och Betsson och kan hjälpa er att lättare nå ut till era kunder.
+  stor: true
+
+- title: Besöksstatistik och analys
+  fa: bar-chart
+  text: Implementera marknadens bästa statistikverktyg Google Analytics på din hemsida. Med Google Analytics får du en grundlig överblick över dina besökare och kan enkelt se hur många de är, var de kommer ifrån och vilka sidor på din hemsida som är mest populära. Vi skickar dessutom ut en sammanfattning på din statistik direkt till din mail varje månad.
+  pris: 50
+  pris-suffix: /mån
+  stor: true
+  
+- title: Löpande uppdateringar av innehåll
+  fa: refresh 
+  text: Ibland räcker inte tiden till. När du behöver få en uppdatering inlagd på din hemsida är det bara att maila vad som ska göras så ordnar vi det inom kort.
+  pris: 995
+  stor: true
+  
+- title: Flerspråksstöd
+  fa: language
+  text: Erbjud era besökare möjligheten att växla mellan exempelvis svenska och engelska.
+  pris: 1 495
+  pris-prefix: från
+  
+- title: Animation
+  fa: film
+  text: Animerad reklam- / informationsfilm för att illustrera er affärs­verksamhet eller produkt. <a href="/offertformular/">Klicka här för att få offert</a>.
+  pris: 14 995
+  pris-prefix: från
+  
+- title: Logotyp
+  fa: image
+  text: Vi hjälper dig att hitta logotypen som speglar just ert varumärke och som ger era kunder rätt uppfattning om er.
+  pris: 4 495
+  
+- title: Grafisk design
+  fa: eye
+  text: Vi designar formulär, brevpapper, visitkort och allt annat ditt företag kan tänkas behöva.
+  pris: 4 995
+  pris-prefix: från
+  
+- title: Sökmotor­optimering (SEO) och Google­annonsering
+  fa: eye
+  text: Vi hjälper er att synas och få bra resultat i sökmotorerna med er nya, eller nuvarande, hemsida.
+  pris: 4 995
+  pris-suffix: <br>(eller timdebitering)
+
+---
