@@ -26,7 +26,7 @@
 
     // Hide menu when scrolling too far down
     (function(){
-        var $header = $('.header'),
+        var $header = $('.intro'),
             $menuToggle = $('#menu-toggle'),
             height = $header.height();
 

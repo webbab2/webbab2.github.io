@@ -3286,7 +3286,7 @@ function(e) {
       }, 1e3)
     }),
     function() {
-      var t = e(".header"),
+      var t = e(".intro"),
         n = e("#menu-toggle"),
         r = t.height();
       e(window).scroll(function() {

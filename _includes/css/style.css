@@ -160,6 +160,163 @@ ul li i {
 
 /*** nav ***/
 
+.nav-toggle {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 45px;
+    margin: 25px 30px;
+}
+    
+.site-logo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 35px;
+}
+    
+.nav-list {
+    margin-top: 100px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-list li {
+    font-size: 100px;
+    line-height: 150px;
+}
+.nav-list li a {
+    width: 100%;
+    display: block;
+    font-weight: 700;
+}
+.menu-collapsed {
+  text-align: center;
+  transition: all .25s;
+  position: fixed;
+  top: 0;
+  height: 0%;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+  background-color: transparent;
+}
+.menu-expanded {
+  text-align: center;
+  transition: all .25s;
+  line-height: 200px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  border-radius: 0px;
+  top: 0;
+  background-color: rgba(150,0,80,0.90);
+  z-index: 1000;
+}
+
+.menu-collapsed ul {
+  text-align: center;
+  transition: all .05s;
+  position: fixed;
+  top: -9000px;
+  width: 100%;
+}
+    
+.menu-expanded ul {
+  text-align: center;
+  transition: all .05s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list a {
+  transition: all .15s;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  width: 100%;
+}
+.nav-list a:hover {
+  transition: all .15s;
+  letter-spacing: 2px;
+  background-color: {{ site.color.primary }};
+}
+
+
+    
+.bar {
+  transition: all .25s;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 45px;
+  height: 6px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: {{ site.color.primary }};
+}
+.bar:before {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  height: 6px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: {{ site.color.primary }};
+}
+.bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 6px;
+  width: 30px;
+  border-radius: 2px;
+  background-color: {{ site.color.primary }};
+}
+    
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s;
+}
+.menu-expanded .bar:before {
+  transition: all .25s;
+  content: "";
+  transform: rotate(45deg);
+  top: -0px;
+  background-color: rgba(255, 255, 255, 1);
+}
+.menu-expanded .bar:after {
+  transition: all .25s;
+  content: "";
+  transform: rotate(-45deg);
+  top: 0px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.menu-collapsed .nav_white .bar,
+.menu-collapsed .nav_white .bar:before,
+.menu-collapsed .nav_white .bar:after {
+    background-color: rgba(239, 239, 239, 1);
+}
+.menu-collapsed .nav_colored bar,
+.menu-collapsed .nav_colored bar:before,
+.menu-collapsed .nav_colored bar:after {
+    background-color: {{ site.color.primary }};
+}
+
+.menu-expanded .nav_colored .bar,
+.menu-expanded .nav_white .bar{
+    background-color: transparent;
+}
+
+
+
+/***nav old**/
 @media(min-width:767px) {
     .navbar-absolute { position: absolute; width: 100%; }
 }
@@ -222,6 +379,14 @@ button.navbar-toggle{
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+    z-index: -1;
+}
+.logo-hitbox {
+    height: 50px;
+    width: 162px;
+    margin: 35px;
+    position: fixed;
+    z-index: 2;
 }
 
 .top-nav-collapse .site-logo {
@@ -572,10 +737,6 @@ p.medarbetare-titel {
 }
 
 
-
-
-
-
 .intro h1 {
     color: #fff;
 }
@@ -632,36 +793,37 @@ p.medarbetare-titel {
     }
 }
 
-.btn-circle {
+
+.btn-down {
     width: 70px;
     height: 70px;
     margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid #fff;
+    padding: 3px 16px;
     border-radius: 35px;
     font-size: 40px;
     color: #fff;
-    background: 0 0;
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+    text-align: center;
 }
 
-.btn-circle:hover,
-.btn-circle:focus {
+.btn-down:hover,
+.btn-down:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+}
+.btn-down:active{
+    box-shadow: none;
 }
 
-.btn-circle i.animated {
+
+
+.btn-down i.animated {
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
 }
 
-.btn-circle:hover i.animated {
+.btn-down i.animated {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
     -webkit-animation-duration: 1.5s;
@@ -705,6 +867,35 @@ p.medarbetare-titel {
         transform: scale(1);
     }
 }
+
+
+
+
+
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    text-align: center;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
 
 
 
