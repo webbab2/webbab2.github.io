@@ -1,4 +1,4 @@
-/*** grund grejer ***/
+
 
 body {
     width: 100%;
@@ -76,7 +76,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: {{ site.color.links }};
 }
 
 .light {
@@ -590,9 +590,13 @@ p.medarbetare-titel {
     font-weight: 900;
 }
 
-.intro .intro-body .intro-text {
-    font-size: 18px;
+.intro-text {
+    font-size: 38px;
+    line-height: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
 }
+
 
 @media(min-width:767px) {
     .intro {
@@ -604,8 +608,27 @@ p.medarbetare-titel {
         font-size: 100px;
     }
 
-    .intro .intro-body .intro-text {
-        font-size: 25px;
+    .intro-text {
+        font-size: 48px;
+    }
+}
+
+@media(min-width:992px) {
+    .intro-text {
+        font-size: 72px;
+    }
+}
+
+@media(min-width:1250px) {
+    .intro-text {
+        font-size: 90px;
+    }
+}
+
+@media(max-width:500px) {
+    .intro-text {
+        font-size: 28px;
+        padding: 0 10px;
     }
 }
 

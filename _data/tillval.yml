@@ -32,7 +32,7 @@
   
 - title: Animation
   fa: film
-  text: Animerad reklam- / informationsfilm för att illustrera er affärs­verksamhet eller produkt. <a href="/offertformular/">Klicka här för att få offert</a>.
+  text: Animerad reklam- / informationsfilm för att illustrera er affärs­verksamhet eller produkt. <a href="/offertformular/">Klicka här för offert</a>.
   pris: 14 995
   pris-prefix: från
   
@@ -48,9 +48,31 @@
   pris-prefix: från
   
 - title: Sökmotor­optimering (SEO) och Google­annonsering
-  fa: eye
+  fa: search
   text: Vi hjälper er att synas och få bra resultat i sökmotorerna med er nya, eller nuvarande, hemsida.
   pris: 4 995
   pris-suffix: <br>(eller timdebitering)
+
+- title: Social media
+  fa: comment-o
+  text: Har ni inte tid eller ork att sköta er Facebook­sida? Vi kan sätta upp och sköta konton åt er på de största sociala mediasidorna så ni når ut till era kunder på bästa möjliga sätt.
+  pris: 650
+  pris-suffix: /h
+  
+- title: Nyhetsbrev
+  fa: envelope-o
+  text: Vi samarbetar med <a title="Partners" href="/partners/">Contentor</a> och kan erbjuda&nbsp;ditt företag att regelbundet nå ut till kunder och andra intresserade med nyheter, erbjudanden och information via nyhetsbrev och e-post­marknadsföring.
+  pris: 995
+
+- title: Lösenordsskydd
+  fa: lock
+  text: Kräv lösenord för valfria dolda sidor. Perfekt för intranät eller sidor för kunder.
+  pris: 495
+
+- title: Löpande arbete
+  fa: gears
+  text: Vi kan det mesta och hjälper dig med allt du behöver hjälp med, till ett bra timpris!
+  pris: 650
+  pris-suffix: /h
 
 ---

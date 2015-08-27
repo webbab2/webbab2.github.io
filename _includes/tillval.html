@@ -1,35 +1,44 @@
-<div class="container mtb">
-    <div class="col-lg-12">
-        <h2>Tilläggsfunktioner</h2>
-        <p class="subtitle">Anpassa din hemsida efter dina behov med några av våra extra tjänster för en komplett lösning</p>
-    </div>
-
-    
-    {% for tillval in site.data.tillval %}
-{% if tillval.stor != true %}
-    <div class="col-md-3 mb-xs">
-{% endif %}
-{% if tillval.stor == true %}
-    <div class="col-md-6 mb-sm">
-{% endif %}
-        <div class="tillval" style="background-color: #fafafa;">
-            <p style="text-align: center;"><i class="fa fa-{{ tillval.fa }}"></i></p>
-            <h4>{{ tillval.title }}</h4>
-            <p>{{ tillval.text }}</p>
-            <p style="text-align: right;">
-                {% if tillval.pris-prefix %}
-                    <em>{{ tillval.pris-prefix }}</em>
-                {% endif %}
-                {% if tillval.pris %}
-                    <span class="pris-small">{{ tillval.pris }}:-</span>
-                {% endif %}
-                {% if tillval.pris-suffix %}
-                    {{ tillval.pris-suffix }}
-                {% endif %}
-            </p>
-            
+<div class="container mt">
+        <div class="col-lg-12">
+            <h2>Tilläggsfunktioner</h2>
+            <p class="subtitle">Anpassa din hemsida efter dina behov med några av våra extra tjänster för en komplett lösning</p>
         </div>
-    </div>
-    {% endfor %}
-    
 </div>
+<div class="container mb">
+    <div class="row masonry-container">
+        {% for tillval in site.data.tillval %}
+        <div class="col-md-4 col-sm-6 col-xs-12 mb-sm col-masonry">
+            <div class="tillval" style="background-color: #fafafa;">
+                <p style="text-align: center;"><i class="fa fa-{{ tillval.fa }}"></i></p>
+                <h4>{{ tillval.title }}</h4>
+                <p>{{ tillval.text }}</p>
+                <p style="text-align: right;">
+                    {% if tillval.pris-prefix %}
+                        <em>{{ tillval.pris-prefix }}</em>
+                    {% endif %}
+                    {% if tillval.pris %}
+                        <span class="pris-small">{{ tillval.pris }}:-</span>
+                    {% endif %}
+                    {% if tillval.pris-suffix %}
+                        {{ tillval.pris-suffix }}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script>
+    (function($) {
+        var $container = $('.masonry-container');
+        $container.imagesLoaded(function() {
+            $container.masonry({
+                columnWidth: '.col-masonry',
+                itemSelector: '.col-masonry'
+            });
+        });
+    })(jQuery);
+</script>
