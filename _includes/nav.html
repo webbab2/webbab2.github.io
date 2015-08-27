@@ -1,0 +1,34 @@
+<img src="/img/webbab-logo-pink.png" alt="WEBBAB" class="site-logo">
+<a class="page-scroll" href="/"><div class="logo-hitbox"></div></a>
+
+<div class="menu-collapsed">
+    <div class="nav_colored">
+        <div class="bar"></div>
+    </div>
+    <div class="nav-toggle"></div>
+    <nav>
+      <ul class="list-unstyled nav-list">
+        <li><a href="/">Start</a></li>
+        <li><a href="/om-oss/">Om oss</a></li>
+        <li><a href="/tjanster/">Tjänster</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+      </ul>
+    </nav>  
+</div>
+
+<script>
+$(".menu-collapsed").click(function() {
+  $(this).toggleClass("menu-expanded");
+});
+
+$(document).on('scroll',function(){
+    if($(document).scrollTop()<=$('#about').offset().top){
+        $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
+        //$('.site-logo').css( "opacity", "0" );
+    }
+    else{
+        $('.nav_white').removeClass('nav_white').addClass('nav_colored');
+        //$('.site-logo').css( "opacity", "1" );
+    }
+});
+</script>
