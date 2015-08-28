@@ -2,8 +2,16 @@
 <html>
     {% include head.html %}
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <style> .site-logo { z-index: -1; } </style>
+    <script>
+    $(document).ready(function() { 
+        $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
+    });
+    </script>
     {% include nav.html %}
     {% include intro.html %}
+    <div class="top nav-turn-normal"></div>
+    {% include infofilm.html %}
     {% include about.html %}
     <div class="container">
         <h1>Portfolio</h1>

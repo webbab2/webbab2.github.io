@@ -101,6 +101,10 @@ ul li i {
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
+.mtb-lg {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
 .mb {
 	margin-bottom: 60px;
 }
@@ -109,6 +113,9 @@ ul li i {
 }
 .mt-sm{
     margin-top: 20px;
+}
+.mb-md{
+    margin-bottom: 30px;
 }
 .mb-sm{
     margin-bottom: 20px;
@@ -177,27 +184,58 @@ ul li i {
 }
     
 .nav-list {
-    margin-top: 100px;
-    text-transform: uppercase;
-    text-align: center;
+    margin-top: 150px;    
 }
 .nav-list li {
     font-size: 100px;
-    line-height: 150px;
+    line-height: 1.2em;
+    /*text-align: left;*/
+    border-left: 2px solid #fff;
+    padding-left: 30px;
+}
+
+@media (max-width: 767px){
+    .nav-list li {
+        font-size: 48px;
+    }
+}
+@media (max-width: 400px){
+    .nav-list li {
+        font-size: 28px;
+    }
+}
+@media (max-height: 820px){
+    .nav-list li {
+        font-size: 72px;
+    }
+}
+@media (max-height: 620px){
+    .nav-list li {
+        font-size: 42px;
+    }
+}
+@media (max-height: 450px){
+    .nav-list li {
+        font-size: 28px;
+    }
+    .nav-list {
+    margin-top: 100px;
+    }
 }
 .nav-list li a {
     width: 100%;
     display: block;
     font-weight: 700;
+    font-style: italic;
+    color: rgba(255,255,255,0.9);
+    /*padding-left: 10%;*/
 }
 .menu-collapsed {
-  text-align: center;
   transition: all .25s;
   position: fixed;
   top: 0;
   height: 0%;
   width: 100%;
-  z-index: 1;
   cursor: pointer;
   background-color: transparent;
 }
@@ -210,12 +248,11 @@ ul li i {
   padding: 0;
   border-radius: 0px;
   top: 0;
-  background-color: rgba(150,0,80,0.90);
+  background-color: rgba(150,0,80,1);
   z-index: 1000;
 }
 
 .menu-collapsed ul {
-  text-align: center;
   transition: all .05s;
   position: fixed;
   top: -9000px;
@@ -223,7 +260,8 @@ ul li i {
 }
     
 .menu-expanded ul {
-  text-align: center;
+  text-align: left;
+  padding-left: 15%;
   transition: all .05s;
   position: fixed;
   top: 0;
@@ -233,15 +271,20 @@ ul li i {
 .nav-list a {
   transition: all .15s;
   text-decoration: none;
-  color: white;
+  color: #222;
   padding: 5px;
   width: 100%;
+    letter-spacing: 0.01em;
 }
 .nav-list a:hover {
   transition: all .15s;
-  letter-spacing: 2px;
-  background-color: {{ site.color.primary }};
-}
+  /*letter-spacing: 2px;*/
+  color: #e664aa ; 
+    padding-left: 30px;
+}/*
+.nav-list li:hover {
+  background-color: rgba(255,255,255,0.05);
+}*/
 
 
     
@@ -379,14 +422,14 @@ button.navbar-toggle{
     -webkit-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    z-index: -1;
+    z-index: 9997;
 }
 .logo-hitbox {
     height: 50px;
     width: 162px;
     margin: 35px;
     position: fixed;
-    z-index: 2;
+    z-index: 9999;
 }
 
 .top-nav-collapse .site-logo {
@@ -548,7 +591,7 @@ ul.footer-social-buttons li {
 /***************/
 
 .medarbetare {
-    background-color: {{ site.color.secondary-light }};
+    background-color: {{ site.color.primary-light }};
 }
 
 .medarbetare h4 {
@@ -601,7 +644,7 @@ p.medarbetare-titel {
     color: {{ site.color.primary }};
 }
 .contact-social-buttons a {
-    color: #999;
+    color: #333;
 }
 .contact-social-buttons a:hover {
     color: {{ site.color.primary }};
@@ -753,7 +796,7 @@ p.medarbetare-titel {
 
 .intro-text {
     font-size: 38px;
-    line-height: 1em;
+    line-height: 1.1em;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -792,15 +835,27 @@ p.medarbetare-titel {
         padding: 0 10px;
     }
 }
-
-
+@media (max-height: 660px){
+    .intro-text {
+        font-size: 60px;
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+}
+@media (max-height: 450px){
+    .intro-text {
+        font-size: 40px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+}
 .btn-down {
     width: 70px;
     height: 70px;
     margin-top: 15px;
     padding: 3px 16px;
     border-radius: 35px;
-    font-size: 40px;
+    font-size: 60px;
     color: #fff;
     text-align: center;
 }

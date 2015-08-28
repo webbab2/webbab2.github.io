@@ -1,0 +1,29 @@
+<section class="container mt">
+    <!--div class="embed-responsive embed-responsive-16by9 mb">
+        <video max-width="1920" max-height="1080" poster="https://webbab.se/media/webbab-poster.png" id="videon" class="embed-responsive-item">
+            <source src="https://webbab.se/media/webbab.mp4" type="video/mp4">
+            <source src="https://webbab.se/media/webbab.ogg" type="video/ogg">
+            <source src="https://webbab.se/media/webbab.webm" type="video/webm"> Your browser does not support the video tag :(
+        </video>
+    </div-->
+    
+    <h2>Låt oss visa vad vi gör</h2>
+    <div class="icontain mb">
+      <iframe src="https://player.vimeo.com/video/130987567?color=b32081&title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    
+    <script type="text/javascript">
+        document.getElementById('videon').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default behaviour in FireFox
+
+            // Then toggle the video ourselves
+            if (this.paused) {
+                this.play();
+            } else {
+                this.pause();
+            }
+        });
+
+    </script>
+</section>

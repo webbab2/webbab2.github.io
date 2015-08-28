@@ -1,4 +1,5 @@
-<img src="/img/webbab-logo-pink.png" alt="WEBBAB" class="site-logo">
+<img src="/img/webbab-logo-pink.png" alt="WEBBAB" class="site-logo logo-normal">
+<img src="/img/webbab-logo.png" alt="WEBBAB" class="site-logo logo-white hide" style="z-index: 9999;">
 <a class="page-scroll" href="/"><div class="logo-hitbox"></div></a>
 
 <div class="menu-collapsed">
@@ -7,28 +8,30 @@
     </div>
     <div class="nav-toggle"></div>
     <nav>
-      <ul class="list-unstyled nav-list">
-        <li><a href="/">Start</a></li>
-        <li><a href="/om-oss/">Om oss</a></li>
-        <li><a href="/tjanster/">Tjänster</a></li>
-        <li><a href="/kontakt/">Kontakt</a></li>
-      </ul>
-    </nav>  
+        <ul class="list-unstyled nav-list">
+            <li><a href="/">Start</a></li>
+            <li><a href="/portfolio/">Portfolio</a></li>
+            <li><a href="/tjanster/">Tjänster</a></li>
+            <li><a href="/om-oss/">Om oss</a></li>
+            <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+    </nav>
 </div>
 
 <script>
 $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
+    $('.logo-white').toggleClass("hide");
 });
 
 $(document).on('scroll',function(){
-    if($(document).scrollTop()<=$('#about').offset().top){
+    if($(document).scrollTop()<=$('.nav-turn-normal').offset().top){
         $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
-        //$('.site-logo').css( "opacity", "0" );
+        //$('.site-logo').css( "z-index", "-1" );
     }
     else{
         $('.nav_white').removeClass('nav_white').addClass('nav_colored');
-        //$('.site-logo').css( "opacity", "1" );
+        //$('.site-logo').css( "z-index", "1" );
     }
 });
 </script>
