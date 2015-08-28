@@ -1373,3 +1373,18 @@ border-color: #ddd;
   top: -2.75em;
   text-decoration: underline;
 }
+
+
+.tjanster-lista li{
+    font-size: 38px;
+    line-height: 1.4em;
+    font-style: italic;
+    font-weight: 700;
+}
+.tjanster-lista a{
+    color: #333;
+}
+.tjanster-lista a:hover,
+.tjanster-lista a:active {
+    color: {{ site.color.primary }};
+}
