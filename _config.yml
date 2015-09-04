@@ -8,6 +8,7 @@ description: "Hemsidor, animerade film, och mycket mer till företag. Vi bygger 
 color:
   primary: '#960051'
   primary-rgba: 'rgba(150,0,80,0.75)'
+  secondary: '#e664aa' #dc509b
   primary-dark: '#14050f'
   primary-light: '#f7f7f7'
   secondary-light: '#ededed'
