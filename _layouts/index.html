@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <style> .site-logo { z-index: -1; } </style>
     <script>
     $(document).ready(function() { 
         $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
+        //$('.logo-normal').addClass('z-1');
     });
     </script>
     {% include nav.html %}
     {% include intro.html %}
     <div class="top nav-turn-normal"></div>
-    {% include about.html %}
+    {% include tjanster-mini.html %}
         <div class="container mb-sm"><hr class="hr-fat"></div>
     {% include infofilm.html %}
         <div class="container mb-sm"><hr class="hr-fat"></div>
@@ -19,7 +20,6 @@
         <h2>Portfolio</h2>
     </div>
     {% include portfolio-grid.html %}
-    {% include prislista.html %}
         <div class="container mb-sm"><hr class="hr-fat"></div>
     {% include contact.html %}
         <div class="container mb-sm"><hr class="hr-fat"></div>
@@ -27,5 +27,5 @@
         <div class="mb"></div>
     {% include footer.html %}
     {% include js.html %}
-    </body>
+</body>
 </html>

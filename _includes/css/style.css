@@ -115,13 +115,13 @@ ul li i {
     margin-top: 20px;
 }
 .mb-md{
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
 }
 .mb-sm{
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 .mb-xs{
-    margin-bottom: 10px;
+    margin-bottom: 10px !important;
 }
 
 @media (max-width: 767px){
@@ -149,16 +149,15 @@ ul li i {
     background-color: {{ site.color.primary }};
     color: #f7f7f7;
 }
+.white-bg {
+    background-color: #fff;
+}
 
 .bordered {
     border: 3px solid #666;
     padding: 25px 20px;
 }
 
-
-.li18px li{
-    font-size: 18px;
-}
 
 .t14px {
     font-size: 14px;
@@ -238,6 +237,7 @@ ul li i {
   width: 100%;
   cursor: pointer;
   background-color: transparent;
+    z-index: 1000;
 }
 .menu-expanded {
   text-align: center;
@@ -357,7 +357,12 @@ ul li i {
     background-color: transparent;
 }
 
-
+.z9999{
+z-index: 9999 !important;
+}
+.z-1{
+z-index: -1 !important;
+}
 
 /***nav old**/
 @media(min-width:767px) {
@@ -628,11 +633,11 @@ p.medarbetare-titel {
 
 /*** contact ***/
 
-#contact ul {
-    font-size: 18px;
-    line-height: 30px;
+#contact ul li{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 300;
 }
-
 .contact-social-buttons li {
     font-size: 32px;
     -webkit-transition: all .2s ease-in-out;
@@ -640,11 +645,11 @@ p.medarbetare-titel {
     transition: all .2s ease-in-out;
 }
 .contact-social-buttons li:hover {
-    transform: translateY(-5px);
+    /*transform: translateY(-5px);*/
     color: {{ site.color.primary }};
 }
 .contact-social-buttons a {
-    color: #333;
+    color: #888;
 }
 .contact-social-buttons a:hover {
     color: {{ site.color.primary }};
@@ -707,9 +712,10 @@ p.medarbetare-titel {
 }
 
 .btn-ghost {
-    border: 2px solid {{ site.color.links }};
-    color: {{ site.color.links }};
+    border: 2px solid {{ site.color.primary }};
+    color: {{ site.color.primary }};
     background-color: transparent;
+    font-weight: 400;
 }
 
 .btn-ghost:hover,
@@ -1386,5 +1392,23 @@ border-color: #ddd;
 }
 .tjanster-lista a:hover,
 .tjanster-lista a:active {
+    color: {{ site.color.primary }};
+}
+.tjanster-lista .fa{
+    color: {{ site.color.primary }};
+    font-size: 32px;
+}
+
+
+.tjanst-lista li{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 16px;
+}
+.tjanst-lista li a{
+    color: #333;
+}
+.tjanst-lista li a:hover,
+.tjanst-lista li a:active {
     color: {{ site.color.primary }};
 }

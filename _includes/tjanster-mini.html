@@ -1,0 +1,274 @@
+<section class="container mtb">
+    <div class="col-lg-12">
+        <h2 class="mb-sm">Vad kan vi hjälpa er med?</h2>
+        <div class="row">
+            
+            
+<div class="tab-system">
+    <ul class="tabs tjanst-lista">
+        <li class="active">Webbsida</li>
+        <li>Webbshop</li>
+        <li>Animation och film</li>
+        <li>Grafisk design</li>
+        <li>Appar och spel</li>
+        <li>Andra webblösningar</li>
+    </ul>
+
+    <ul class="tab__content">
+        <li class="active">
+            <div class="content__wrapper">
+        <div class="col-lg-4">
+            <img class="img-responsive center-block" src="/img/tjanster/tjanster_hemsida.png" alt="Hemsida">
+        </div>
+        <div class="col-lg-8">
+            <h2>Hemsida</h2>
+            <p class="ll">Vi tycker inte du ska behöva betala för mer än vad du vill ha. Våra grundpaket innehåller därför endast de mest grundläggande funktionerna, sedan kan du själv utöka med de extra funktioner du behöver. Om inget av våra paketförslag eller tillvalen passar dina behov är du självklart även välkommen att <a title="Offertformulär" href="/offertformular/">begära en offert</a>. Inget projekt är för litet och nästan inget för stort. Vi kan fixa fram mer än det som listas här, så ring eller skicka iväg ett meddelande och berätta för oss om dina planer. Vi anpassar oss efter dina behov och tar fram en specialanpassad lösning just för dig!</p>
+            
+            <p class="mb-xs">För alla webbproduktioner vi skapar ingår självklart:</p>
+            <ul class="list-unstyled">
+                <li><i class="fa fa-check fa-fw primary-color"></i> Support via telefon, e-post &amp; chatt under produktionstiden</li>
+                <li><i class="fa fa-check fa-fw primary-color"></i> Kostnadsfri regelbunden backup</li>
+                <li><i class="fa fa-check fa-fw primary-color"></i> Responsiv design <wbr />(mobil­anpassad)</li>
+            </ul>
+            <p>Vi erbjuder dessutom specialpriser för föreningar.</p>
+            <a title="Webbsidor" href="/tjanster/webbutveckling/"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+        </div>
+            </div>
+        </li>
+        <li>
+            <div class="content__wrapper">
+        <div class="col-lg-4">
+            <img class="img-responsive center-block" src="/img/tjanster/tjanster_webbshop.png" alt="Webbshop">
+        </div>
+        <div class="col-lg-8">
+            <h2>Webbshop</h2>
+            <p>Behöver du hjälp med att omvandla din hemsida till en snygg och lättanvänd webbshop? Låt oss bygga din onlinebutik och om du vill kan vi även koppla din hemsida till butiken. Vi hjälper dig att få igång en webbutik med WooCommerce för WordPress, både för dig som vill starta, eller redan driver, e-handel. WooCommerce är ett kraftfullt e-handelsplugin till WordPress som förvandlar din hemsida till en komplett nätbutik. Med sin smidiga och användarvänliga kontrollpanel passar denna lösning till både företag och privatpersoner, vare sig du säljer 1 eller 1000 produkter.</p>
+            <a title="Webbsidor" href="/tjanster/webbshop"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+        </div>
+                
+            </div>
+        </li>
+        <li>
+            <div class="content__wrapper">
+                Animation och film
+            </div>
+        </li>
+        <li>
+            <div class="content__wrapper">
+                Grafisk design
+            </div>
+        </li>
+        <li>
+            <div class="content__wrapper">
+                Appar och spel
+            </div>
+        </li>
+        <li>
+            <div class="content__wrapper">
+                Andra webblösningar
+            </div>
+        </li>
+    </ul>
+</div> <!-- /tab-system -->
+    
+            
+<style>
+.tab-system * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+    margin-bottom: 15px;
+}
+.tabs > li {
+  transition-duration: .25s;
+  display: table-cell;
+  list-style: none;
+  text-align: center;
+  padding: 10px 20px 15px 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+    border-bottom: 4px solid {{ site.color.primary }};
+}
+.tabs > li:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  background-color: {{ site.color.primary }};
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition-duration: .25s;
+}
+.tabs > li:hover:before {
+  -webkit-transform: translateY(70%);
+  transform: translateY(70%);
+}
+.tabs > li.active {
+  color: {{ site.color.primary }};
+    border-bottom: 4px solid #dc509b;
+}
+.tabs > li.active:before {
+  transition-duration: .5s;
+  background-color: #efefef;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.tab__content {
+  position: relative;
+  width: 100%;
+}
+.tab__content > li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  list-style: none;
+}
+.tab__content > li .content__wrapper {
+  width: 100%;
+  padding: 30px 0px 50px;
+    font-weight: 300;
+}
+    
+/* fixar */
+.tab__content > li .content__wrapper div {
+    padding: 0 15px;   
+}
+.tab-system p {
+    margin-bottom: 30px;
+}
+.tab-system .btn{
+    padding: 10px 20px !important;
+}
+.tab-system h2,
+.tab-system .list-unstyled {
+    margin-bottom: 10px;
+}
+    
+</style>
+<script>
+$(document).ready(function(){
+	
+	// Variables
+	var clickedTab = $(".tabs > .active");
+	var tabWrapper = $(".tab__content");
+	var activeTab = tabWrapper.find(".active");
+	var activeTabHeight = activeTab.outerHeight();
+	
+	// Show tab on page load
+	activeTab.show();
+	
+	// Set height of wrapper on page load
+	tabWrapper.height(activeTabHeight);
+	
+	$(".tabs > li").on("click", function() {
+		
+		// Remove class from active tab
+		$(".tabs > li").removeClass("active");
+		
+		// Add class active to clicked tab
+		$(this).addClass("active");
+		
+		// Update clickedTab variable
+		clickedTab = $(".tabs .active");
+		
+		// fade out active tab
+		activeTab.fadeOut(50, function() {
+			
+			// Remove active class all tabs
+			$(".tab__content > li").removeClass("active");
+			
+			// Get index of clicked tab
+			var clickedTabIndex = clickedTab.index();
+
+			// Add class active to corresponding tab
+			$(".tab__content > li").eq(clickedTabIndex).addClass("active");
+			
+			// update new active tab
+			activeTab = $(".tab__content > .active");
+			
+			// Update variable
+			activeTabHeight = activeTab.outerHeight();
+			
+			// Animate height of wrapper to new tab height
+			tabWrapper.stop().delay(10).animate({
+				height: activeTabHeight
+			}, 100, function() {
+				
+				// Fade in active tab
+				activeTab.delay(10).fadeIn(100);
+				
+			});
+		});
+	});
+});
+</script>
+            
+            
+            
+            
+            
+            
+
+        </div>
+    </div>
+
+
+
+    <!--div class="col-lg-12">
+        <h2 class="mb-sm">Vad kan vi hjälpa er med?</h2>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-inline tjanst-lista">
+                    <li><a href="/tjanster/webbutveckling/">Webbsida</a></li>
+                    <li><a href="/tjanster/webbshop/">Webbshop</a></li>
+                    <li><a href="/tjanster/animerad-film/">Animation och film</a></li>
+                    <li><a href="/tjanster#grafisk-design">Grafisk design</a></li>
+                    <li><a href="/tjanster/appar/">Appar och spel</a></li>
+                    <li><a href="/tjanster#webblosningar">Andra webblösningar</a></li>
+                </ul>
+            </div>
+            <p>Behöver du hjälp med att omvandla din hemsida till en snygg och lättanvänd webbshop? Låt oss bygga din onlinebutik och om du vill kan vi även koppla din hemsida till butiken. Vi hjälper dig att få igång en webbutik med WooCommerce för WordPress, både för dig som vill starta, eller redan driver, e-handel. WooCommerce är ett kraftfullt e-handelsplugin till WordPress som förvandlar din hemsida till en komplett nätbutik. Med sin smidiga och användarvänliga kontrollpanel passar denna lösning till både företag och privatpersoner, vare sig du säljer 1 eller 1000 produkter.
+
+LÄS MER 
+</p>
+        </div>
+    </div-->
+</section>
+
+<!--section class="container mtb">
+    <h2 class="mb-sm">Vad kan vi hjälpa er med?</h2>
+    <div class="row">
+        <div class="col-md-12 hidden-lg mb-sm">
+            <p>Även om vi kallar oss själva för en webbyrå så gör vi så mycket mer än bara hemsidor. Vi kan hjälpa er med allt från hela er webbverksamhet till er grafiska profil, mobilappar, reklamfilmer, animation och 3d-modeller. Allt som har med webben att göra helt enkelt. Fast även tryckproduktioner och mycket annat också.</p>
+        </div>
+        <div class="col-lg-6">
+            <ul class="list-unstyled tjanster-lista">
+                <a href="/tjanster/webbutveckling/"><li><i class="fa fa-chevron-right"></i>Webbsida</li></a>
+                <a href="/tjanster/webbshop/"><li><i class="fa fa-chevron-right"></i>Webbshop</li></a>
+                <a href="/tjanster/animerad-film/"><li><i class="fa fa-chevron-right"></i>Animation och film</li></a>
+                <a href="/tjanster#grafisk-design"><li><i class="fa fa-chevron-right"></i>Grafisk design</li></a>
+                <a href="/tjanster/appar/"><li><i class="fa fa-chevron-right"></i>Appar och spel</li></a>
+                <a href="/tjanster#webblosningar"><li><i class="fa fa-chevron-right"></i>Andra webblösningar</li></a>
+            </ul>
+        </div>
+        <div class="col-lg-6 visible-lg">
+            <p>Även om vi kallar oss själva för en webbyrå så gör vi så mycket mer än bara hemsidor. Vi kan hjälpa er med allt från hela er webbverksamhet till er grafiska profil, mobilappar, reklamfilmer, animation och 3d-modeller. Allt som har med webben att göra helt enkelt. Fast även tryckproduktioner och mycket annat också.</p>
+        </div>
+ 
+    </div>
+</section-->

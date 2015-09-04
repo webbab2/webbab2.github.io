@@ -19,19 +19,29 @@
 </div>
 
 <script>
+// toggle menu när man klickar på ikonen
 $(".menu-collapsed").click(function() {
   $(this).toggleClass("menu-expanded");
-    $('.logo-white').toggleClass("hide");
+  $('.logo-white').toggleClass("hide");
 });
 
+// toggle menu när man trycker esc
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) {
+        $(".menu-collapsed").toggleClass("menu-expanded");
+        $('.logo-white').toggleClass("hide");
+    }
+});
+
+// byt färg på navicon
 $(document).on('scroll',function(){
     if($(document).scrollTop()<=$('.nav-turn-normal').offset().top){
         $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
-        //$('.site-logo').css( "z-index", "-1" );
+        //$('.logo-normal').removeClass('z9999').addClass('z-1');
     }
     else{
         $('.nav_white').removeClass('nav_white').addClass('nav_colored');
-        //$('.site-logo').css( "z-index", "1" );
+        //$('.logo-normal').removeClass('z-1').addClass('z9999');
     }
 });
 </script>
