@@ -10,106 +10,23 @@ header-text: Även om vi kallar oss själva för en webbyrå så gör vi så myc
     <hr class="hr-fat">
 </div>
 
-<style>
-    .mtb {
-        margin-bottom: 125px;
-        margin-top: 125px;
-    }
-</style>
 
 <section class="container">
-    <!--div class="row mb">
-        <div class="col-lg-8 col-lg-offset-2">
-            <h1>Det här kan vi hjälpa dig med</h1>
-            <p>Även om vi kallar oss själva för en webbyrå så gör vi så mycket mer än bara <a title="Webbutveckling" href="/tjanster/webbutveckling/">hemsidor</a>. Vi kan hjälpa er med allt från hela er <a title="Webbutveckling" href="/tjanster/webbutveckling/#tillval">webbverksamhet</a> till er grafiska profil, <a title="Appar" href="/tjanster/appar/">mobilappar</a>, <a href="/tjanster/animerad-film/">reklamfilmer</a>, <a href="/tjanster/animerad-film/">animation</a> och 3d-modeller. Allt som har med webben att göra helt enkelt. Fast även tryckproduktioner och mycket annat också.</p>
-        </div>    
-    </div-->
-    
-    <div class="row mb" id="webbsida">
+
+    {% for tjanst in site.data.tjanster %}
+    <div class="row mtb-xl" id="{{ tjanst.id }}">
         <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_hemsida.png" alt="Hemsida">
+            <img class="img-responsive center-block" src="/img/tjanster/tjanster_{{ tjanst.bild }}.png" alt="{{ tjanst.titel }}">
         </div>
         <div class="col-lg-8">
-            <h2>Hemsida</h2>
-            <p class="ll">Vi tycker inte du ska behöva betala för mer än vad du vill ha. Våra grundpaket innehåller därför endast de mest grundläggande funktionerna, sedan kan du själv utöka med de extra funktioner du behöver. Om inget av våra paketförslag eller tillvalen passar dina behov är du självklart även välkommen att <a title="Offertformulär" href="/offertformular/">begära en offert</a>. Inget projekt är för litet och nästan inget för stort. Vi kan fixa fram mer än det som listas här, så ring eller skicka iväg ett meddelande och berätta för oss om dina planer. Vi anpassar oss efter dina behov och tar fram en specialanpassad lösning just för dig!</p>
-            
-            <p class="mb-xs">För alla webbproduktioner vi skapar ingår självklart:</p>
-            <ul class="list-unstyled">
-                <li><i class="fa fa-check fa-fw primary-color"></i> Support via telefon, e-post &amp; chatt under produktionstiden</li>
-                <li><i class="fa fa-check fa-fw primary-color"></i> Kostnadsfri regelbunden backup</li>
-                <li><i class="fa fa-check fa-fw primary-color"></i> Responsiv design <wbr />(mobil­anpassad)</li>
-            </ul>
-            <p>Vi erbjuder dessutom specialpriser för föreningar.</p>
-            <a title="Webbsidor" href="/tjanster/webbutveckling/"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+            <h2>{{ tjanst.titel }}</h2>
+            <p class="ll">{{ tjanst.text }}</p>
+            {% if tjanst.lasmer %}
+                <a title="{{ tjanst.titel }}" href="/tjanster/{{ tjanst.lasmer }}/"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+            {% endif %}
         </div>
     </div>
-    
-    <div class="row mtb" id="webbshop">
-        <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_webbshop.png" alt="Webbshop">
-        </div>
-        <div class="col-lg-8">
-            <h2>Webbshop</h2>
-            <p>Behöver du hjälp med att omvandla din hemsida till en snygg och lättanvänd webbshop? Låt oss bygga din onlinebutik och om du vill kan vi även koppla din hemsida till butiken. Vi hjälper dig att få igång en webbutik med WooCommerce för WordPress, både för dig som vill starta, eller redan driver, e-handel. WooCommerce är ett kraftfullt e-handelsplugin till WordPress som förvandlar din hemsida till en komplett nätbutik. Med sin smidiga och användarvänliga kontrollpanel passar denna lösning till både företag och privatpersoner, vare sig du säljer 1 eller 1000 produkter.</p>
-            <a title="Webbsidor" href="/tjanster/webbshop"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
-        </div>
-    </div>
-    
-    <div class="row mtb" id="animation">
-        <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_animation.png" alt="Film & Animation">
-        </div>
-        <div class="col-lg-8">
-            <h2>Film & Animation</h2>
-            <p>Behöver ni en animerad reklam- eller informationsfilm för att illustrera er affärs­verksamhet eller produkt? Vi producerar animerade filmer i både 2D och 3D, allt från ren motion graphics till saker med mer realistiskt utseende. Ibland har det till och med hänt att vi filmat och klippt inspelade filmer.</p>
-            <p>Animation på webben behöver idag inte vara begränsade inbäddade YouTubeklipp och giffar, även själva innehållet på hemsidor kan med fördel animeras för att skapa en mer interaktiv och engagerande användarupplevelse.</p>
-            <a title="Webbsidor" href="/tjanster/animerad-film"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
-        </div>
-    </div>
-    
-    <div class="row mtb" id="grafisk-design">
-        <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_grafiskdesign.png" alt="Grafisk design">
-        </div>
-        <div class="col-lg-8">
-            <h2>Grafisk design</h2>
-            <p>Vi designar logotyper, formulär, brevpapper, visitkort och allt annat ditt företag kan tänkas behöva.</p>
-        </div>
-    </div>
-    
-    <div class="row mtb" id="appar">
-        <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_appar.png" alt="Appar & Spel">
-        </div>
-        <div class="col-lg-8">
-            <h2>Appar & Spel</h2>
-            <p>Behöver ert företag en egen app för era kunder, interna system, eller för att effektivisera ert arbete? Eller vill du kanske skapa ett spel, antingen för reklamsyfte, gamificerad e-learning eller ren underhållning?</p>
-            <p>De flesta av oss har idag en smartphone och behovet, och användningsområdena, av appar för dessa enheter växer hela tiden. Vi hjälper dig att bygga appar med den funktionalitet du önskar, med användarupplevelsen i fokus – för alla plattformar!</p>
-            <a title="Webbsidor" href="/tjanster/appar"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
-        </div>
-    </div>
-    
-    <div class="row mtb" id="webblosningar">
-        <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_webblosningar.png" alt="Webblösningar">
-        </div>
-        <div class="col-lg-8">
-            <h2>Webblösningar</h2>
-            <p>Förutom att skapa själva hemsidan kan vi även hjälpa er med sökmotor­optimering (SEO) och Google­annonsering. Om du inte redan har ett domännamn (t ex en .se eller .com adress) kan vi hjälpa dig att registrera och aktivera den, samt lägga upp sidan på ett webbhotell.</p>
-            <p>Vi kan även hjälpa er att ta fram innehåll för er webbplats med unikt framtagna professionella texter och bilder via vårt samarbete med Contentor och Gefle Fotostudio.</p>
-        </div>
-    </div>
-    
-    <div class="row mt">
-        <div class="col-lg-4">
-            <img class="img-responsive center-block" src="/img/tjanster/tjanster_mer.png" alt="Och mycket mer">
-        </div>
-        <div class="col-lg-8">
-            <h2>Och mycket mer</h2>
-            <p>Vi kan det mesta och hjälper dig med allt du behöver hjälp med, och till ett bra timpris!</p>
-            <p class="ll">Vi har bland annat hjälpt kunder med fotografering, nyhetsbrev, banderoller, plastkort, giveaways, musikvideos och mycket mer. <a title="Offertformulär" href="/offertformular/">Kontakta oss</a> om era planer för en offert.</p>
-        </div>
-    </div>
+    {% endfor %}
     
 </section>
 
