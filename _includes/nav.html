@@ -1,6 +1,6 @@
-<img src="/img/webbab-logo-pink.png" alt="WEBBAB" class="site-logo logo-normal">
-<img src="/img/webbab-logo.png" alt="WEBBAB" class="site-logo logo-white hide" style="z-index: 9999;">
-<a class="page-scroll" href="/"><div class="logo-hitbox"></div></a>
+<a class="page-scroll" href="/"><img src="/img/webbab-logo-pink.png" alt="WEBBAB" class="site-logo logo-normal"></a>
+<a class="page-scroll" href="/"><img src="/img/webbab-logo.png" alt="WEBBAB" class="site-logo logo-white hide" style="z-index: 9999;"></a>
+<!--a class="page-scroll" href="/"><div class="logo-hitbox"></div></a-->
 
 <div class="menu-collapsed">
     <!--div class="nav-bg"></div-->
@@ -38,11 +38,9 @@ $(document).keyup(function(e) {
 $(document).on('scroll',function(){
     if($(document).scrollTop()<=$('.nav-turn-normal').offset().top){
         $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
-        //$('.logo-normal').removeClass('z9999').addClass('z-1');
     }
     else{
         $('.nav_white').removeClass('nav_white').addClass('nav_colored');
-        //$('.logo-normal').removeClass('z-1').addClass('z9999');
     }
 });
 </script>

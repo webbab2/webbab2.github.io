@@ -215,6 +215,13 @@ ul li i {
         top: 0;
     }
 }
+@media (max-width: 767px){
+    .logo-normal{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
 
 .nav-list {
     margin-top: 150px;    
