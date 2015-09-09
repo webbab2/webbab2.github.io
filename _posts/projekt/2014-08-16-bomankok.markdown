@@ -1,0 +1,15 @@
+---
+layout: project
+title: Bomankök Stockholm 
+category: 
+- Webb
+date: 2015-03-01 #för sortering
+thumbnail: bomankok_logo.png
+thumbnail-hover: bomankok_preview.jpg
+img: bomankok_img.png
+client: Bomankök Stockholm 
+client-info: Bomankök är en modern köksproducent med mer än 80 års erfarenhet av kökstillverkning och tillverkar måttanpassade kök utifrån önskemål.
+url: http://bomankokstockholm.se/
+
+---
+Vi har ansvarat för Bomankök Stockholms hemsida sedan många år tillbaka och sedan dess har utseendet gått igenom ett antal uppfräschningar, nu senast gjorde vi hela sajten responsiv så den ser lika fin ut i mobilen också. Webbsidan är byggd i WordPress vilket gör det enkelt för dom att själva uppdatera och lägga in nya kök på sidan.

@@ -6,12 +6,15 @@ category:
 - Logotyp
 - Visitkort
 - Grafisk design
-date: 2014-11-10 #för sortering
-project-date: Nov 2014
+date: 2014-12-01 #för sortering
+project-date: Dec 2014
 thumbnail: moab_logo.png
-thumbnail-hover: moab_thumb.png
+thumbnail-hover: moab_preview.jpg
 img: moab_img.jpg
 img2: moab_logotyp.png
+img2-desc: Logotypen pryder allt från visitkort, arbetskläder och fordon.
+img3: moab_visitkort.jpg
+img3-desc: Visitkorten vi tog fram blev i slutändan tryckta på plastkort vilket skapade en väldigt exklusiv känsla.
 client: MOAB Asfalt & Entreprenad 
 client-info: MOAB Asfalt & Entreprenad AB är Sveriges snabbast växande leverantör inom asfalt och entreprenad. De utför entreprenad­arbeten och alla typer av arbeten inom asfaltläggning till alla kunders behov.
 

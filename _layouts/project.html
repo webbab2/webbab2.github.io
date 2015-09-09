@@ -6,7 +6,7 @@
     
     <header class="container default-header">
         <div class="row mb">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <h1><a href="/portfolio">Portfolio</a> / {{ page.title }}</h1>
                 <!--p style="margin-bottom: 5px;">{{ page.category | join: ', ' }}</p-->
                 
@@ -31,7 +31,7 @@
             <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb" alt="{{ page.title }}">
             {% endif %}
         </div>
-        <div class="row">
+        <div class="row mb">
             <div class="col-lg-6 col-lg-offset-1">
                 <div class="spacing"></div>
 
@@ -46,9 +46,37 @@
                 {% if page.project-date %}<p class="project-meta"><b>Datum:</b> {{ page.project-date }}</p>{% endif %}
                 {% if page.website %}<p class="project-meta"><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
             </div>
-        </div><! --/row -->
+        </div><!-- /row -->
+        <div class="row">
+            {% if page.img2 %}
+            <div class="col-lg-6 col-lg-offset-3">
+                <img src="/img/portfolio/{{ page.img2 }}" class="img-responsive center-block mb-sm" alt="{{ page.title }}">
+            </div>
+            {% if page.img2-desc %}
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>{{ page.img2-desc }}</p>
+            </div>
+            {% endif %}
+            {% endif %}
+            
+            {% if page.img2 and page.img3 %}
+            <div class="row mtb"></div>
+            {% endif %}
+            
+            {% if page.img3 %}
+            <div class="col-lg-6">
+                <img src="/img/portfolio/{{ page.img3 }}" class="img-responsive center-block mb" alt="{{ page.title }}">
+            </div>
+            {% if page.img2-desc %}
+            <div class="col-lg-6">
+                <p>{{ page.img3-desc }}</p>
+            </div>
+            {% endif %}
+            {% endif %}
+        </div>
+        
         <hr class="hr-fat">
-    </div><! --/container -->
+    </div><!-- /container -->
     
     {% include portfolio-grid.html %}
     {% include footer.html %}

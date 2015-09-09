@@ -21,16 +21,16 @@ footer: Webbyrån WEBBAB
 social:
   - title: Facebook
     fa: facebook-official
-    url: https://facebook.com/webbab.se
+    url: http://bit.ly/WEBBAB-Facebook #https://facebook.com/webbab.se
   - title: Vimeo
     fa: vimeo-square
-    url: https://vimeo.com/webbab
+    url: http://bit.ly/WEBBAB-Vimeo #https://vimeo.com/webbab
   - title: YouTube
     fa: youtube-play
-    url: https://youtube.com/webbab
+    url: http://bit.ly/WEBBAB-Youtube #https://youtube.com/webbab
   - title: LinkedIn
     fa: linkedin-square
-    url: https://linkedin.com/company/webbab
+    url: http://bit.ly/WEBBAB-Linkedin #https://linkedin.com/company/webbab
 
 # Medarbetare
 medarbetare:
@@ -51,3 +51,4 @@ medarbetare:
 # Build settings
 markdown: kramdown
 permalink: /portfolio/:title #pretty
+paginate: 6

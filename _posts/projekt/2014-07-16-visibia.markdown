@@ -4,12 +4,11 @@ title: Visibia
 category: 
 - Webb
 date: 2014-11-10 #för sortering
-project-date: April 2014
 thumbnail: visibia_logo.png
 thumbnail-hover: visibia_thumb.png
 img: visibia_img.png
 client: Visibia 
-client-info: ”Tryckeri i Uppsala, Stockholm och Mariehamn. Helhetsleverantör inom visuell marknadsföring.”
+client-info: Tryckeri i Uppsala, Stockholm och Mariehamn. Helhetsleverantör inom visuell marknadsföring.
 
 ---
 WEBBAB har hjälpt Visibia med framtagandet och implementationen av design och produktion av en ny webbsida baserad på WordPress.

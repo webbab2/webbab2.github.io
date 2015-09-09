@@ -8,21 +8,21 @@
                 </div>
             </div-->
             <div class="row mtb">
-            {% for project in site.posts %}
+            {% for project in site.posts limit:12 %}
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="{{ project.url }}" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <img src="/img/portfolio/{{ project.thumbnail-hover }}" class="img-responsive" alt="">
                         </div>
                         <img src="/img/portfolio/{{ project.thumbnail }}" class="img-responsive" alt="">
+                        <div class="portfolio-caption">
+                            <h4>{{ project.title }}</h4>
+                            <!--p class="text-muted"><a href="/portfolio/{{ project.category-url }}">{{ project.subtitle }}</a></p-->
+                            {% for category in project.category limit:3 %}
+                            <p class="text-muted" style="display: inline-block; padding: 0 2px;"><a href="/portfolio/{{ category }}">{{ category }}</a></p>
+                            {% endfor %}
+                        </div>
                     </a>
-                    <div class="portfolio-caption">
-                        <h4>{{ project.title }}</h4>
-                        <!--p class="text-muted"><a href="/portfolio/{{ project.category-url }}">{{ project.subtitle }}</a></p-->
-                        {% for category in project.category %}
-                        <p class="text-muted" style="display: inline-block;"><a href="/portfolio/{{ category }}">{{ category }}</a></p>
-                        {% endfor %}
-                    </div>
                 </div>
             {% endfor %}
             </div>

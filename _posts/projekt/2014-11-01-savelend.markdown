@@ -3,12 +3,11 @@ layout: project
 title: Savelend
 category: 
 - Animation
-- Grafisk design
 date: 2014-11-10 #för sortering
-project-date: April 2014
+project-date: Okt 2014
 video: https://player.vimeo.com/video/112219619?color=b32081&title=0&byline=0&portrait=1
 thumbnail: savelend_logo.png
-thumbnail-hover: savelend_thumb.png
+thumbnail-hover: savelend_preview.png
 client: Savelend Sweden AB
 client-info: ”Den vänliga tjänsten för att förbättra din ekonomiska situation, både för dig med tillfälligt behov av pengar och för dig med överskott”
 

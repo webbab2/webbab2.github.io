@@ -4,7 +4,7 @@
         <div class="row">
             
             
-<div class="tab-system">
+<div class="tab-system visible-md visible-lg">
     <ul class="tabs tjanst-lista">
         <li class="active">Webbsida</li>
         <li>Webbshop</li>
@@ -19,14 +19,17 @@
         {% if tjanst.forsta %}<li class="active">
         {% else %}<li>{% endif %}
             <div class="content__wrapper">
-                <div class="col-lg-4">
+                <div class="col-md-4">
                     <img class="img-responsive center-block" src="/img/tjanster/tjanster_{{ tjanst.bild }}.png" alt="{{ tjanst.titel }}">
                 </div>
-                <div class="col-lg-8">
+                <div class="col-md-8">
                     <h2>{{ tjanst.titel }}</h2>
                     <p class="ll">{{ tjanst.text }}</p>
                     {% if tjanst.lasmer %}
                         <a title="{{ tjanst.titel }}" href="/tjanster/{{ tjanst.lasmer }}/"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+                    {% endif %}
+                    {% if tjanst.offert %}
+                        <a title="{{ tjanst.titel }}" href="/offert/{{ tjanst.offert }}/" style="margin-left: 15px;"><span class="btn">Begär offert <i class="fa fa-chevron-right"></i></span></a>
                     {% endif %}
                 </div>
             </div>
@@ -49,18 +52,18 @@
   width: 100%;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .tabs > li {
   transition-duration: .25s;
   display: table-cell;
   list-style: none;
   text-align: center;
-  padding: 10px 20px 15px 20px;
+  padding: 12px 20px 12px 20px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-    border-bottom: 4px solid {{ site.color.primary }};
+  border-bottom: 4px solid {{ site.color.primary }};
 }
 .tabs > li:before {
   z-index: -1;
@@ -80,12 +83,13 @@
   transform: translateY(70%);
 }
 .tabs > li.active {
-  color: {{ site.color.primary }};
-    border-bottom: 4px solid {{ site.color.secondary }};
+  color: #fff;
+  font-weight: 400;
+  border-bottom: 4px solid {{ site.color.primary }};
 }
 .tabs > li.active:before {
   transition-duration: .5s;
-  background-color: #efefef;
+  background-color: {{ site.color.primary }};
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
@@ -193,25 +197,20 @@ $(document).ready(function(){
 
 
 
-    <!--div class="col-lg-12">
-        <h2 class="mb-sm">Vad kan vi hjälpa er med?</h2>
+    <div class="col-lg-12 visible-xs visible-sm">
         <div class="row">
             <div class="col-lg-12">
-                <ul class="list-inline tjanst-lista">
-                    <li><a href="/tjanster/webbutveckling/">Webbsida</a></li>
-                    <li><a href="/tjanster/webbshop/">Webbshop</a></li>
-                    <li><a href="/tjanster/animerad-film/">Animation och film</a></li>
-                    <li><a href="/tjanster#grafisk-design">Grafisk design</a></li>
-                    <li><a href="/tjanster/appar/">Appar och spel</a></li>
-                    <li><a href="/tjanster#webblosningar">Andra webblösningar</a></li>
+                <ul class="list-unstyled tjanster-lista">
+                    <a href="/tjanster/webbutveckling/"><li><i class="fa fa-chevron-right"></i>Webbsida</li></a>
+                    <a href="/tjanster/webbshop/"><li><i class="fa fa-chevron-right"></i>Webbshop</li></a>
+                    <a href="/tjanster/animerad-film/"><li><i class="fa fa-chevron-right"></i>Animation och film</li></a>
+                    <a href="/tjanster#grafisk-design"><li><i class="fa fa-chevron-right"></i>Grafisk design</li></a>
+                    <a href="/tjanster/appar/"><li><i class="fa fa-chevron-right"></i>Appar och spel</li></a>
+                    <a href="/tjanster#webblosningar"><li><i class="fa fa-chevron-right"></i>Andra webblösningar</li></a>
                 </ul>
             </div>
-            <p>Behöver du hjälp med att omvandla din hemsida till en snygg och lättanvänd webbshop? Låt oss bygga din onlinebutik och om du vill kan vi även koppla din hemsida till butiken. Vi hjälper dig att få igång en webbutik med WooCommerce för WordPress, både för dig som vill starta, eller redan driver, e-handel. WooCommerce är ett kraftfullt e-handelsplugin till WordPress som förvandlar din hemsida till en komplett nätbutik. Med sin smidiga och användarvänliga kontrollpanel passar denna lösning till både företag och privatpersoner, vare sig du säljer 1 eller 1000 produkter.
-
-LÄS MER 
-</p>
         </div>
-    </div-->
+    </div>
 </section>
 
 <!--section class="container mtb">
