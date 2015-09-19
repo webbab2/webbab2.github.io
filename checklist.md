@@ -1,2 +1,0 @@
-- [ ] Item to check off
-- [ ] Item to check off
