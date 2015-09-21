@@ -22,7 +22,7 @@
                 <div class="col-md-4">
                     <img class="img-responsive center-block" src="/img/tjanster/tjanster_{{ tjanst.bild }}.png" alt="{{ tjanst.titel }}">
                 </div>
-                <div class="col-md-8">
+                <div class="col-md-8" style="padding: 0 25px;">
                     <h2>{{ tjanst.titel }}</h2>
                     <p class="ll">{{ tjanst.text }}</p>
                     {% if tjanst.lasmer %}
@@ -125,8 +125,7 @@
 .tab-system h2,
 .tab-system .list-unstyled {
     margin-bottom: 10px;
-}
-    
+}   
 </style>
 <script>
 $(document).ready(function(){
@@ -185,18 +184,12 @@ $(document).ready(function(){
 	});
 });
 </script>
-            
-            
-            
-            
-            
-            
 
-        </div>
+        </div> <!-- /row -->
     </div>
 
 
-
+<!-- på mobil -->
     <div class="col-lg-12 visible-xs visible-sm">
         <div class="row">
             <div class="col-lg-12">
@@ -210,28 +203,5 @@ $(document).ready(function(){
                 </ul>
             </div>
         </div>
-    </div>
+    </div> <!-- /mobil --> 
 </section>
-
-<!--section class="container mtb">
-    <h2 class="mb-sm">Vad kan vi hjälpa er med?</h2>
-    <div class="row">
-        <div class="col-md-12 hidden-lg mb-sm">
-            <p>Även om vi kallar oss själva för en webbyrå så gör vi så mycket mer än bara hemsidor. Vi kan hjälpa er med allt från hela er webbverksamhet till er grafiska profil, mobilappar, reklamfilmer, animation och 3d-modeller. Allt som har med webben att göra helt enkelt. Fast även tryckproduktioner och mycket annat också.</p>
-        </div>
-        <div class="col-lg-6">
-            <ul class="list-unstyled tjanster-lista">
-                <a href="/tjanster/webbutveckling/"><li><i class="fa fa-chevron-right"></i>Webbsida</li></a>
-                <a href="/tjanster/webbshop/"><li><i class="fa fa-chevron-right"></i>Webbshop</li></a>
-                <a href="/tjanster/animerad-film/"><li><i class="fa fa-chevron-right"></i>Animation och film</li></a>
-                <a href="/tjanster#grafisk-design"><li><i class="fa fa-chevron-right"></i>Grafisk design</li></a>
-                <a href="/tjanster/appar/"><li><i class="fa fa-chevron-right"></i>Appar och spel</li></a>
-                <a href="/tjanster#webblosningar"><li><i class="fa fa-chevron-right"></i>Andra webblösningar</li></a>
-            </ul>
-        </div>
-        <div class="col-lg-6 visible-lg">
-            <p>Även om vi kallar oss själva för en webbyrå så gör vi så mycket mer än bara hemsidor. Vi kan hjälpa er med allt från hela er webbverksamhet till er grafiska profil, mobilappar, reklamfilmer, animation och 3d-modeller. Allt som har med webben att göra helt enkelt. Fast även tryckproduktioner och mycket annat också.</p>
-        </div>
- 
-    </div>
-</section-->

@@ -18,11 +18,14 @@ header-text: Även om vi kallar oss själva för en webbyrå så gör vi så myc
         <div class="col-lg-4">
             <img class="img-responsive center-block" src="/img/tjanster/tjanster_{{ tjanst.bild }}.png" alt="{{ tjanst.titel }}">
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8" style="padding: 0 25px !important;">
             <h2>{{ tjanst.titel }}</h2>
             <p class="ll">{{ tjanst.text }}</p>
             {% if tjanst.lasmer %}
                 <a title="{{ tjanst.titel }}" href="/tjanster/{{ tjanst.lasmer }}/"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+            {% endif %}
+            {% if tjanst.offert %}
+                <a title="{{ tjanst.titel }}" href="/offert/{{ tjanst.offert }}/" style="margin-left: 15px;"><span class="btn">Begär offert <i class="fa fa-chevron-right"></i></span></a>
             {% endif %}
         </div>
     </div>
