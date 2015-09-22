@@ -1,6 +1,7 @@
 <section id="contact">
     <div class="container mtb">
         <div class="row">
+
             <div class="col-md-6">
                 <h2>Berätta vad du går och tänker på<br><span style="font-size: 0.9em; font-weight: 400; font-style: italic;">Vi hjälper gärna till!</span></h2>
                 <br>
@@ -40,9 +41,53 @@
             </div> <!-- /col-md-6 -->
 
             <div class="col-md-6">
-                <div class="iframe-container">
+                <!--div class="iframe-container">
                     <iframe src="https://webbab.se/contact/" width="450" height="600" seamless="" style="border: 0;" frameborder="0" scrolling="no"></iframe>
-                </div>
+                </div-->
+                
+
+                <form action="http://webbab.se/sent/api/GyRxO3Xxj9Z2bGGsooAF" method="post">
+                    <input type="text" name="name">
+                    <input type="email" name="email">
+                    <textarea name="message"></textarea>
+                    <input type="submit" value="Skicka">
+                </form>
+                
+          <!--form method="post" action="<?php echo $_SERVER[" PHP_SELF "];?>">
+              
+            <div class="group">      
+              <input type="text" name="name" value="<?php echo $name;?>" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Namn</label>
+            </div>
+
+            <div class="group">      
+              <input type="email" name="email" value="<?php echo $from;?>" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Epost</label>
+            </div>
+              
+            <div class="group">      
+              <input type="text" name="tel" value="<?php echo $tel;?>" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Telefon</label>
+            </div>
+
+             <div class="group">      
+              <textarea id="message" rows="4" name="message" required><?php echo $message;?></textarea>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Meddelande</label>
+            </div>
+
+            <input id="submit" name="submit" type="submit" value="Skicka">
+
+          </form-->
+
+                
 
             </div>
 
