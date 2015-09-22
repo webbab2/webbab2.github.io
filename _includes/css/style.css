@@ -581,9 +581,8 @@ button.navbar-toggle{
 /*** footer ***/
 
 footer {
-    /*position: absolute;
-    bottom: 0;
-    width: 100%;*/
+    position: fixed: bottom: 0; left: 0;
+    
     padding: 50px 0;
     background-color: {{ site.color.primary-dark }};
     color: #bbb;
@@ -1529,4 +1528,14 @@ border-color: #ddd;
 }
 .list-readmore li .fa {
     padding-right: 8px;
+}
+
+
+#main-container{
+    display: table-row;
+    height: 100%;
+}
+#footer-container{
+    display: table-row;
+    height: 1px;
 }
