@@ -1,141 +1,12 @@
-<style>
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
-form * { box-sizing:border-box; }
-
-
-form p {
-  font-weight: 300;
-  font-size:18px;
-  color: #444;
-}
-
-
-/* form starting stylings ------------------------------- */
-.group { 
-  position:relative;
-  margin-bottom:45px; 
-}
-input, textarea {
-  font-weight: 300;
-  font-size:18px;
-  padding:10px 5px;
-  display:block;
-  width:300px;
-  border:none;
-  border-bottom: 2px solid #ccc;
-  background-color: transparent;
-  color: #960051;
-}
-textarea {
-  border: 2px solid #ccc; 
-}
-textarea:focus {
-  background: #fafafa;
-}
-input:focus, textarea:focus { outline:none;}
-textarea { resize: none; }
-
-
-/* LABEL ======================================= */
-label {
-  font-weight: 400;
-  color: #888;
-  font-size:18px;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-
-/* active state */
-input:focus ~ label, input:valid ~ label{
-  top:-20px;
-  font-size:16px;
-  color:#960051;
-}
-textarea:focus ~ label, textarea:valid ~ label{
-  top:-28px;
-  font-size:16px;
-  color:#960051;
-}
-
-input:focus, input:valid,
-textarea:focus, textarea:valid{
-  color:#222;
-}
-
-/* BOTTOM BARS ================================= */
-form .streck 	{ position:relative; display:block; width:300px; }
-form .streck:before, .streck:after {
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:#960051; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-form .streck:before {
-  left:50%;
-}
-form .streck:after {
-  right:50%; 
-}
-
-/* active state */
-input:focus ~ .streck:before, input:focus ~ .streck:after,
-textarea:focus ~ .streck:before, textarea:focus ~ .streck:after{
-  width:50%;
-}
-
-/* HIGHLIGHTER ================================== */
-form .highlight {
-  position:absolute;
-  height:60%; 
-  width:100px; 
-  top:25%; 
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
-}
-
-/** submit button *******/
-input[type=submit] {
-  font-size: 16px;
-  font-weight: 400;
-  color: #960051;
-  border: 2px solid #960051;
-  cursor: pointer;
-  padding: 10px 20px;
-  width: auto;
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-input[type=submit]:hover {
-  background-color: #960051;
-  color: #f7f7f7;
-  transition:0.25s ease all; 
-  -moz-transition:0.25s ease all; 
-  -webkit-transition:0.25s ease all;
-}
-
-</style>
-
+<link rel="stylesheet" href="{{ '/css/form.css' | prepend: site.baseurl }}">
 
 <section id="contact">
     <div class="container mtb">
         <div class="row">
-
-            <div class="col-md-6">
+            <div class="col-md-12 mb-md">
                 <h2>Berätta vad du går och tänker på<br><span style="font-size: 0.9em; font-weight: 400; font-style: italic;">Vi hjälper gärna till!</span></h2>
-                <br>
+            </div>
+            <div class="col-md-6">
                 <div style="padding-left: 10px;">
                     <ul class="list-unstyled ll-b">
                         <li><i class="fa fa-phone fa-fw"></i> <a href="tel:004626614000">026-61 40 00</a></li>
@@ -170,21 +41,8 @@ input[type=submit]:hover {
                 <a href="/offert/" class="btn btn-ghost btn-lg">Vill du ha en offert?</a>
 
             </div> <!-- /col-md-6 -->
-
+            <div class="space mb-md visible-xs visible-sm"></div>
             <div class="col-md-6">
-                <!--div class="iframe-container">
-                    <iframe src="https://webbab.se/contact/" width="450" height="600" seamless="" style="border: 0;" frameborder="0" scrolling="no"></iframe>
-                </div-->
-                
-
-                <!--form action="http://webbab.se/sent/api/GyRxO3Xxj9Z2bGGsooAF" method="post">
-                    <input type="text" name="name">
-                    <input type="email" name="email">
-                    <textarea name="message"></textarea>
-                    <input type="submit" value="Skicka">
-                    <input type="hidden" name="_after" value="/kontakt/tack/">
-                    <input type="hidden" name="_confirmation" value="<b>Thank you!</b> We have received your message and will get back to you asap.">
-                </form-->
                 
                 
                 <form action="http://webbab.se/sent/api/GyRxO3Xxj9Z2bGGsooAF" method="post">
@@ -199,7 +57,7 @@ input[type=submit]:hover {
                       <input type="email" name="email" required>
                       <span class="highlight"></span>
                       <span class="streck"></span>
-                      <label>Epost</label>
+                      <label>E-post</label>
                     </div>
 
                      <div class="group">      
@@ -212,38 +70,47 @@ input[type=submit]:hover {
                     <input type="hidden" name="_after" value="/kontakt/tack/">
                     <input type="hidden" name="_confirmation" value="<b>Thank you!</b> We have received your message and will get back to you asap.">
                 </form>
-                
-          <!--form method="post" action="<?php echo $_SERVER[" PHP_SELF "];?>">
-              
-            <div class="group">      
-              <input type="text" name="name" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Namn</label>
-            </div>
-
-            <div class="group">      
-              <input type="email" name="email" required>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Epost</label>
-            </div>
-
-             <div class="group">      
-              <textarea id="message" rows="4" name="message" required></textarea>
-              <span class="highlight"></span>
-              <span class="bar"></span>
-              <label>Meddelande</label>
-            </div>
-
-            <input id="submit" name="submit" type="submit" value="Skicka">
-
-          </form-->
 
                 
 
             </div>
 
-        </div>
+        </div><!-- /row -->
+        
+        
+        <div class="space"></div>
+        <hr class="mb">
+        
+        {% for medarbetare in site.medarbetare %}
+            <div class="col-md-3 col-sm-6">
+                <img src="/img/medarbetare/{{ medarbetare.img }}" alt="{{ medarbetare.namn }}" class="circle-img img-responsive center-block" style="max-height: 100px;">
+                    <h4 class="bold-caps text-center mt-sm mb-0">{{ medarbetare.namn }}</h4>
+                    <p class="medarbetare-titel text-center mb-sm">{{ medarbetare.titel }}</p>
+                    <ul class="list-unstyled medarbetare-list">
+                        <li>
+                            <!--<i class="fa fa-phone fa-fw"></i>--> <a href="tel:{{ medarbetare.tel }}" class="">{{ medarbetare.tel }}</a>
+                        </li>
+                        <li>
+                            <!--<i class="fa fa-envelope-o fa-fw"></i>--> <a href="tel:{{ medarbetare.email }}" class="">{{ medarbetare.email }}</a>
+                        </li>
+                    </ul>
+                    <div class="space"></div>
+                </div>
+    {% endfor %}
+        
+        <style>
+            .circle-img{
+                border-radius: 50%;
+            }
+            .medarbetare-titel{
+                font-size: 12px;
+                color: #666 !important;
+            }
+            .medarbetare-list  li{
+                font-size: 16px !important;
+                text-align: center;
+            }
+        </style>
+        
     </div>
 </section>

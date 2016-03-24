@@ -1,14 +1,15 @@
 ---
 layout: project
 title: Advokatbyrån WSW 
-category: 
+category: portfolio
+tags:
 - Webb
 date: 2014-11-10 #för sortering
 thumbnail: advokatwsw_logo.jpg
-thumbnail-hover: advokatwsw_thumb.png
+thumbnail-hover: advokatwsw_preview.png
 img: advokatwsw_img.png
 client: Advokatbyrån Wiklund Skoglund Wachenfeldt 
 client-info: Advokatbyrå med idag sju anställda, med kontor i Gävle, Uppsala och Sollentuna.
 
 ---
-Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+Vi tog fram en ny modern responsiv site byggd på WordPress åt Advokatbyrån Wiklund Skoglund Wachenfeldt.

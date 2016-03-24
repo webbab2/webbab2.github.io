@@ -1,12 +1,76 @@
 <section class="content-section mini-kontakt">
     <div class="container-fluid primary-color-bg">
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 text-center">
-            <h2>Låter det intressant?</h2>
-            <p>[textfält för namn + email och skicka knapp]</p>
-        </div>
-    </div>
+        <div class="container">
+            <div class="row mt-sm mb">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="mb-sm">Låter det intressant?</h2>
+
+                    <form action="http://webbab.se/sent/api/GyRxO3Xxj9Z2bGGsooAF" method="post">
+                        <div class="group">
+                            <label>Namn:</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="group">
+                            <label>E-post:</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <input type="submit" value="Kontakta mig!">
+                        <input type="hidden" name="_after" value="/kontakt/tack/">
+                    </form>
+
+                </div>
+            </div>
         </div>
     </div>
 </section>
+
+<style>
+    .group {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    
+    label {
+        font-size: 18px;
+        font-style: italic;
+    }
+    
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: 2px dashed #fff; /*****/
+/*        border-bottom: 2px dashed #f66;
+*/        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    
+    input[type=submit] {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff; /*****/
+/*        color: #f66;
+*/        border: 2px solid #fff; /*****/
+/*        border: 2px solid #f66; 
+*/        cursor: pointer;
+        padding: 10px 20px;
+        width: auto;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #fff; /*****/
+        /*background-color: #f66;*/
+        color: #960051;
+        transition: 0.25s ease all;
+        -moz-transition: 0.25s ease all;
+        -webkit-transition: 0.25s ease all;
+    }
+</style>

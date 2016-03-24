@@ -1,7 +1,8 @@
 ---
 layout: project
 title: Savelend
-category: 
+category: portfolio
+tags:
 - Animation
 date: 2014-11-10 #för sortering
 project-date: Okt 2014
@@ -12,4 +13,4 @@ client: Savelend Sweden AB
 client-info: ”Den vänliga tjänsten för att förbättra din ekonomiska situation, både för dig med tillfälligt behov av pengar och för dig med överskott”
 
 ---
-Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+Vi skapade en animerad informationsfilm åt Savelend för att lättare beskriva deras affärsverksamhet samt visa upp hur deras tjänster fungerar för deras kunder.

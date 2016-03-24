@@ -1,46 +1,55 @@
-<a class="page-scroll" href="/"><img src="/img/webbab-logo-pink.png" alt="WEBBAB" class="site-logo logo-normal"></a>
-<a class="page-scroll" href="/"><img src="/img/webbab-logo.png" alt="WEBBAB" class="site-logo logo-white hide" style="z-index: 9999;"></a>
-<!--a class="page-scroll" href="/"><div class="logo-hitbox"></div></a-->
+ <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-absolute navbar-fixed" role="navigation">
+        
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">
+                    <img src="/img/webbab-logo.png" alt="Webbyrån WEBBAB" class="logo">
+                </a>
+            </div>
 
-<div class="menu-collapsed">
-    <!--div class="nav-bg"></div-->
-    <div class="nav_colored">
-        <div class="bar"></div>
-    </div>
-    <div class="nav-toggle"></div>
-    <nav>
-        <ul class="list-unstyled nav-list">
-            <li><a href="/">Start</a></li>
-            <li><a href="/portfolio/">Portfolio</a></li>
-            <li><a href="/tjanster/">Tjänster</a></li>
-            <li><a href="/om-oss/">Om oss</a></li>
-            <li><a href="/kontakt/">Kontakt</a></li>
-        </ul>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/tjanster/">Tjänster</a>
+                    </li>
+                    <li>
+                        <a href="/portfolio/">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/blogg/">Blogg</a>
+                    </li>
+                    <li>
+                        <a href="/kontakt/">Kontakt</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+
     </nav>
-</div>
 
-<script>
-// toggle menu när man klickar på ikonen
-$(".menu-collapsed").click(function() {
-  $(this).toggleClass("menu-expanded");
-  $('.logo-white').toggleClass("hide");
-});
 
-// toggle menu när man trycker esc
-$(document).keyup(function(e) {
-     if (e.keyCode == 27) {
-        $(".menu-collapsed").toggleClass("menu-expanded");
-        $('.logo-white').toggleClass("hide");
+<style>
+    .nav li a {
+        font-style: italic;
+        font-weight: 700 !important;
+        text-transform: none;
+        font-size: 18px;
     }
-});
-
-// byt färg på navicon
-$(document).on('scroll',function(){
-    if($(document).scrollTop()<=$('.nav-turn-normal').offset().top){
-        $('.nav_colored').removeClass('nav_colored').addClass('nav_white');
+    
+    .logo{
+        max-height: 50px;
     }
-    else{
-        $('.nav_white').removeClass('nav_white').addClass('nav_colored');
+    @media (max-width: 766px){
+        .logo {
+            max-height: 35px;
+        }
     }
-});
-</script>
+</style>

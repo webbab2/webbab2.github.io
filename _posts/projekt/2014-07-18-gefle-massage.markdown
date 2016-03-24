@@ -1,14 +1,16 @@
 ---
 layout: project
 title: Gefle Massage
-category: 
+category: portfolio
+tags:
 - Webb
 date: 2014-11-10 #för sortering
 thumbnail: geflemassage_logo.png
-thumbnail-hover: geflemassage_thumb.png
+thumbnail-hover: geflemassage_preview.png
 img: geflemassage_img.jpg
+img-shadow: jäpp
 client: Gefle Massage - By Emil Klang
 client-info: Massage för privatpersoner och företag
 
 ---
-Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+Vi tog fram en ny modern responsiv site byggd på WordPress åt Gefle Massage.

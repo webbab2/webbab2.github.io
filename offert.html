@@ -4,19 +4,53 @@ permalink: offert/
 layout: default
 header-title: Offertförfrågan
 header-text: 
+description: Vill du snabbt och enkelt vill få ett kostnadsförslag på din nya hemsida eller webbproduktion? Använd det här formuläret så skickar vi en offert ASAP.
 ---
 
-<div class="container mb">
+<link rel="stylesheet" href="{{ '/css/form.css' | prepend: site.baseurl }}">
+
+<div class="container mb ll">
     <hr class="hr-fat">
 
-    <p>Så trevligt! Vad är det ni vill ha hjälp med?</p>
-    <p>Använd kontaktformuläret nedan så hör vi av oss så fort som möjligt. Om det gäller en <a href="/offert/webb">webbsida</a>, <a href="/offert/webbshop">webbshop</a> eller <a href="/offert/film">animering/film</a> så har vi tagit fram några coola separata formulär du kan gärna använda för att ge oss mer detaljerad information. </p>
-    <ul class="list-unstyled">
-        <li><a href="/offert/webb">Webbsida</a></li>
-        <li><a href="/offert/webbshop">Webbshop</a></li>
-        <li><a href="/offert/film">Animation/film</a></li>
-        <li><a href="/kontakt">Grafisk design</a></li>
-        <li><a href="/kontakt">Övrigt (3d, app, mm)</a></li>
-    </ul>
-    
+    <div class="row mt">
+        
+    <div class="col-md-6">
+    <h3>Vad kan vi hjälpa er med?</h3>
+    <p>Använd kontaktformuläret så hör vi av oss så fort som möjligt. Om det gäller en <a href="/offert/webb">webbsida</a>, <a href="/offert/webbshop">webbshop</a> eller <a href="/offert/film">animering/film</a> så har vi tagit fram några coola separata formulär du gärna kan använda för att ge oss mer detaljerad information. </p>
+    </div>
+ 
+  
+                <div class="col-md-6">
+                
+                
+                <form action="http://webbab.se/sent/api/GyRxO3Xxj9Z2bGGsooAF" method="post">
+                    <div class="group">      
+                      <input type="text" name="name" required>
+                      <span class="highlight"></span>
+                      <span class="streck"></span>
+                      <label>Namn</label>
+                    </div>
+
+                    <div class="group">      
+                      <input type="email" name="email" required>
+                      <span class="highlight"></span>
+                      <span class="streck"></span>
+                      <label>E-post</label>
+                    </div>
+
+                     <div class="group">      
+                      <textarea id="message" rows="4" name="message" required></textarea>
+                      <span class="highlight"></span>
+                      <span class="streck"></span>
+                      <label>Meddelande</label>
+                    </div>
+                    <input type="submit" value="Skicka">
+                    <input type="hidden" name="_after" value="/kontakt/tack/">
+                    <input type="hidden" name="_confirmation" value="<b>Thank you!</b> We have received your message and will get back to you asap.">
+                </form>
+
+                
+
+            </div>
+        </div>
 </div>

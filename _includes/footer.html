@@ -1,12 +1,37 @@
     <!-- Footer -->
     <footer>
+        <div class="container leger">
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-md-offset-3">
+                    <ul class="list-unstyled">
+                        <li><a href="" title="">Om oss</a></li>
+                        <li><a href="" title="">Press</a></li>
+                        <li><a href="" title="">Allmänna villkor</a></li>
+                        <li><a href="" title="">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <ul class="list-unstyled">
+                        <li><a href="" title="">Tjänster</a></li>
+                        <li><a href="" title="">Frågor och svar</a></li>
+                        <li><a href="" title="">Kontakta oss</a></li>
+                        <li><a href="" title="">Offert</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr style="border-color: #5F3C50;">
+            
+        </div>
+        
+        
         <div class="container footer">
             <div class="row">
                 
                 <div class="col-md-6 col-sm-12">
                     
-                <div class="col-md-6 col-sm-6"><!-- öppettider -->
-                    <i class="fa fa-clock-o fa-fw"></i> <h4>Öppettider</h4>
+                <div class="col-md-6 col-xs-6"><!-- öppettider -->
+                    <h4><i class="fa fa-clock-o fa-fw"></i> Öppettider</h4>
                     <p>Vardagar: 09:00–17:00</p>
                     <br>
                     <ul class="list-unstyled footer-contact">
@@ -17,13 +42,12 @@
                     <li><i class="fa fa-globe fa-fw"></i> <a href="https://webbab.se/">webbab.se</a></li>
                     </ul>
                 </div>
-                <div class="visible-xs space"></div>
                 
-                <div class="col-md-6 col-sm-6 address"><!-- adress -->
-                    <i class="fa fa-map-marker fa-fw"></i> <h4>Besöksadress</h4>
+                <div class="col-md-6 col-xs-6 address"><!-- adress -->
+                    <h4><i class="fa fa-map-marker fa-fw"></i> Besöksadress</h4>
                     <p style="margin-bottom: 18px;"><a href="http://bit.ly/WEBBAB-GoogleMaps" target="_blank">Muréngatan 1, 802 51 Gävle</a></p>
                     
-                    <i class="fa fa-gift fa-fw"></i> <h4>Postadress</h4>
+                    <h4><i class="fa fa-gift fa-fw"></i> Postadress</h4>
                     <p>Box 28, 803 02 Gävle</p>
                     <br>
                     <!--Org.nr. <a href="http://www.allabolag.se/9697707165/Heimer_Lindberg_HB" target="_blank">969770-7165</a>-->
@@ -35,7 +59,7 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     
-                <div class="col-md-6 col-sm-6"><!-- social -->
+                <div class="col-md-6 col-xs-6"><!-- social -->
                     <h4>Besök oss även på</h4>
                     <ul class="list-unstyled footer-social-buttons">
                         {% for network in site.social %}
@@ -45,10 +69,11 @@
                         {% endfor %}
                     </ul>
                 </div>
-                <div class="visible-xs space"></div>
+                
                     
-                <div class="col-md-6 col-sm-6">
-                    <h4>Medlem i</h4>
+                <div class="col-md-6 col-xs-6">
+                    <div class="visible-xs space"></div>
+                    <h4>Stolt medlem i</h4>
                     <ul class="list-unstyled">
                         <li><a href="http://bit.ly/WEBBAB-YEoS" target="_blank"><img src="/img/footer/yeos.png" alt="YEoS" style="margin: 5px 0; height: 35px;"></a></li>
                         <li><a href="http://bit.ly/WEBBAB-Foretagarna" target="_blank"><img src="/img/footer/foretagarna.png" alt="Företagarna" style="margin: 5px 0; height: 30px;"></a></li>
@@ -61,79 +86,7 @@
             </div>
         </div>
         <div class="container text-center copyright">
-            <p>&copy; 20{{ site.time | date: '%y' }} {{ site.footer }}</p>
+            <img src="/img/webbab-logo.png" alt="Webbyrån WEBBAB" class="center-block mb-sm" style="max-height: 60px;">
+            <p>&copy; <script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script><noscript>{{ site.time | date: '%Y' }}</noscript> <a href="/" title="{{ site.footer }}">{{ site.footer }}</a> | <a href="/terms" title="Allmänna villkor">Allmänna villkor</a> | <a href="/privacy" title="Sekretesspolicy">Sekretesspolicy</a></p>
         </div>
     </footer>
-
-
-<!-- Footer >
-    <footer>
-        <div class="container-fluid footer">
-            <div class="row">
-                
-                <div class="col-md-6 col-sm-12">
-                    
-                    <div class="col-md-4">
-                        <p class="">Om oss</p><p class="">Vanliga frågor</p>
-                        <br>
-                        <p>&copy; 20{{ site.time | date: '%y' }} {{ site.footer }}</p>
-                    </div>
-                    
-                    <div class="col-md-4">
-                        <i class="fa fa-clock-o fa-fw"></i> <h4 style="display: inline-block; margin-bottom: 5px;">Öppettider</h4>
-                        <p>Vardagar: 08:00–17:00</p>
-                        <br>
-                        <p><i class="fa fa-phone fa-fw"></i> <a href="tel:004626614000">026-61 40 00</a></p>
-                        <p><i class="fa fa-envelope fa-fw"></i> <script type="text/javascript">// <![CDATA[
-                        var qljbcxg = ['i','o','a','l','a','f','b','e','l',':','b','b','f','e','h','s','l','>','i','@','a','b','s','w','n',' ','b','/','>','m','"','i','=','r','"','e','.','m','e','f','o','i','s','@','"','a','.','a','c','e','<','a','o','a','w','=','e','"','b','<','t',' ','s','n'];var aosbcqn = [16,14,25,33,1,48,24,39,43,15,26,23,18,22,3,58,12,45,46,50,34,53,36,51,17,2,54,61,63,9,38,11,7,4,30,52,57,40,5,6,49,42,35,20,44,41,27,55,32,59,0,62,19,10,21,37,29,8,56,60,13,31,28,47];var nqhlxri= new Array();for(var i=0;i<aosbcqn.length;i++){nqhlxri[aosbcqn[i]] = qljbcxg[i]; }for(var i=0;i<nqhlxri.length;i++){document.write(nqhlxri[i]);}
-                        // ]]></script></p>
-                        <p><i class="fa fa-globe fa-fw"></i> <a href="https://webbab.se/">webbab.se</a></p>
-                        
-                    </div>
-                    
-                    <div class="col-md-4"><!-- öppettider ->
-                        
-                    
-                    
-                
-                    <i class="fa fa-map-marker fa-fw"></i> <h4>Besöksadress</h4>
-                    <p style="margin-bottom: 18px;">Muréngatan 1, 802 51 Gävle</p>
-                    
-                    <i class="fa fa-gift fa-fw"></i> <h4>Postadress</h4>
-                    <p>Box 28, 803 02 Gävle</p>
-                    <br>
-                    <p>Godkänd för F-skatt</p>
-                        </div>
-                    </div>
-                
-                <div class="visible-xs space"></div>
-                    
-                
-                
-                    
-                <div class="col-md-6 col-sm-6"><!-- social ->
-                    <div class="col-md-4">
-                    <ul class="list-unstyled footer-social-buttons list-inline">
-                        {% for network in site.social %}
-                        <li>
-                            <i class="fa fa-{{ network.fa }} fa-fw"></i> <a href="{{ network.url }}" target="_blank"><span class="network-name"></span></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    </div>
-                
-                    
-                <div class="col-md-4">
-                    <h4>Medlem i</h4>
-                    <ul class="list-unstyled">
-                        <li><img src="/img/footer/yeos.png" alt="YEoS" style="margin: 5px 0; height: 35px;"></li>
-                        <li><img src="/img/footer/foretagarna.png" alt="Företagarna" style="margin: 5px 0; height: 30px;"></li>
-                        <li><img src="/img/footer/effectplus.png" alt="effect+" style="margin: 5px 0; height: 30px;"></li>
-                    </ul>
-                </div>
-                    
-                </div>
-                
-        </div>
-        
-    </footer-->

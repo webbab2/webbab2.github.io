@@ -10,8 +10,8 @@
                 <h1><a href="/portfolio">Portfolio</a> / {{ page.title }}</h1>
                 <!--p style="margin-bottom: 5px;">{{ page.category | join: ', ' }}</p-->
                 
-                {% for category in page.category %}
-                <p style="margin-bottom: 5px; display: inline-block; background-color: #fcfcfc; padding: 2px 6px; margin-right: 4px;"><a href="/portfolio/{{ category }}">{{ category }}</a></p>
+                {% for tag in page.tags %}
+                <p class="project-tags"><a href="/portfolio/{{ tag }}">{{ tag }}</a></p>
                 {% endfor %}
                 
             </div>
@@ -28,7 +28,7 @@
             {% endif %}
             
             {% if page.img %}
-            <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb" alt="{{ page.title }}">
+            <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb" alt="{{ page.title }}" style="max-height: 800px; {% if page.img-shadow %}box-shadow: #aaa 0px 0px 25px;{% endif %}">
             {% endif %}
         </div>
         <div class="row mb">
@@ -40,40 +40,192 @@
             </div>
             <div class="col-lg-3 col-lg-offset-1">
                 <div class="spacing"></div>
-                <h4 class="project-details">{{ page.client }}</h4>
+                <h4 class="project-details"><i class="fa fa-info-circle"></i> {{ page.client }}</h4>
                 <div class="hline"></div>
                 <p class="t14px mb-xs">{{ page.client-info }}</p>
                 {% if page.project-date %}<p class="project-meta"><b>Datum:</b> {{ page.project-date }}</p>{% endif %}
                 {% if page.website %}<p class="project-meta"><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
             </div>
         </div><!-- /row -->
-        <div class="row">
-            {% if page.img2 %}
-            <div class="col-lg-6 col-lg-offset-3">
-                <img src="/img/portfolio/{{ page.img2 }}" class="img-responsive center-block mb-sm" alt="{{ page.title }}">
+        
+        {% if page.video2 %}
+        <!-- video under huvudtexten -->
+        <div class="row mb">
+            <div class="icontain mb-md">
+              <iframe src="{{ page.video2 }}" frameborder="0" allowfullscreen></iframe>
             </div>
-            {% if page.img2-desc %}
+            <div class="col-md-10 col-md-offset-1">
+                <h2>{{ page.video2-title }}</h2>
+                <p>{{ page.video2-text }}</p>
+            </div>
+        </div>
+        {% endif %}
+        
+        {% if page.logo-old %}
+</div>
+<div class="container-fluid" style="background-color: #fafafa;">
+<div class="container mt-md">
+    
+        <!-- före och efter logos -->
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>Logotyp</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <p class="info-sm c-1 mb-xs ct">Före</p>
+                <img src="{{ page.logo-old }}" alt="{{ page-title }}" class="img-responsive center-block">
+            </div>
+            <div class="col-md-4">
+                <p class="info-sm c-1 mb-xs ct">Efter</p>
+                <img src="{{ page.logo-new }}" alt="{{ page-title }}" class="img-responsive center-block">
+            </div>
+            <div class="col-md-10 col-md-offset-1 mt-sm">
+                <p>{{ page.logo-text }}</p>
+            </div>
+        </div>
+    
+</div>
+</div>
+<div class="container mt">
+        {% endif %}
+        
+        {% if page.visitkort %}
+        <div class="row mb">
+            {% if page.visitkort_img-12 %}
+            <div class="col-md-12">
+                <img src="{{ page.visitkort_img-12 }}" alt="{{ page-title }}" class="img-responsive center-block">
+            </div>
+            <div class="col-md-10 col-md-offset-1 mt-sm">
+                <p>{{ page.visitkort-text }}</p>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        
+        
+        
+        
+        
+        <div class="row">
+            {% if page.img-c %}
             <div class="col-lg-6 col-lg-offset-3">
-                <p>{{ page.img2-desc }}</p>
+                <img src="/img/portfolio/{{ page.img-c }}" class="img-responsive center-block mb-sm" alt="{{ page.title }}">
+            </div>
+            {% if page.img-c-desc %}
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>{{ page.img-c-desc }}</p>
             </div>
             {% endif %}
             {% endif %}
             
-            {% if page.img2 and page.img3 %}
+            {% if page.img-c and page.img-l %}
             <div class="row mtb"></div>
             {% endif %}
             
-            {% if page.img3 %}
+            {% if page.img-l %}
             <div class="col-lg-6">
-                <img src="/img/portfolio/{{ page.img3 }}" class="img-responsive center-block mb" alt="{{ page.title }}">
+                <img src="/img/portfolio/{{ page.img-l }}" class="img-responsive center-block mb" alt="{{ page.title }}">
             </div>
-            {% if page.img2-desc %}
+            {% if page.img-c-desc %}
             <div class="col-lg-6">
-                <p>{{ page.img3-desc }}</p>
+                <p>{{ page.img-l-desc }}</p>
             </div>
             {% endif %}
             {% endif %}
+            
+            {% if page.img-site %}
+            <div class="row mb"></div>
+
+            <div class="col-lg-10 col-lg-offset-1">
+                <img src="/img/portfolio/{{ page.img-site }}" class="img-responsive center-block mb" alt="{{ page.title }}">
+            </div>
+            {% if page.img-site-desc %}
+            <div class="col-lg-6">
+                <p>{{ page.img-site-desc }}</p>
+            </div>
+            {% endif %}
+            {% endif %}
+            
         </div>
+        
+        {% if page.kundcitat %}
+        <div class="row mb">
+            <div class="col-md-12 col-sm-offset-0 col-xs-offset-1 col-xs-10">
+                <div class="bubble">
+                    <div class="quote_content">{{ page.kundcitat }}</div>
+                    <div class="quote_author tiny-caps">{{ page.citatperson }}</div>
+                </div>
+            </div>
+            <style>
+                .kundcitat {
+                    background: #ddd;
+                    padding: 15px;
+                }
+                
+                .bubble{
+                    position: relative;
+                    padding: 15px 35px 25px 15px;
+                    background: #ddd;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    border-radius: 5px;
+                    display: inline-block;
+                }
+                .bubble:after{
+                    content: '';
+                    position: absolute;
+                    border-style: solid;
+                    border-width: 15px 15px 0;
+                    border-color: #ddd transparent;
+                    display: block;
+                    width: 0;
+                    z-index: 1;
+                    bottom: -15px;
+                    left: 35px;
+                }
+                
+                .quote_content{
+                    margin-left: 30px;
+                    font-size: 28px;
+                    font-weight: 700;
+                    position: relative;
+                }
+                .quote_author{
+                    margin-left: 30px;
+                    font-weight: 300;
+                    padding-top: 5px;
+                }
+
+                .quote_content:before, blockquote:before {
+                    font-size: 50px;
+                    /*font-family: FontAwesome;
+                    content: '\f10e';*/
+                    /*content: "\201C";*/
+                    color: {{ site.color.primary }};
+                    position: absolute;
+                    left: -30px;
+                    top: -5px;
+                }
+                
+                .icon-quote:before{
+                    content: '\f10e';
+                }
+                
+            </style>
+        </div>
+        {% endif %}
+        
+        
+        {% if page.villduvetamer %}
+        <div class="row" style="background-color: #fafafa;">
+            <div class="col-md-10 col-md-offset-1 mt-sm">
+                <h3>Vill du veta mer om projektet?</h3>
+                <p>{{ page.villduvetamer }}</p>
+            </div>
+        </div>
+        {% endif %}
         
         <hr class="hr-fat">
     </div><!-- /container -->

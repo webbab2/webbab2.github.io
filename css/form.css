@@ -1,0 +1,122 @@
+form * { box-sizing:border-box; }
+
+form p {
+  font-weight: 300;
+  font-size:18px;
+  color: #444;
+}
+
+/* form starting stylings ------------------------------- */
+.group { 
+  position:relative;
+  margin-bottom:45px; 
+}
+input, textarea {
+  font-weight: 300;
+  font-size:18px;
+  padding:10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  color: #960051;
+}
+textarea {
+  border: 2px solid #ccc; 
+}
+textarea:focus {
+  background: #fafafa;
+}
+input:focus, textarea:focus { outline:none;}
+textarea { resize: none; }
+
+
+/* LABEL ======================================= */
+label {
+  font-weight: 400;
+  color: #888;
+  font-size:18px;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label{
+  top:-20px;
+  font-size:16px;
+  color:#960051;
+}
+textarea:focus ~ label, textarea:valid ~ label{
+  top:-28px;
+  font-size:16px;
+  color:#960051;
+}
+
+input:focus, input:valid,
+textarea:focus, textarea:valid{
+  color:#222;
+}
+
+/* BOTTOM BARS ================================= */
+form .streck 	{ position:relative; display:block; width:300px; }
+form .streck:before, .streck:after {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#960051; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+form .streck:before {
+  left:50%;
+}
+form .streck:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .streck:before, input:focus ~ .streck:after,
+textarea:focus ~ .streck:before, textarea:focus ~ .streck:after{
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+form .highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/** submit button *******/
+input[type=submit] {
+  font-size: 16px;
+  font-weight: 400;
+  color: #960051;
+  border: 2px solid #960051;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: auto;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+input[type=submit]:hover {
+  background-color: #960051;
+  color: #f7f7f7;
+  transition:0.25s ease all; 
+  -moz-transition:0.25s ease all; 
+  -webkit-transition:0.25s ease all;
+}

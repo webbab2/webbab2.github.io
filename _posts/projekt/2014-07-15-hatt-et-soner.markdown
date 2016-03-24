@@ -1,7 +1,8 @@
 ---
 layout: project
 title: HATT <i>et</i> SÖNER 
-category: 
+category: portfolio
+tags:
 - Webbshop
 date: 2014-11-10 #för sortering
 thumbnail: hatt-soner_logo.png
