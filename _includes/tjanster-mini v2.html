@@ -1,0 +1,56 @@
+<section class="container mtb">
+    <div class="col-lg-12">
+        <div class="visible-xs space mt"></div>
+        <h2 class="mb-sm">Vad kan vi hjälpa er med idag?</h2>
+        
+        
+        <div class="hidden-xs hidden-sm">
+        <div class="row">
+            
+            
+        {% for tjanst in site.data.tjanster limit:3 %}
+            <div class="col-md-4">
+                <img class="img-responsive center-block mb-sm" src="/img/tjanster/tjanster_{{ tjanst.bild }}.png" alt="{{ tjanst.titel }}" style="max-height:200px;">
+                    
+                <h3 class="h-italic">{{ tjanst.titel }}</h3>
+                    <p class="ll">{{ tjanst.text }}</p>
+                    {% if tjanst.lasmer %}
+                        <a title="{{ tjanst.titel }}" href="/tjanster/{{ tjanst.lasmer }}/"><span class="btn">Läs mer <i class="fa fa-chevron-right"></i></span></a>
+                    {% endif %}
+                    {% if tjanst.offert %}
+                        <a title="{{ tjanst.titel }}" href="/offert/{{ tjanst.offert }}/" style="margin-left: 15px;"><span class="btn">Begär offert <i class="fa fa-chevron-right"></i></span></a>
+                    {% endif %}
+                
+            </div>
+        {% endfor %}
+            
+        </div>
+        <div class="row mt">
+            <p>En länk eller nåt som berättar att vi gör mer saker, kanske listar allt?, och länkar dit</p>
+        </div>
+        
+        </div> <!-- /desktop -->
+            
+        
+        
+    </div>
+            
+
+
+<!-- på mobil -->
+    <div class="col-lg-12 visible-xs visible-sm">
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="list-unstyled tjanster-lista">
+                    <a href="/tjanster/webbutveckling/"><li><i class="fa fa-chevron-right"></i>Webbsida</li></a>
+                    <a href="/tjanster/webbshop/"><li><i class="fa fa-chevron-right"></i>Webbshop</li></a>
+                    <a href="/tjanster/animerad-film/"><li><i class="fa fa-chevron-right"></i>Animation och film</li></a>
+                    <a href="/tjanster#grafisk-design"><li><i class="fa fa-chevron-right"></i>Grafisk design</li></a>
+                    <a href="/tjanster/appar/"><li><i class="fa fa-chevron-right"></i>Appar och spel</li></a>
+                    <a href="/tjanster#webblosningar"><li><i class="fa fa-chevron-right"></i>Andra webblösningar</li></a>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- /mobil --> 
+    
+</section>

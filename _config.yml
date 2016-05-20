@@ -56,4 +56,5 @@ paginate: 6
 #sitemap
 gems:
   - jekyll-sitemap
+  #- jekyll-paginate
   #- jekyll-archives

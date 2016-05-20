@@ -1,0 +1,98 @@
+<style>
+    .portfolio-item {
+        /*padding: 0 !important;
+        margin: 0 !important;*/
+        
+    }
+    .portfolio-caption {
+        position: absolute;
+        bottom: 0;
+        background-color: transparent !important;
+        color: #fff;
+    }
+    .portfolio-link {
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+    }
+    
+    .portfolioCardInfo{
+        position: relative;
+        top: -30%;
+        left: 20px;
+        color: #fff;
+    }
+    
+    .portfolioCardTags{
+        position: relative;
+        top: -125%;
+        left: 20px;
+        color: #fff !important;
+        
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    .portfolioCardTags p {
+        display: inline-block;
+        padding: 0 6px;
+        font-size: 14px !important;
+        border: 1px solid #fff;
+        margin-right: 4px;
+    }
+    
+    
+    .portfolio-hover {
+        overflow: hidden;
+    }
+    
+    .portfolio-hover .portfolioCardInfo{
+        top: -0%;
+        -webkit-transition: all ease .25s;
+        -moz-transition: all ease .25s;
+        transition: all ease .25s;
+    }
+    .portfolio-hover:hover .portfolioCardInfo{
+        top: -30%;
+    }
+    
+    .portfolio-hover .portfolioCardTags{
+        top: -150%;
+        -webkit-transition: all ease .25s;
+        -moz-transition: all ease .25s;
+        transition: all ease .25s;
+    }
+    .portfolio-hover:hover .portfolioCardTags{
+        top: -125%;
+    }
+    
+</style>
+
+<!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row mtb">
+            {% for project in site.categories.portfolio limit:6 %}
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="{{ project.url }}" class="portfolio-link">
+                        <div class="portfolio-hover">
+                            <img src="/img/portfolio/{{ project.thumbnail-hover }}" class="img-responsive" alt="{{ project.title }}">
+                            
+                            <div style="background-color: rgba(150,0,81,0.75); width: 100%; height: 100%; position: absolute; top: 0; display: block;"></div>
+                            
+                            <div class="portfolioCardInfo">
+                                <h4 style="color: #fff; margin-bottom: 0;">{{ project.title }}</h4>
+                                <p class="small">En kort mening som beskriver projektet.</p>
+                            </div>
+                            <div class="portfolioCardTags">
+                                {% for tag in project.tags limit:3 %}
+                                <p>{{ tag }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <img src="/img/portfolio/{{ project.thumbnail }}" class="img-responsive" alt="{{ project.title }}">
+                    </a>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,46 @@
+---
+- titel: Hemsida
+  bild: hemsida
+  text: Vi tycker inte du ska behöva betala för mer än vad du vill ha. Våra grundpaket innehåller därför endast de mest grundläggande funktionerna, sedan kan du själv utöka med de extra funktioner du behöver. Om inget av våra paketförslag eller tillvalen passar dina behov är du självklart även välkommen att <a title="Offertformulär" href="/offert/">begära en offert</a>. Inget projekt är för litet och nästan inget för stort. Vi kan fixa fram mer än det som listas här, så ring eller skicka iväg ett meddelande och berätta för oss om dina planer. Vi anpassar oss efter dina behov och tar fram en specialanpassad lösning just för dig!</p><p class="mb-xs">För alla webbproduktioner vi skapar ingår självklart:</p><ul class="list-unstyled"><li><i class="fa fa-check fa-fw primary-color"></i> Support via telefon, e-post &amp; chatt under produktionstiden</li><li><i class="fa fa-check fa-fw primary-color"></i> Kostnadsfri regelbunden backup</li><li><i class="fa fa-check fa-fw primary-color"></i> Responsiv design <wbr />(mobil­anpassad)</li></ul><p>Vi erbjuder dessutom specialpriser för föreningar.
+  lasmer: webbutveckling
+  offert: webb
+  id: webbsida
+  forsta: ja
+
+- titel: Webbshop
+  bild: webbshop
+  text: Behöver du hjälp med att omvandla din hemsida till en snygg och lättanvänd webbshop? Låt oss bygga din onlinebutik och om du vill kan vi även koppla din hemsida till butiken. Vi hjälper dig att få igång en webbutik med WooCommerce för WordPress, både för dig som vill starta, eller redan driver, e-handel. WooCommerce är ett kraftfullt e-handelsplugin till WordPress som förvandlar din hemsida till en komplett nätbutik. Med sin smidiga och användarvänliga kontrollpanel passar denna lösning till både företag och privatpersoner, vare sig du säljer 1 eller 1000 produkter.
+  lasmer: webbshop
+  offert: webbshop
+  id: webbshop
+
+- titel: Film & Animation
+  bild: animation
+  text: Behöver ni en animerad reklam- eller informationsfilm för att illustrera er affärs­verksamhet eller produkt? Vi producerar animerade filmer i både 2D och 3D, allt från ren motion graphics till saker med mer realistiskt utseende. Ibland har det till och med hänt att vi filmat och klippt inspelade filmer.</p><p>Animation på webben behöver idag inte vara begränsade inbäddade YouTubeklipp och giffar, även själva innehållet på hemsidor kan med fördel animeras för att skapa en mer interaktiv och engagerande användarupplevelse.
+  lasmer: animerad-film
+  offert: film
+  id: animation
+
+- titel: Grafisk design
+  bild: grafiskdesign
+  text: Vi designar logotyper, formulär, brevpapper, visitkort och allt annat ditt företag kan tänkas behöva.
+  id: grafisk-design
+  lasmer: grafisk-design
+
+- titel: Appar & Spel
+  bild: appar
+  text: Behöver ert företag en egen app för era kunder, interna system, eller för att effektivisera ert arbete? Eller vill du kanske skapa ett spel, antingen för reklamsyfte, gamificerad e-learning eller ren underhållning?</p><p>De flesta av oss har idag en smartphone och behovet, och användningsområdena, av appar för dessa enheter växer hela tiden. Vi hjälper dig att bygga appar med den funktionalitet du önskar, med användarupplevelsen i fokus – för alla plattformar!
+  lasmer: appar
+  id: appar
+
+- titel: Webblösningar
+  bild: webblosningar
+  text: Förutom att skapa själva hemsidan kan vi även hjälpa er med sökmotor­optimering (SEO) och Google­annonsering. Om du inte redan har ett domännamn (t ex en .se eller .com adress) kan vi hjälpa dig att registrera och aktivera den, samt lägga upp sidan på ett webbhotell.</p><p>Vi kan även hjälpa er att ta fram innehåll för er webbplats med unikt framtagna professionella texter och bilder via vårt samarbete med Contentor och Gefle Fotostudio.
+  id: webblosningar
+
+- title: Och mycket mer
+  bild: mer
+  text: Vi kan det mesta och hjälper dig med allt du behöver hjälp med, och till ett bra timpris!</p><p class="ll">Vi har bland annat hjälpt kunder med fotografering, nyhetsbrev, banderoller, plastkort, giveaways, musikvideos och mycket mer. <a title="Offertformulär" href="/offert/">Kontakta oss</a> om era planer för en offert.
+  id: mer
+
+---

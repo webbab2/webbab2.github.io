@@ -1,36 +1,234 @@
 ---
 title: Offertförfrågan
 permalink: offert/film/
-layout: blank
+layout: default
 ---
 
-<!DOCTYPE html>
-<html>
-{% include head.html %}
-<body>
-{% include nav.html %}
-    
+
 <style type="text/css">
-    html{
-        margin: 0;
-        height: 100%;
-        overflow: hidden;
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.step{
+    display: none;
+    padding:10vh 0;
+    max-width:800px;
+    margin:0 auto;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+  color: #960051;
+}
+
+form{
+  min-height: 999px;
+}
+
+.step p {
+  color: #444;
+}
+
+input, input[type="text"], input[type="email"], textarea {
+  background: transparent;
+    font-size: 16px;
+  font-weight: 300;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+}
+textarea{
+  border: 2px solid #ccc;
+  width: 300px;
+  margin-bottom: -13px;
+}
+
+input[type="button"], input[type="submit"] {
+    font-size: 16px;
+    font-weight: 400;
+    color: #960051;
+    border: 2px solid #960051;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: auto;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #960051;
+    color: #f7f7f7;
+    transition: 0.25s ease all;
+    -moz-transition: 0.25s ease all;
+    -webkit-transition: 0.25s ease all;
+}
+    input[type=radio]{
+        margin-right: 8px;
     }
-    iframe{
-        position: absolute;
-        left:0;
-        right:0;
-        bottom:0;
-        top:0;
-        border:0;
+    label{
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
     }
-    .logo-normal{
-        z-index:1;
+    
+    /*.fa-btn {
+        color: #960051;
+        font-size: 2.5em;
+        position: relative;
+        top: 0.35em;
+        transition: 0.25s ease all;
+    -moz-transition: 0.25s ease all;
+    -webkit-transition: 0.25s ease all;
     }
+    .fa-btn:hover{
+        cursor:pointer;
+        font-size: 3em;
+    } */
+    .fa-btn {
+        box-sizing: initial;
+        cursor:pointer;
+        color: #960051;
+        border: 2px solid #960051;
+                
+        border-radius: 50%;
+        padding: 0.35em 0.25em;
+        
+        transition: 0.25s ease all;
+    -moz-transition: 0.25s ease all;
+    -webkit-transition: 0.25s ease all;
+    }
+    .fa-btn:hover{
+        cursor:pointer;
+        background: #960051;
+        color: #fff;
+    }
+    
+    
+    
 </style>
 
-	<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://webbab1.typeform.com/to/tSHTKw"></iframe>
-	<script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
-    
-</body>
-</html>
+
+
+
+<section class="container">
+<div class="col-md-10 col-md-offset-1 mb">
+<h1>Offertformulär <p style="font-weight:700;">Animerad film</p></h1>
+<p>Vad kul att ni vill samarbeta med oss.<br>
+Vi kommer nu ställa några frågor för att få en lite tydligare bild av er situation.<br>
+Fyll gärna i så mycket som möjligt, så kan vi ta ett litet möte sen.</p>
+<input type="button" value="ok!" onclick="showStep(1)">
+
+ <hr>
+  </div>
+   
+   <form>
+  <div id="step1" class="step">
+    <h2>Vad är det för sorts film ni vill ha?</h2>
+    <label for="1a"><input type="radio" name="1" id="1a" onclick="showStep(2)">Inspelat</label>
+    <label for="1b"><input type="radio" name="1" id="1b" onclick="showStep(2)">Animerad, 2d (platt stil)</label>
+    <label for="1c"><input type="radio" name="1" id="1c" onclick="showStep(2)">Animerad, 3d (mer detaljerat med mer avancerade kameravinklar)</label>
+    <label for="1d"><input type="radio" name="1" id="1d" onclick="showStep(2)">Specialeffekter (post-production)</label>
+    <label for="1e"><input type="radio" name="1" id="1e" onclick="showStep(2)">Vet inte</label>
+  </div>
+
+  <div id="step2" class="step">
+    <h2>Vad är syftet med filmen?</h2>
+    <p>Reklam, information, instruktion, presentation, mm...</p>
+    <textarea rows="5" name="2" onkeydown="if (event.keyCode == 13){showStep(3)}"></textarea>
+    <i class="fa fa-angle-right fa-2x fa-fw fa-btn" aria-hidden="true" onclick="showStep(3)"></i>
+<!--    <input type="button" value="ok" onclick="showStep(3)">
+-->  </div>
+ 
+  <div id="step3" class="step">
+    <h2>Berätta lite kort i egna ord om vad det är ni vill ha</h2>
+    <textarea rows="5" name="3" onkeydown="if (event.keyCode == 13){showStep(4)}"></textarea>
+    <i class="fa fa-angle-right fa-2x fa-fw fa-btn" aria-hidden="true" onclick="showStep(4)"></i>
+ </div>
+ 
+  <div id="step4" class="step">
+    <h2>Ungefär hur lång ska filmen bli?</h2>
+    <p>Under 15 sekunder, 15-60 sek, 60-120 sek, eller längre?</p>
+    <textarea rows="5" name="4" onkeydown="if (event.keyCode == 13){showStep(5)}"></textarea>
+    <i class="fa fa-angle-right fa-2x fa-fw fa-btn" aria-hidden="true" onclick="showStep(5)"></i>
+ </div>
+
+ <div id="step5" class="step">
+    <h2>Finns det redan ett färdigt manus?</h2>
+    <label for="5a"><input type="radio" name="5" id="5a" onclick="showStep(6)">Ja</label>
+    <label for="5b"><input type="radio" name="5" id="5b" onclick="showStep(6)">Ja, även storyboard.</label>
+    <label for="5c"><input type="radio" name="5" id="5c" onclick="showStep(6)">Nej men nästan. Vi vill ha lite hjälp att göra klart det bara.</label>
+    <label for="5d"><input type="radio" name="5" id="5d" onclick="showStep(6)">Nej, inte alls. Men vi har en idé att utgå från.</label>
+    <label for="5e"><input type="radio" name="5" id="5e" onclick="showStep(6)">Nepp, vi vet knappt vad den ska handla om.</label>
+  </div>
+
+<div id="step6" class="step">
+    <h2>Kommer ni behöva berättarröst eller andra röstskådisar?</h2>
+    <label for="6a"><input type="radio" name="5" id="6a" onclick="showStep(7)">Ja</label>
+    <label for="6b"><input type="radio" name="5" id="6b" onclick="showStep(7)">Nej</label>
+    <label for="6c"><input type="radio" name="5" id="6c" onclick="showStep(7)">Kanske</label>
+  </div>
+
+<div id="step7" class="step">
+    <h2>Hur är det med musik och ljud?</h2>
+    <p>Har ni redan nån musik ni vill använda, eller behövs det kanske inte ens? Vi löser det såklart annars.</p>
+    <textarea rows="5" name="7" onkeydown="if (event.keyCode == 13){showStep(8)}"></textarea>
+    <i class="fa fa-angle-right fa-2x fa-fw fa-btn" aria-hidden="true" onclick="showStep(8)"></i>
+ </div>
+ 
+ <div id="step8" class="step">
+    <h2>Hur snygg ska filmen vara?</h2>
+    <label for="8a"><input type="radio" name="8" id="8a" onclick="showStep(9)">Billig!</label>
+    <label for="8b"><input type="radio" name="8" id="8b" onclick="showStep(9)">Lagom duger</label>
+    <label for="8c"><input type="radio" name="8" id="8c" onclick="showStep(9)">Snygg</label>
+    <label for="8d"><input type="radio" name="8" id="8c" onclick="showStep(9)">Jättesnygg</label>
+  </div>
+  
+ <div id="step9" class="step">
+    <h2>Okej! Då behöver vi bara lite kontaktuppgifter så hör vi av oss så fort som möjligt.</h2>
+    <p>Namn/företagsnamn, telnr eller email...</p>
+    <textarea rows="5" name="9" onkeydown="if (event.keyCode == 13){showStep(10)}"></textarea>
+    <i class="fa fa-angle-right fa-2x fa-fw fa-btn" aria-hidden="true" onclick="showStep(10)"></i>
+ </div>
+
+  <div id="step10" class="step">
+   <p>Det var allt!</p>
+    <input type="submit" value="Skicka!">
+  </div>
+</form>
+   
+</section>   
+ 
+ 
+ 
+<script>
+    function showStep(nr) {
+  document.getElementById("step" + nr).style.display = "block";
+  $('html, body').animate({
+    scrollTop: $('#step' + nr).position().top + 'px'
+  }, 800);
+}
+
+function stepOption(nr1, nr2) {
+  document.getElementById("step" + nr1).style.display = "block";
+  document.getElementById("step" + nr2).style.display = "none";
+  $('html, body').animate({
+    scrollTop: $('#step' + nr1).position().top + 'px'
+  }, 800);
+}
+
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script> 
