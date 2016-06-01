@@ -13,6 +13,9 @@
     .portfolio-link {
         box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
     }
+    .portfolio-link:hover {
+        box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.5);
+    }
     
     .portfolioCardInfo{
         position: relative;
@@ -20,7 +23,13 @@
         left: 20px;
         color: #fff;
     }
-    
+    .portfolioCardInfo h4{
+        font-weight: 800;
+    }
+    .portfolioCardInfo p{
+        font-weight: 400;
+    }
+        
     .portfolioCardTags{
         position: relative;
         top: -125%;
@@ -64,6 +73,7 @@
         top: -125%;
     }
     
+
 </style>
 
 <!-- Portfolio Grid Section -->
@@ -74,13 +84,13 @@
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="{{ project.url }}" class="portfolio-link">
                         <div class="portfolio-hover">
-                            <img src="/img/portfolio/{{ project.thumbnail-hover }}" class="img-responsive" alt="{{ project.title }}">
+                            <img src="/img/portfolio/{{ project.thumbnail-hover }}" class="img-responsive preview" alt="{{ project.title }}">
                             
-                            <div style="background-color: rgba(150,0,81,0.75); width: 100%; height: 100%; position: absolute; top: 0; display: block;"></div>
+                            <div style="background: linear-gradient(135deg, {% if project.color1 %}rgba({{ project.color1 }},0.75){% else %}rgba(150,0,81,0.75){% endif %} 0%,{% if project.color2 %}rgba({{ project.color2 }},0.25){% else %}rgba(150,0,81,0.25){% endif %} 100%); width: 100%; height: 100%; position: absolute; top: 0; display: block;"></div>
                             
                             <div class="portfolioCardInfo">
                                 <h4 style="color: #fff; margin-bottom: 0;">{{ project.title }}</h4>
-                                <p class="small">En kort mening som beskriver projektet.</p>
+                                <p class="small">{% if project.s-desc %}{{ project.s-desc }}{% else %}Kolla in projektet!{% endif %}</p>
                             </div>
                             <div class="portfolioCardTags">
                                 {% for tag in project.tags limit:3 %}

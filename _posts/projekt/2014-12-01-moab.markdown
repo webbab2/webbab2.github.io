@@ -18,6 +18,8 @@ img-l: moab_visitkort.jpg
 img-l-desc: Visitkorten vi tog fram blev i slutändan tryckta på plastkort vilket skapade en exklusiv känsla.
 client: MOAB Asfalt & Entreprenad 
 client-info: MOAB Asfalt & Entreprenad AB är Sveriges snabbast växande leverantör inom asfalt och entreprenad. De utför entreprenad­arbeten och alla typer av arbeten inom asfaltläggning till alla kunders behov.
+color1: 0, 0, 0
+s-desc: Logotyp, hemsida, visitkort och mer för ett nytt företag
 
 ---
 Vi tog fram logotyp, visitkort, webbsida och varumärkesplattform för det nybildade företaget MOAB Asfalt & Entreprenad som redan är Sveriges snabbast växande leverantör inom asfalt och entreprenad.

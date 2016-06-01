@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Hej igen
-category: blog
+category: blogg
 tags: 
   - Blogg
   - Coola saker

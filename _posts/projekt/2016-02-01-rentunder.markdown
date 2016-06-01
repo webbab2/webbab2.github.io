@@ -24,6 +24,9 @@ visitkort-text: <b>Visitkort</b> asdkasd asdklasd asd kasld aksd askdasld asklda
 kundcitat: '"WEBBAB är jätteduktiga, vi älskar dom. De är bäst."'
 citatperson: Kund Kundsson, CEO, Företaget AB 
 villduvetamer: Hör av dig till projektledare <a href="/kontakt" title="Kontakta oss">Mattis Johansson</a>, eller besök <a href="http://rentunder.se" target="_blank" title="Rentunder">rentunder.se</a>.
+color1: 0, 75, 135
+color2: 254, 219, 0
+s-desc: Ny hemsida, ny grafisk profil, och en cool animerad film
 
 ---
 <p class="ingress">När Rentunder i slutet av 2015 ville utöka till den internationella marknaden kände de att det var dags att fräscha upp deras webbplats och grafiska profil.</p>

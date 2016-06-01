@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Hejsan
-category: blog
+category: blogg
 tags: 
 - Blogg
 - WEBBAB
@@ -9,5 +9,5 @@ tags:
 img: 1.jpg
 
 ---
-#Hejsan
+# Hejsan
 Hej hej detta är vårt första blogginlägg.

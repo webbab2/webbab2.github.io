@@ -614,7 +614,7 @@ button.navbar-toggle{
 /*** footer ***/
 
 footer {
-    position: fixed: bottom: 0; left: 0;
+    /*position: fixed; bottom: 0; left: 0;*/
     
     padding: 50px 0;
     background-color: {{ site.color.primary-dark }};
@@ -935,6 +935,11 @@ p.medarbetare-titel {
     text-transform: uppercase;
 }
 
+@media(max-width:400px) {
+    .intro-text {
+        font-size: 18px;
+    }
+}
 @media(max-width:500px) {
     .intro-text {
         font-size: 28px;
@@ -985,6 +990,13 @@ p.medarbetare-titel {
         font-size: 90px;
     }
 }
+
+/*@media(max-height:760px) {
+    .intro-text {
+        font-size: 48px;
+    }
+}*/
+
 
 
 .btn-down {
@@ -1607,6 +1619,7 @@ border-color: #ddd;
 .list-readmore li {
     font-weight: 700;
     font-size: 22px;
+    padding-bottom: 5px;
 }
 
 .list-readmore .fa {
@@ -1633,6 +1646,7 @@ footer h4 {
     font-size: 14px;
     letter-spacing: 0.12em;
 }
+
 
 /*.mini-kontakt h2, .mini-kontakt form, .mini-kontakt input[submit] {
     color: #f66;

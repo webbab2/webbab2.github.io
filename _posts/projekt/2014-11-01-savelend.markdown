@@ -11,6 +11,9 @@ thumbnail: savelend_logo.png
 thumbnail-hover: savelend_preview.png
 client: Savelend Sweden AB
 client-info: ”Den vänliga tjänsten för att förbättra din ekonomiska situation, både för dig med tillfälligt behov av pengar och för dig med överskott”
+color1: 109, 218, 223
+color2: 26, 48, 62
+s-desc: Säljande animerad film
 
 ---
 Vi skapade en animerad informationsfilm åt Savelend för att lättare beskriva deras affärsverksamhet samt visa upp hur deras tjänster fungerar för deras kunder.

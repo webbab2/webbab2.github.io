@@ -50,7 +50,7 @@ medarbetare:
 
 # Build settings
 markdown: kramdown
-permalink: /portfolio/:title #pretty
+permalink: /:categories/:title #pretty
 paginate: 6
 
 #sitemap
