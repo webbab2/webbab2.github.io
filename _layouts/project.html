@@ -151,70 +151,24 @@
         </div>
         
         {% if page.kundcitat %}
-        <div class="row mb">
-            <div class="col-md-12 col-sm-offset-0 col-xs-offset-1 col-xs-10">
-                <div class="bubble">
-                    <div class="quote_content">{{ page.kundcitat }}</div>
-                    <div class="quote_author tiny-caps">{{ page.citatperson }}</div>
-                </div>
-            </div>
-            <style>
-                .kundcitat {
-                    background: #ddd;
-                    padding: 15px;
-                }
-                
-                .bubble{
-                    position: relative;
-                    padding: 15px 35px 25px 15px;
-                    background: #ddd;
-                    -webkit-border-radius: 5px;
-                    -moz-border-radius: 5px;
-                    border-radius: 5px;
-                    display: inline-block;
-                }
-                .bubble:after{
-                    content: '';
-                    position: absolute;
-                    border-style: solid;
-                    border-width: 15px 15px 0;
-                    border-color: #ddd transparent;
-                    display: block;
-                    width: 0;
-                    z-index: 1;
-                    bottom: -15px;
-                    left: 35px;
-                }
-                
-                .quote_content{
-                    margin-left: 30px;
-                    font-size: 28px;
-                    font-weight: 700;
-                    position: relative;
-                }
-                .quote_author{
-                    margin-left: 30px;
-                    font-weight: 300;
-                    padding-top: 5px;
-                }
+        <!-- kundcitat -->
+        <div class="container mtb">
+            <div class="row">
 
-                .quote_content:before, blockquote:before {
-                    font-size: 50px;
-                    /*font-family: FontAwesome;
-                    content: '\f10e';*/
-                    /*content: "\201C";*/
-                    color: {{ site.color.primary }};
-                    position: absolute;
-                    left: -30px;
-                    top: -5px;
-                }
-                
-                .icon-quote:before{
-                    content: '\f10e';
-                }
-                
-            </style>
+                <div class="col-sm-12 col-md-11 col-md-push-1">
+                    <div class="bubble">
+                        <div class="quote_content">{{ page.kundcitat }}</div>
+                        <div class="quote_author tiny-caps">{{ page.citatperson }}</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-1 col-sm-offset-1 col-md-offset-0 col-md-pull-11">
+                    <div class="quoter_pic" {% if page.citatbild %}style="background: url('{{ page.citatbild }}')"{% endif %}></div>
+                </div>
+
+            </div>
         </div>
+        <!-- /kundcitat -->
         {% endif %}
         
         

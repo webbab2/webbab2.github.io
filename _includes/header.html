@@ -1,11 +1,52 @@
     <!-- Header -->
-    <header class="container default-header">
-        <div class="row mb">
+    <header class="container-fluid default-header">
+       <div class="container">
+        <div class="row">
             <div class="col-md-6">
                 <h1>{{ page.header-title }}</h1>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 header-desc">
                 <p class="header-text ll">{{ page.header-text }}</p>
             </div>
         </div>
+        </div>
     </header>
+
+
+{% if page.cleanheader %}{% else %}
+<style>
+    @media (min-width: 767px){
+        header {
+            background: #2D0A23;
+            {% if page.header-img %}background: url(/img/header/{{page.header-img}});{% endif %}
+            background-size: cover;
+            background-position: right;
+            margin-top: 90px !important;
+            padding: 0 !important;
+            color: #fafafa;
+        }
+        header h1 {
+            color: #fafafa;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+        }
+        .header-desc{
+            background: rgba(180,0,80,0.4);
+            background: linear-gradient(135deg, rgba(150,0,81,0.75) 0%,rgba(150,0,81,0.33) 100%);
+            text-shadow: 1px 1px 4px rgba(150,0,81,0.75);
+        }
+        header .col-md-6 {
+            padding-top: 70px !important;
+            padding-bottom: 80px !important;
+        }
+        .header-desc a {
+            color: #fafafa;
+            font-weight: 700;
+            text-decoration: none;
+            border-color: #960051;
+        }
+        .header-desc a:hover {
+            color: #fafafa;
+        }
+    }
+</style>
+{% endif %}

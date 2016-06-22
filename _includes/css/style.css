@@ -623,6 +623,9 @@ footer {
 
 footer a {
     color: #eee;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 footer a:hover, footer a:active {
     /*border-bottom: 1px solid {{ site.color.primary }};
@@ -803,6 +806,18 @@ p.medarbetare-titel {
     border-bottom: 1px solid {{ site.color.secondary }};
     box-shadow: inset 0 -3px 0 {{ site.color.secondary }};
     color: {{ site.color.secondary }};
+}
+
+.a-bold a{
+    color: #f7f7f7;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+.a-bold a:hover{
+    border-bottom: 2px solid #f7f7f7;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .btn {
@@ -1647,7 +1662,27 @@ footer h4 {
     letter-spacing: 0.12em;
 }
 
+@media (min-width: 991px){
+    footer .list-medlemi li img {
+        margin: 5px 0 15px;
+        height: 30px;
+    }
+}
 
+@media (max-width: 991px){
+    footer .list-medlemi li {
+        display: inline-block;
+        max-width: 32%;
+        height: auto;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 766px){
+    .footer-social-buttons li {
+        display: inline-block !important;
+        padding: 0 6px !important;
+    }
+}
 /*.mini-kontakt h2, .mini-kontakt form, .mini-kontakt input[submit] {
     color: #f66;
 }
@@ -1661,3 +1696,184 @@ footer h4 {
 /** MOBILE **/
 
 .m-collapsed{}
+
+
+
+
+/*** kundcitat ***/
+.quoter_pic {
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        background: #ccc;
+        border-radius: 50%;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    
+    .kundcitat {
+        background: #ddd;
+        padding: 15px;
+    }
+    
+    .bubble {
+        position: relative;
+        padding: 15px 35px 25px 15px;
+        background: #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    @media (max-width:768px) {
+        .quoter_pic {
+            margin-left: 50px;
+        }
+    }
+    
+    @media (max-width:991px) {
+        .bubble:after {
+            top: 100%;
+            left: 15%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-top-color: #fff;
+            border-width: 15px;
+            margin-left: -15px;
+        }
+        .bubble {
+            margin-bottom: 25px;
+        }
+    }
+    
+    @media (min-width:992px) {
+        .bubble:after {
+            right: 100%;
+            top: 25%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 15px;
+            margin-top: -15px;
+        }
+    }
+    
+    .quote_content {
+        margin-left: 30px;
+        font-size: 28px;
+        font-weight: 700;
+        position: relative;
+    }
+    
+    .quote_author {
+        margin-left: 30px;
+        font-weight: 300;
+        padding-top: 10px;
+        color: #666;
+    }
+    
+    /*.quote_content:before,
+    blockquote:before {
+        font-size: 50px;
+        /*font-family: FontAwesome;
+                    content: '\f10e';*
+        /*content: "\201C";*
+        color: {
+            {
+                site.color.primary
+            }
+        }
+        ;
+        position: absolute;
+        left: -30px;
+        top: -5px;
+    }*/
+    
+    .icon-quote:before {
+        content: '\f10e';
+    }
+
+/*** /kundcitat ***/
+
+
+/*** tjänster ***/
+.tjanstbox{
+    background: #e2e2e2;
+    border-radius: 10px;
+    padding: 20px 0 0;
+}
+.tjanstbox p{
+    margin: 5px 25px 20px;
+}.tjanstbox ul{
+    margin: 5px 25px 20px;
+    padding: 5px 0 15px;
+}
+.tjanstbox-title{
+    font-weight: 700;
+    color: #222;
+    font-size: 20px;
+}
+.tjanstbox-l-btn {
+    background: #960051;
+    color: #fafafa;
+    text-align: center;
+    border-radius: 0 0 0 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+.tjanstbox-l-btn em {
+    font-weight: 400;
+    font-size: 18px;
+}
+.tjanstbox-r-btn {
+    background: #aaa;
+    color: #fafafa;
+    text-align: center;
+    border-radius: 0 0 10px 0;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    padding: 10px;
+    border-left: 1px solid #eee;
+}
+.tjanstbox-r-btn-a:hover .tjanstbox-r-btn {
+    background: #960051;
+}
+.tjanst-feature{
+    padding: 0 10%;
+}
+.tjanst-feature i {
+    padding-bottom: 20px;
+}
+@media (max-width: 991px){
+    .tjanst-feature-mid{
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+    .tjanst-feature{
+        padding-top: 25px;
+    }
+}
+@media (min-width: 992px){
+    .tjanst-feature-mid{
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+    .tjanst-text {
+        padding-right: 50px;
+    }
+}

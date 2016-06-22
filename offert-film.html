@@ -119,7 +119,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 
 <section class="container">
 <div class="col-md-10 col-md-offset-1 mb">
-<h1>Offertformulär <p style="font-weight:700;">Animerad film</p></h1>
+<h1>Offertförfrågan <p style="font-weight:700;">Animerad film</p></h1>
 <p>Vad kul att ni vill samarbeta med oss.<br>
 Vi kommer nu ställa några frågor för att få en lite tydligare bild av er situation.<br>
 Fyll gärna i så mycket som möjligt, så kan vi ta ett litet möte sen.</p>
@@ -148,6 +148,7 @@ Fyll gärna i så mycket som möjligt, så kan vi ta ett litet möte sen.</p>
  
   <div id="step3" class="step">
     <h2>Berätta lite kort i egna ord om vad det är ni vill ha</h2>
+    <p>Har ni exempel på andra filmer eller bilder i liknande stil, känsla eller upplägg som ni gillar och vill använda som inspiration för detta projekt kan ni gärna länka det också.</p>
     <textarea rows="5" name="3" onkeydown="if (event.keyCode == 13){showStep(4)}"></textarea>
     <i class="fa fa-angle-right fa-2x fa-fw fa-btn" aria-hidden="true" onclick="showStep(4)"></i>
  </div>
@@ -163,9 +164,10 @@ Fyll gärna i så mycket som möjligt, så kan vi ta ett litet möte sen.</p>
     <h2>Finns det redan ett färdigt manus?</h2>
     <label for="5a"><input type="radio" name="5" id="5a" onclick="showStep(6)">Ja</label>
     <label for="5b"><input type="radio" name="5" id="5b" onclick="showStep(6)">Ja, även storyboard.</label>
-    <label for="5c"><input type="radio" name="5" id="5c" onclick="showStep(6)">Nej men nästan. Vi vill ha lite hjälp att göra klart det bara.</label>
+    <label for="5c"><input type="radio" name="5" id="5c" onclick="showStep(6)">Ja nästan. Vi vill ha lite hjälp att göra klart det bara.</label>
     <label for="5d"><input type="radio" name="5" id="5d" onclick="showStep(6)">Nej, inte alls. Men vi har en idé att utgå från.</label>
-    <label for="5e"><input type="radio" name="5" id="5e" onclick="showStep(6)">Nepp, vi vet knappt vad den ska handla om.</label>
+    <label for="5d"><input type="radio" name="5" id="5e" onclick="showStep(6)">Nej, men vi har stolpord och en lista på det viktigaste vi vill förmedla med filmen.</label>
+    <label for="5e"><input type="radio" name="5" id="5f" onclick="showStep(6)">Nepp, vi vet knappt vad den ska handla om.</label>
   </div>
 
 <div id="step6" class="step">
@@ -198,7 +200,7 @@ Fyll gärna i så mycket som möjligt, så kan vi ta ett litet möte sen.</p>
  </div>
 
   <div id="step10" class="step">
-   <p>Det var allt!</p>
+   <p>Det var allt! Klicka på Skicka på kommer vi kontakta er så fort som möjligt.</p>
     <input type="submit" value="Skicka!">
   </div>
 </form>

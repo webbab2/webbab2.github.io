@@ -1,0 +1,26 @@
+---
+- q: Borde man ha en sån däringa vebb-sida?
+  a: ja
+  t: webb
+
+- q: Vad kostar en animerad film?
+  a: mindre än man tror
+  t: film
+  
+- q: Vad kostar en animerad film?
+  a: pengar
+  t: film
+
+- q: Kan ni trycka ID-kort?
+  a: japp
+  t: tryck
+
+- q: Hur långt är ett snöre?
+  a: 42 cm
+  t: övrigt
+
+- q: Hur uttalas FAQ?
+  a: "'fah-kjoo'"
+  t: övrigt
+
+---
