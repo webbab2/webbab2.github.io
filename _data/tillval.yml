@@ -22,6 +22,7 @@
   fa: refresh 
   text: Ibland räcker inte tiden till. När du behöver få en uppdatering inlagd på din hemsida är det bara att maila vad som ska göras så ordnar vi det inom kort.
   pris: 995
+  pris-suffix: /mån
   stor: true
   
 - title: Flerspråksstöd

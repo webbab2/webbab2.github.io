@@ -4,7 +4,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Lato", sans-serif;
-    color: #444;
+    color: #222;
     background-color: #efefef;
     font-weight:300;
     text-rendering: optimizeLegibility;
@@ -34,6 +34,7 @@ h1 {
 }
 h2 {
     font-size: 36px;
+    color: {{ site.color.primary }};
 }
 
 h3, h4 {
@@ -1516,7 +1517,7 @@ border-color: #ddd;
 	font-weight: 900;
 	font-style: italic;
 	font-size: 24px;
-	border-bottom: 4px solid {{ site.color.primary }};
+	/*border-bottom: 4px solid {{ site.color.primary }};*/
 	color: #222;
 	/* text-align: center; */
 	line-height: 24px;
@@ -1524,11 +1525,11 @@ border-color: #ddd;
 }
 
 .pris-small {
-	font-weight: 900;
+	font-weight: 700;
 	font-style: italic;
 	font-size: 18px;
-	border-bottom: 3px solid {{ site.color.primary }};
-	color: #222;
+	/*border-bottom: 3px solid {{ site.color.primary }};*/
+	color: #333;
 	padding: 0 2px;
 }
 
@@ -1811,7 +1812,7 @@ footer h4 {
 /*** tjänster ***/
 .tjanstbox{
     background: #e2e2e2;
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 20px 0 0;
 }
 .tjanstbox p{
@@ -1829,7 +1830,7 @@ footer h4 {
     background: #960051;
     color: #fafafa;
     text-align: center;
-    border-radius: 0 0 0 10px;
+    border-radius: 0 0 0 4px;
     padding: 10px;
     font-size: 20px;
     font-weight: 900;
@@ -1843,7 +1844,7 @@ footer h4 {
     background: #aaa;
     color: #fafafa;
     text-align: center;
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 4px 0;
     font-size: 20px;
     font-style: italic;
     font-weight: 700;
