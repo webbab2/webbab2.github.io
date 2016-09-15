@@ -4,9 +4,10 @@ title: Savelend
 category: portfolio
 tags:
 - Animation
-date: 2014-11-10 #för sortering
+date: 2016-07-10 #för sortering
 project-date: Okt 2014
-video: https://player.vimeo.com/video/112219619?color=b32081&title=0&byline=0&portrait=1
+video: https://player.vimeo.com/video/112219619?color=960051&title=0&byline=0&portrait=0
+video2: https://player.vimeo.com/video/182541674?color=960051&title=0&byline=0&portrait=0
 thumbnail: savelend_logo.png
 thumbnail-hover: savelend_preview.png
 client: Savelend Sweden AB
@@ -16,4 +17,4 @@ color2: 26, 48, 62
 s-desc: Säljande animerad film
 
 ---
-Vi skapade en animerad informationsfilm åt Savelend för att lättare beskriva deras affärsverksamhet samt visa upp hur deras tjänster fungerar för deras kunder.
+Savelend sysslar med p2p-utlåning, något som låter betydligt mer komplicerat än vad det faktiskt är. För att lättare visa upp för deras kunder hur tjänsten faktiskt fungerar tog vi fram ett par animerade filmer som snabbt och enkelt visar hur allt går till.
