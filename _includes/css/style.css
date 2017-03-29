@@ -173,6 +173,7 @@ ul li i {
     }
     .mb { margin-bottom: 40px; }
     .mt { margin-top: 40px; }
+    .mb-hidden-xs {margin-bottom: 0;}
 }
 
 .inline {

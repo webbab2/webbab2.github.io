@@ -5,7 +5,7 @@ category: portfolio
 tags:
 - Webb
 date: 2015-09-09 #för sortering
-thumbnail: lendtower_logo.png
+thumbnail: lendtower-logo.png
 thumbnail-hover: lendtower_preview.jpg
 img: lendtower_img.jpg
 img-site: lendtower_site.png

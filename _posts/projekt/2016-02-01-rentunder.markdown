@@ -6,7 +6,7 @@ tags:
 - Webb
 - Animation
 date: 2016-02-01 #för sortering
-thumbnail: rentunder_logo.png
+thumbnail: rentunder-logo.png
 thumbnail-hover: rentunder_preview.jpg
 img: rentunder_img.jpg
 #img-site: rentunder_site.png

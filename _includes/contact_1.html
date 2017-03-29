@@ -1,32 +1,32 @@
 <link rel="stylesheet" href="{{ '/css/form.css' | prepend: site.baseurl }}">
 
 <section id="contact">
-    <div class="container mtb">
-        <div class="row">
-            <div class="col-md-12 mb-md">
+
+    <div class="container-fluid">
+        <div class="row primary-color-bg ">
+            <div class="col-md-6 white-bg primary-color" style="padding: 25px 0 25px 10%">
                 <h2>Berätta vad du går och tänker på<br><span style="font-size: 0.9em; font-weight: 400; font-style: italic;">Vi hjälper gärna till!</span></h2>
-            </div>
-            <div class="col-md-6">
+                <br>
                 <div style="padding-left: 10px;">
-                    <ul class="list-unstyled ll-b">
+                    <ul class="list-unstyled ll-b li18px">
                         <li><i class="fa fa-phone fa-fw"></i> <a href="tel:004626614000">026-61 40 00</a></li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <script type="text/javascript">// <![CDATA[
-                        var qljbcxg = ['i','o','a','l','a','f','b','e','l',':','b','b','f','e','h','s','l','>','i','@','a','b','s','w','n',' ','b','/','>','m','"','i','=','r','"','e','.','m','e','f','o','i','s','@','"','a','.','a','c','e','<','a','o','a','w','=','e','"','b','<','t',' ','s','n'];var aosbcqn = [16,14,25,33,1,48,24,39,43,15,26,23,18,22,3,58,12,45,46,50,34,53,36,51,17,2,54,61,63,9,38,11,7,4,30,52,57,40,5,6,49,42,35,20,44,41,27,55,32,59,0,62,19,10,21,37,29,8,56,60,13,31,28,47];var nqhlxri= new Array();for(var i=0;i<aosbcqn.length;i++){nqhlxri[aosbcqn[i]] = qljbcxg[i]; }for(var i=0;i<nqhlxri.length;i++){document.write(nqhlxri[i]);}
-                        // ]]></script></li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>
+                            <script type="text/javascript">
+                                // <![CDATA[
+                                var qljbcxg = ['i', 'o', 'a', 'l', 'a', 'f', 'b', 'e', 'l', ':', 'b', 'b', 'f', 'e', 'h', 's', 'l', '>', 'i', '@', 'a', 'b', 's', 'w', 'n', ' ', 'b', '/', '>', 'm', '"', 'i', '=', 'r', '"', 'e', '.', 'm', 'e', 'f', 'o', 'i', 's', '@', '"', 'a', '.', 'a', 'c', 'e', '<', 'a', 'o', 'a', 'w', '=', 'e', '"', 'b', '<', 't', ' ', 's', 'n'];
+                                var aosbcqn = [16, 14, 25, 33, 1, 48, 24, 39, 43, 15, 26, 23, 18, 22, 3, 58, 12, 45, 46, 50, 34, 53, 36, 51, 17, 2, 54, 61, 63, 9, 38, 11, 7, 4, 30, 52, 57, 40, 5, 6, 49, 42, 35, 20, 44, 41, 27, 55, 32, 59, 0, 62, 19, 10, 21, 37, 29, 8, 56, 60, 13, 31, 28, 47];
+                                var nqhlxri = new Array();
+                                for (var i = 0; i < aosbcqn.length; i++) {
+                                    nqhlxri[aosbcqn[i]] = qljbcxg[i];
+                                }
+                                for (var i = 0; i < nqhlxri.length; i++) {
+                                    document.write(nqhlxri[i]);
+                                }
+                                // ]]>
+                            </script>
+                        </li>
                         <!--li><i class="fa fa-globe fa-fw"></i> <a href="https://webbab.se/">webbab.se</a></li-->
                     </ul>
-                    <br>
-                    <div class="row address">
-                        <div class="col-md-4">
-                        <h4>Besöksadress</h4>
-                        <p style="margin-bottom: 18px;" class="ll-b"><a href="http://bit.ly/WEBBAB-GoogleMaps" target="_blank">Muréngatan 1
-                            <br> 802 51 Gävle</a></p>
-                        </div><div class="col-md-4">
-                        <h4>Postadress</h4>
-                        <p>Box 28
-                            <br> 803 02 Gävle</p>
-                        </div>
-                    </div>
                 </div>
 
                 <ul class="list-inline contact-social-buttons">
@@ -38,79 +38,32 @@
                 </ul>
 
                 <br>
-                <a href="/offert/" class="btn btn-ghost btn-lg">Vill du ha en offert?</a>
-
-            </div> <!-- /col-md-6 -->
-            <div class="space mb-md visible-xs visible-sm"></div>
-            <div class="col-md-6">
-                
-                
-                <form action="http://webbab.se/sent/api/GyRxO3Xxj9Z2bGGsooAF" method="post">
-                    <div class="group">      
-                      <input type="text" name="name" required>
-                      <span class="highlight"></span>
-                      <span class="streck"></span>
-                      <label>Namn</label>
-                    </div>
-
-                    <div class="group">      
-                      <input type="email" name="email" required>
-                      <span class="highlight"></span>
-                      <span class="streck"></span>
-                      <label>E-post</label>
-                    </div>
-
-                     <div class="group">      
-                      <textarea id="message" rows="4" name="message" required></textarea>
-                      <span class="highlight"></span>
-                      <span class="streck"></span>
-                      <label>Meddelande</label>
-                    </div>
-                    <input type="submit" value="Skicka">
-                    <input type="hidden" name="_after" value="/kontakt/tack/">
-                    <input type="hidden" name="_confirmation" value="<b>Thank you!</b> We have received your message and will get back to you asap.">
-                </form>
-
-                
+                <a href="/offert/" class="btn btn-white btn-lg">Vill du ha en offert?</a>
 
             </div>
+            <!-- /col -->
 
-        </div><!-- /row -->
-        
-        
-        <div class="space"></div>
-        <hr class="mb">
-        
-        {% for medarbetare in site.medarbetare %}
-            <div class="col-md-3 col-sm-6">
-                <img src="/img/medarbetare/{{ medarbetare.img }}" alt="{{ medarbetare.namn }}" class="circle-img img-responsive center-block" style="max-height: 100px;">
-                    <h4 class="bold-caps text-center mt-sm mb-0">{{ medarbetare.namn }}</h4>
-                    <p class="medarbetare-titel text-center mb-sm">{{ medarbetare.titel }}</p>
-                    <ul class="list-unstyled medarbetare-list">
-                        <li>
-                            <!--<i class="fa fa-phone fa-fw"></i>--> <a href="tel:{{ medarbetare.tel }}" class="">{{ medarbetare.tel }}</a>
-                        </li>
-                        <li>
-                            <!--<i class="fa fa-envelope-o fa-fw"></i>--> <a href="tel:{{ medarbetare.email }}" class="">{{ medarbetare.email }}</a>
-                        </li>
-                    </ul>
-                    <div class="space"></div>
-                </div>
-    {% endfor %}
-        
-        <style>
-            .circle-img{
-                border-radius: 50%;
-            }
-            .medarbetare-titel{
-                font-size: 12px;
-                color: #666 !important;
-            }
-            .medarbetare-list  li{
-                font-size: 16px !important;
-                text-align: center;
-            }
-        </style>
-        
+            <div class="col-md-6 primary-color-bg white-color">
+                [kontaktformulär här]
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding: 0;">
+        <div class="col-lg-4 col-lg-offset-2 hidden-xs" style="padding: 0; overflow: hidden;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ssv!2sse!4v1441283926858!6m8!1m7!1sWqKpm1kFTNetrcdKn1D3gw!2m2!1d60.67195367161582!2d17.15482903653804!3f66.43487135528018!4f10.548532649753568!5f0.4000000000000002" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4 white-bg primary-color" style="height:500px; padding: 45px;">
+            <div class="address" style="position: relative; margin: 0 auto; display: block; width: 55%; padding-top: 55px;">
+                <h3>Besöksadress</h3>
+                <p>Muréngatan 1
+                    <br> 802 51 Gävle</p>
+
+                <h3>Postadress</h3>
+                <p>Box 28
+                    <br> 803 02 Gävle</p>
+            </div>
+        </div>
     </div>
 </section>

@@ -9,7 +9,7 @@ tags:
 - Grafisk design
 date: 2014-12-01 #för sortering
 project-date: Dec 2014
-thumbnail: moab_logo.png
+thumbnail: moab-logo.png
 thumbnail-hover: moab_preview.jpg
 img: moab_img.jpg
 img-c: moab_logotyp.png

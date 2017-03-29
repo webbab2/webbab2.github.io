@@ -6,8 +6,8 @@ tags:
 - Webb
 date: 2014-11-10 #för sortering
 thumbnail: advokatwsw_logo.jpg
-thumbnail-hover: advokatwsw_preview.png
-img: advokatwsw_img.png
+thumbnail-hover: advokatwsw-preview.png
+img: advokatwsw-img.png
 client: Advokatbyrån Wiklund Skoglund Wachenfeldt 
 client-info: Advokatbyrå med idag sju anställda, med kontor i Gävle, Uppsala och Sollentuna.
 color1: 0, 120, 181
