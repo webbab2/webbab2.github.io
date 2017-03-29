@@ -28,7 +28,7 @@
             {% endif %}
             
             {% if page.img %}
-            <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb" alt="{{ page.title }}" style="max-height: 800px; {% if page.img-shadow %}box-shadow: #aaa 0px 0px 25px;{% endif %}">
+            <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb {% if page.img-shadow %}bsh-xl{% endif %}" alt="{{ page.title }}" style="max-height: 800px;">
             {% endif %}
         </div>
         <div class="row mb">
@@ -43,7 +43,7 @@
                 <h4 class="project-details"><i class="fa fa-info-circle"></i> {{ page.client }}</h4>
                 <div class="hline"></div>
                 <p class="t14px mb-xs">{{ page.client-info }}</p>
-                {% if page.project-date %}<p class="project-meta"><b>Datum:</b> {{ page.project-date }}</p>{% endif %}
+                <!--{% if page.project-date %}<p class="project-meta"><b>Datum:</b> {{ page.project-date }}</p>{% endif %}-->
                 {% if page.website %}<p class="project-meta"><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
             </div>
         </div><!-- /row -->
@@ -139,7 +139,7 @@
             <div class="row mb"></div>
 
             <div class="col-lg-10 col-lg-offset-1">
-                <img src="/img/portfolio/{{ page.img-site }}" class="img-responsive center-block mb" alt="{{ page.title }}">
+                <img src="/img/portfolio/{{ page.img-site }}" class="img-responsive center-block mb bsh5" alt="{{ page.title }}">
             </div>
             {% if page.img-site-desc %}
             <div class="col-lg-6">

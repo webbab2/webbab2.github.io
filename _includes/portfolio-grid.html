@@ -12,9 +12,11 @@
     }
     .portfolio-link {
         box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
     .portfolio-link:hover {
         box-shadow: 0px 6px 30px 0px rgba(0,0,0,0.5);
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
     
     .portfolioCardInfo{
@@ -25,9 +27,11 @@
     }
     .portfolioCardInfo h4{
         font-weight: 800;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
     }
     .portfolioCardInfo p{
         font-weight: 400;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     }
         
     .portfolioCardTags{
@@ -73,6 +77,10 @@
         top: -125%;
     }
     
+    #portfolio .portfolio-item .portfolio-link, #portfolio .portfolio-item .portfolio-link img, #portfolio .portfolio-item .portfolio-link .overlay {
+        border-radius: 3px;
+    }
+    
 
 </style>
 
@@ -80,13 +88,13 @@
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row mtb">
-            {% for project in site.categories.portfolio limit:9 %}
-                <div class="col-md-4 col-sm-6 portfolio-item">
+            {% for project in site.categories.portfolio limit:99 %}
+                <div class="col-md-4 col-sm-4 col-xs-6 portfolio-item">
                     <a href="{{ project.url }}" class="portfolio-link">
                         <div class="portfolio-hover">
-                            <img src="/img/portfolio/{{ project.thumbnail-hover }}" class="img-responsive preview" alt="{{ project.title }}">
+                            <img src="/img/portfolio/{% if project.thumbnail-hover %}{{ project.thumbnail-hover }}{% else %}{{ project.thumbnail }}{% endif %}" class="img-responsive preview" alt="{{ project.title }}">
                             
-                            <div style="background: linear-gradient(135deg, {% if project.color1 %}rgba({{ project.color1 }},0.75){% else %}rgba(150,0,81,0.75){% endif %} 0%,{% if project.color2 %}rgba({{ project.color2 }},0.25){% else %}rgba(150,0,81,0.25){% endif %} 100%); width: 100%; height: 100%; position: absolute; top: 0; display: block;"></div>
+                            <div class="overlay" style="background: linear-gradient(135deg, {% if project.color1 %}rgba({{ project.color1 }},0.75){% else %}rgba(150,0,81,0.75){% endif %} 0%,{% if project.color2 %}rgba({{ project.color2 }},0.25){% else %}rgba(150,0,81,0.25){% endif %} 100%); width: 100%; height: 100%; position: absolute; top: 0; display: block;"></div>
                             
                             <div class="portfolioCardInfo">
                                 <h4 style="color: #fff; margin-bottom: 0;">{{ project.title }}</h4>

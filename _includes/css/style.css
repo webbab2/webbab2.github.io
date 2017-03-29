@@ -1,5 +1,3 @@
-
-
 body {
     width: 100%;
     height: 100%;
@@ -66,7 +64,7 @@ p {
     line-height: 1.5;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     p {
         margin: 0 0 35px;
         font-size: 18px;
@@ -91,6 +89,9 @@ a:hover,
 a:focus {
     text-decoration: none;
     color: {{ site.color.links }};
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    transition: inherit; 
 }
 
 .light {
@@ -213,7 +214,30 @@ display: inline;
     font-weight: 700;
 }
 
-/*** nav ***/
+
+/* box-shadows */
+.bsh1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.bsh2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.bsh3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.bsh4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bsh5{
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.bsh-xl{
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 6px 10px rgba(0,0,0,0.22), 0px 0px 25px #aaa;
+}
+
+
+
+/*** NAV ***/
 
 .nav-bg {
     background-color: #efefef;
@@ -463,7 +487,7 @@ z-index: -1 !important;
 }
 
 /***nav old**/
-@media(min-width:767px) {
+@media(min-width:768px) {
     .navbar-absolute { position: absolute; width: 100%; }
 }
     
@@ -548,7 +572,7 @@ button.navbar-toggle{
 }
 
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
@@ -612,11 +636,9 @@ button.navbar-toggle{
 }
 
 
-/*** footer ***/
+/*** FOOTER ***/
 
 footer {
-    /*position: fixed; bottom: 0; left: 0;*/
-    
     padding: 50px 0;
     background-color: {{ site.color.primary-dark }};
     color: #eee;
@@ -628,10 +650,8 @@ footer a {
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-footer a:hover, footer a:active {
-    /*border-bottom: 1px solid {{ site.color.primary }};
-    box-shadow: inset 0 -3px 0 {{ site.color.primary }};*/
-    color: {{ site.color.primary }};
+footer a:hover, footer a:active, footer a:focus {
+    color: #BE3278;
 }
 
 footer p {
@@ -643,14 +663,19 @@ footer p {
 footer .fa {
     font-size: 16px;
 }
+
 footer h4 {
-    font-weight: 700;
-    font-size: 16px;
+    color: #BE3278;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.12em;
     display: inline-block;
-    color: #bbb;
     line-height: 18px;
     margin-bottom: 5px;
 }
+
+
 
 ul.footer-social-buttons {
     margin-top: 0;
@@ -697,6 +722,28 @@ ul.footer-social-buttons li {
     footer img {
         max-width: 90%;
         height: auto !important;
+    }
+}
+
+@media (min-width: 991px){
+    footer .list-medlemi li img {
+        margin: 5px 0 15px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 991px){
+    footer .list-medlemi li {
+        display: inline-block;
+        max-width: 32%;
+        height: auto;
+        padding: 5px 10px;
+    }
+}
+@media (max-width: 767px){
+    .footer-social-buttons li {
+        display: inline-block !important;
+        padding: 0 6px !important;
     }
 }
 
@@ -756,7 +803,7 @@ p.medarbetare-titel {
     line-height: 1.5em;
     font-weight: 300;
 }
-@media (max-width: 766px){
+@media (max-width: 767px){
     #contact ul li{
         font-size: 18px;
     }
@@ -893,7 +940,7 @@ p.medarbetare-titel {
 
 /*** intro ***/
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .header-text {  /* den lilla till höger */
         font-size: 22px;
     }
@@ -979,12 +1026,12 @@ p.medarbetare-titel {
         margin-top: 40px;
     }
 }
-@media(max-width:766px) {
+@media(max-width:767px) {
     .intro-text {
         font-size: 28px;
     }
 }
-@media(min-width:767px) {
+@media(min-width:768px) {
     .intro {
         height: 100%;
         padding: 0;
@@ -1135,7 +1182,7 @@ p.medarbetare-titel {
     margin-top: 100px;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .content-section {
         padding-top: 200px;
     }
@@ -1259,7 +1306,7 @@ body {
     z-index: 2;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
@@ -1579,7 +1626,7 @@ border-color: #ddd;
     color: {{ site.color.primary }};
     font-size: 32px;
 }
-@media (max-width: 766px){
+@media (max-width: 767px){
     .tjanster-lista li, .tjanster-lista .fa {
         font-size: 28px;
     }
@@ -1655,35 +1702,7 @@ border-color: #ddd;
 
 
 /** 2016 DESIGN REFRESH (lägg in och ersätt på rätt ställe sen efter ok) **/
-footer h4 {
-    color: #BE3278;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.12em;
-}
 
-@media (min-width: 991px){
-    footer .list-medlemi li img {
-        margin: 5px 0 15px;
-        height: 30px;
-    }
-}
-
-@media (max-width: 991px){
-    footer .list-medlemi li {
-        display: inline-block;
-        max-width: 32%;
-        height: auto;
-        padding: 5px 10px;
-    }
-}
-@media (max-width: 766px){
-    .footer-social-buttons li {
-        display: inline-block !important;
-        padding: 0 6px !important;
-    }
-}
 /*.mini-kontakt h2, .mini-kontakt form, .mini-kontakt input[submit] {
     color: #f66;
 }

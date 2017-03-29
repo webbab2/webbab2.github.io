@@ -6,7 +6,6 @@ tags:
 - Webbshop
 date: 2014-11-10 #för sortering
 thumbnail: hatt-soner_logo.png
-thumbnail-hover: hatt-soner_thumb.png
 img: hatt-soner_img.png
 client: HATT <i>et</i> SÖNER 
 client-info: Svenskägt franskt champagnehus.

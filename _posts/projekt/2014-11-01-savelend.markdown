@@ -12,9 +12,9 @@ thumbnail: savelend_logo.png
 thumbnail-hover: savelend_preview.png
 client: Savelend Sweden AB
 client-info: ”Den vänliga tjänsten för att förbättra din ekonomiska situation, både för dig med tillfälligt behov av pengar och för dig med överskott”
-color1: 109, 218, 223
-color2: 26, 48, 62
+color1: 50, 154, 240
+color2: 168, 210, 240
 s-desc: Säljande animerad film
-
+description: Vi fram ett par animerade filmer som snabbt och enkelt visar hur allt går till.
 ---
 Savelend sysslar med p2p-utlåning, något som låter betydligt mer komplicerat än vad det faktiskt är. För att lättare visa upp för deras kunder hur tjänsten faktiskt fungerar tog vi fram ett par animerade filmer som snabbt och enkelt visar hur allt går till.

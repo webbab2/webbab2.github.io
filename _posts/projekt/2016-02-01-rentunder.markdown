@@ -27,7 +27,7 @@ villduvetamer: Hör av dig till projektledare <a href="/kontakt" title="Kontakta
 color1: 0, 75, 135
 color2: 254, 219, 0
 s-desc: Ny hemsida, ny grafisk profil, och en cool animerad film
-
+description: När Rentunder i slutet av 2015 ville utöka till den internationella marknaden kände de att det var dags att fräscha upp deras webbplats och grafiska profil.
 ---
 <p class="ingress">När Rentunder i slutet av 2015 ville utöka till den internationella marknaden kände de att det var dags att fräscha upp deras webbplats och grafiska profil.</p>
 

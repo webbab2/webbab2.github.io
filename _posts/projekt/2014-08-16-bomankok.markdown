@@ -14,4 +14,4 @@ url: http://bomankokstockholm.se/
 color1: 40, 127, 214
 
 ---
-Vi har ansvarat för Bomankök Stockholms hemsida sedan många år tillbaka och sedan dess har utseendet gått igenom ett antal uppfräschningar, nu senast gjorde vi hela sajten responsiv så den ser lika fin ut i mobilen också. Webbsidan är byggd i WordPress vilket gör det enkelt för dom att själva uppdatera och lägga in nya kök på sidan.
+Vi har ansvarat för Bomankök Stockholms hemsida sedan många år tillbaka och sedan dess har utseendet gått igenom ett antal uppfräschningar, nu senast gjorde vi hela sajten responsiv så den ser lika fin ut i mobilen också. Webbplatsen är byggd i WordPress vilket gör det enkelt för dom att själva uppdatera och lägga in nya kök på sidan.

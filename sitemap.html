@@ -2,8 +2,6 @@
 title: Sitemap
 permalink: sitemap/
 layout: default
-header-title: Sitemap
-cleanheader: såklart
 ---
 
 
@@ -12,10 +10,15 @@ cleanheader: såklart
     <div class="row mtb">
         <div class="col-md-6">
             <ul class="list-unstyled">
-            <li>Om oss</li>
-            <li>Portfolio</li>
-            <li>Vad</li>
-            <li></li>
+                <li>Om oss</li>
+                <li>Portfolio</li>
+                    <ul class="list-unstyled" style="padding-left: 15px;">
+                    {% for project in site.categories.portfolio %}
+                        <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                <li>Vad</li>
+                <li></li>
             
             </ul>
             
@@ -23,14 +26,13 @@ cleanheader: såklart
         <div class="col-md-6">
             <ul class="list-unstyled">
                 <li><a href="/tjanster" title="Tjänster">Tjänster</a></li>
-                <li>Hemsida</a></li>
-                <li>Webbshop</a></li>
-                <li>Film & Animation</a></li>
-                <li>Grafisk design</a></li>
-                <li>Trycksaker</a></li>
-                <li>Appar & Spel</a></li>
-                <li>Webblösningar</a></li>
-            
+                   <ul class="list-unstyled" style="padding-left: 15px;">
+                    {% for tjanst in site.data.tjanster %}
+                        <li>{% if tjanst.lasmer %}<a href="/tjanster/{{ tjanst.lasmer }}/">{% endif %}{{ tjanst.titel }}{% if tjanst.lasmer %}</a>{% endif %}</li>
+                    {% endfor %}
+                    </ul>
+                <li><a href="/blogg" title="Blogg">Blogg</a></li>
+                <li></li>
             </ul>
             
         </div>

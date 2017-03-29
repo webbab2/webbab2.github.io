@@ -1,2 +1,2 @@
 User-agent: *
-Fika: localhost
+Fika-location: localhost

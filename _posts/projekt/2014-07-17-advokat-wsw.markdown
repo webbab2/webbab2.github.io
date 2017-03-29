@@ -10,6 +10,8 @@ thumbnail-hover: advokatwsw_preview.png
 img: advokatwsw_img.png
 client: Advokatbyrån Wiklund Skoglund Wachenfeldt 
 client-info: Advokatbyrå med idag sju anställda, med kontor i Gävle, Uppsala och Sollentuna.
+color1: 0, 120, 181
+color2: 128, 212, 255
 
 ---
 Vi tog fram en ny modern responsiv site byggd på WordPress åt Advokatbyrån Wiklund Skoglund Wachenfeldt.
