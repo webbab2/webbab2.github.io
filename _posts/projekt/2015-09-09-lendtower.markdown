@@ -6,7 +6,7 @@ tags:
 - Webb
 date: 2015-09-09 #för sortering
 thumbnail: lendtower-logo.png
-thumbnail-hover: lendtower_preview.jpg
+thumbnail-hover: lendtower-preview.jpg
 img: lendtower-img.jpg
 img-site: lendtower-site.png
 client: LendTower 
