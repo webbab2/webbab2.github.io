@@ -5,7 +5,7 @@ category: portfolio
 tags:
 - Webb
 date: 2014-11-10 #för sortering
-thumbnail: advokatwsw_logo.jpg
+thumbnail: advokatwsw-logo.png
 thumbnail-hover: advokatwsw-preview.png
 img: advokatwsw-img.png
 client: Advokatbyrån Wiklund Skoglund Wachenfeldt 
