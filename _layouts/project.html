@@ -28,7 +28,7 @@
             {% endif %}
             
             {% if page.img %}
-            <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb {% if page.img-shadow %}bsh-xl{% endif %}" alt="{{ page.title }}" style="max-height: 800px;">
+            <img src="/img/portfolio/{{ page.img }}" class="img-responsive center-block mb {% if page.img-shadow %}bsh-xl bsh-hidden-xs{% endif %}" alt="{{ page.title }}" style="max-height: 800px;">
             {% endif %}
         </div>
         <div class="row mb">
@@ -47,6 +47,13 @@
                 {% if page.website %}<p class="project-meta"><b>Website:</b> <a href="{{ page.website }}">{{ page.website }}</a></p>{% endif %}
             </div>
         </div><!-- /row -->
+        
+        {% if page.img-gallery == '3' %}
+        <div class="row">
+            <div class="col-md-6"><img src="/img/portfolio/{{ page.img2 }}" class="img-responsive center-block mb-md"></div>
+            <div class="col-md-6"><img src="/img/portfolio/{{ page.img3 }}" class="img-responsive center-block mb-md"><img src="/img/portfolio/{{ page.img4 }}" class="img-responsive"></div>
+        </div>
+        {% endif %}
         
         {% if page.video2 %}
         <!-- video under huvudtexten -->

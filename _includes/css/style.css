@@ -235,7 +235,11 @@ display: inline;
 .bsh-xl{
     box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 6px 10px rgba(0,0,0,0.22), 0px 0px 25px #aaa;
 }
-
+@media (max-width: 767px){
+    .bsh-hidden-xs{
+        box-shadow: none;
+    }
+}
 
 
 /*** NAV ***/
@@ -887,6 +891,9 @@ p.medarbetare-titel {
 .btn:focus {
     color: #fff;
     background-color: {{ site.color.primary-rgba }};
+    transition:0.25s ease all; 
+    -moz-transition:0.25s ease all; 
+    -webkit-transition:0.25s ease all;
 }
 
 .btn-default {
@@ -944,6 +951,7 @@ p.medarbetare-titel {
 @media(min-width:768px) {
     .header-text {  /* den lilla till höger */
         font-size: 22px;
+        padding-top: 5px;
     }
 }
 

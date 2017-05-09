@@ -24,16 +24,7 @@
         top: -30%;
         left: 20px;
         color: #fff;
-    }
-    .portfolioCardInfo h4{
-        font-weight: 800;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
-    }
-    .portfolioCardInfo p{
-        font-weight: 400;
-        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-    }
-        
+    }        
     .portfolioCardTags{
         position: relative;
         top: -125%;
@@ -62,9 +53,11 @@
         -webkit-transition: all ease .25s;
         -moz-transition: all ease .25s;
         transition: all ease .25s;
+        color: rgba(255,255,255,0);
     }
     .portfolio-hover:hover .portfolioCardInfo{
         top: -30%;
+        color: #fff;
     }
     
     .portfolio-hover .portfolioCardTags{
@@ -79,6 +72,31 @@
     
     #portfolio .portfolio-item .portfolio-link, #portfolio .portfolio-item .portfolio-link img, #portfolio .portfolio-item .portfolio-link .overlay {
         border-radius: 3px;
+    }
+    
+    .portfolioCardInfo h4{
+        font-weight: 800;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    }
+    .portfolioCardInfo p{
+        font-weight: 400;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    }
+    .portfolio-hover .portfolioCardInfo p,
+    .portfolio-hover .portfolioCardInfo h4{
+        color: rgba(255,255,255,0) !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0);
+        -webkit-transition: all ease .25s;
+        -moz-transition: all ease .25s;
+        transition: all ease .25s;
+    }
+    .portfolio-hover:hover .portfolioCardInfo p{
+        color: rgba(255,255,255,1) !important;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    }
+    .portfolio-hover:hover .portfolioCardInfo h4{
+        color: rgba(255,255,255,1) !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
     }
     
 
@@ -100,11 +118,11 @@
                                 <h4 style="color: #fff; margin-bottom: 0;">{{ project.title }}</h4>
                                 <p class="small">{% if project.s-desc %}{{ project.s-desc }}{% else %}Kolla in projektet!{% endif %}</p>
                             </div>
-                            <div class="portfolioCardTags">
+                            <!--<div class="portfolioCardTags">
                                 {% for tag in project.tags limit:3 %}
                                 <p>{{ tag }}</p>
                                 {% endfor %}
-                            </div>
+                            </div>-->
                         </div>
                         
                         <img src="/img/portfolio/{{ project.thumbnail }}" class="img-responsive" alt="{{ project.title }}">
