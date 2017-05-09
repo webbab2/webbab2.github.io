@@ -10,7 +10,7 @@ tags:
 date: 2014-12-01 #för sortering
 project-date: Dec 2014
 thumbnail: moab-logo.png
-thumbnail-hover: moab_preview.jpg
+thumbnail-hover: moab-preview.jpg
 img: moab_img.jpg
 img-c: moab_logotyp.png
 img-c-desc: Logotypen pryder allt från visitkort, arbetskläder och fordon.

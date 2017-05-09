@@ -7,8 +7,8 @@ tags:
 date: 2015-09-09 #för sortering
 thumbnail: lendtower-logo.png
 thumbnail-hover: lendtower_preview.jpg
-img: lendtower_img.jpg
-img-site: lendtower_site.png
+img: lendtower-img.jpg
+img-site: lendtower-site.png
 client: LendTower 
 client-info: Smidig P2P-utlåning med omfattande kontrollpanel.
 color1: 49, 185, 209

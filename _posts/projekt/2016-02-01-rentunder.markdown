@@ -7,9 +7,9 @@ tags:
 - Animation
 date: 2016-02-01 #för sortering
 thumbnail: rentunder-logo.png
-thumbnail-hover: rentunder_preview.jpg
-img: rentunder_img.jpg
-#img-site: rentunder_site.png
+thumbnail-hover: rentunder-preview.jpg
+img: rentunder-img.jpg
+#img-site: rentunder-site.png
 video2 : https://player.vimeo.com/video/157721759?color=960051&title=0&byline=0&portrait=0
 video2-title: Animerad film
 video2-text: Med en animerad film visar de snabbt och effektivt hur deras produkt fungerar. Med en animerad film visar de snabbt och effektivt hur deras produkt fungerar. Med en animerad film visar de snabbt och effektivt hur deras produkt fungerar. Med en animerad film visar de snabbt och effektivt hur deras produkt fungerar.

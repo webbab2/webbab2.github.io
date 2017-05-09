@@ -6,7 +6,7 @@ tags:
 - Webb
 date: 2015-03-01 #för sortering
 thumbnail: bomankok-logo.png
-thumbnail-hover: bomankok_preview.jpg
+thumbnail-hover: bomankok-preview.jpg
 img: bomankok-img.png
 client: Bomankök Stockholm 
 client-info: Bomankök är en modern köksproducent med mer än 80 års erfarenhet av kökstillverkning och tillverkar måttanpassade kök utifrån önskemål.
